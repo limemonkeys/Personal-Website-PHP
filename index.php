@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka One">
         <link rel="stylesheet" href="styles/styles.css">
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="jQuery.js"></script>
         <!--<script src="functions.js"></script>-->
     </head>
     <body id="body">
@@ -354,6 +355,9 @@
                 </a>
             </div>
         </div>
+
+        <!-- Nav Button Section -->
+
         <div class="row">
             <a id="nav-index" class="col-3" href="./index.html">
                 <div class="nav-page">
@@ -370,13 +374,19 @@
                     Resume
                 </div>
             </a>
+            
         </div>
         
-
+        <div class="row">
+            
+            <button id="tempID">change</button>
+            
+        </div>
         
 
         <!--Main-->
         <div class="main border">
+            <p id="pTest">Male</p>
             <h1>Home</h1>
             <p class="text">
                 Welcome. 
