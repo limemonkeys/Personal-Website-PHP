@@ -379,8 +379,11 @@
         
         <div class="row">
             
-            <button id="tempID">change</button>
-            
+            <button id="index">Index</button>
+            <button id="portfolio">Portfolio</button>
+            <button id="resume">Resume</button>
+            <button id="appender">Appender</button>
+            <button id="nuke">Nuke</button>
         </div>
         
 
