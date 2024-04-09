@@ -1,0 +1,27 @@
+punch-1: https://pixabay.com/sound-effects/punch-140236/
+punch-2: https://pixabay.com/sound-effects/punch-2-123106/
+
+
+
+scream-1: https://pixabay.com/sound-effects/the-funny-cry-of-a-man-122084/
+scream-2: https://pixabay.com/sound-effects/male-scream-123080/
+scream-3: https://pixabay.com/sound-effects/male-scream-in-fear-123079/
+
+
+positive-1: https://pixabay.com/sound-effects/interface-1-126517/
+positive-2: https://pixabay.com/sound-effects/button-124476/
+positive-3: https://pixabay.com/sound-effects/message-incoming-132126/
+positive-4: https://pixabay.com/sound-effects/the-notification-email-143029/
+positive-5: https://pixabay.com/sound-effects/clock-ticking-153321/
+
+bell-1: https://pixabay.com/sound-effects/bells-139883/
+bell-2: https://pixabay.com/sound-effects/single-church-bell-156463/
+bell-3: https://pixabay.com/sound-effects/single-strike-church-bell-156464/
+
+smack-1: https://pixabay.com/sound-effects/hitting-the-sandbag-131853/
+smack-2: https://pixabay.com/sound-effects/muffled-sound-of-falling-game-character-131797/
+
+respawn-1: https://pixabay.com/sound-effects/the-magical-surprise-141291/
+
+shoot-1: https://pixabay.com/sound-effects/retro-game-shot-152052/
+shoot-2: https://pixabay.com/sound-effects/retro-game-shot-2-152053/
