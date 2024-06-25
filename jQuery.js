@@ -1,33 +1,65 @@
+// Issues loading jQuery?
+// Try: ctrl + shift + R (Clears cache and loads saved file)
+// CTRL + F5 may work as well
+
+
+// $ sign distinguishes jQuery variables from other variables.
+
 $(document).ready(function(){
 
+    fetch("./templates/icons_template.php")
+        .then((res) => res.text())
+        .then((text) =>{
+            
+            $('#icons_section').append(text);
+        })
+        .catch((e) => console.error(e));
+
     /*
-    $('button').click(function(){
-        $('#pTest').text('test')
-    })
+    fetch("./templates/nav_template.php")
+        .then((res) => res.text())
+        .then((text) =>{
+            
+            $('#nav_section').append(text);
+        })
+        .catch((e) => console.error(e));
     */
+    fetch("./templates/index_template.php")
+        .then((res) => res.text())
+        .then((text) =>{
+            
+            $('.main').append(text);
+        })
+        .catch((e) => console.error(e));
 
-    $('#index').click(function(){
-        // $ sign distinguishes jQuery variables from other variables.
-        var $divStart = "<h1>test</h1>";
-        var $divCont = "<p>more info here</p>"
-        $('#pTest').html($divStart);
-        $('#pTest').append($divCont);
+    $('#nav-index').click(function(){
+        $('.main').html("");
+        fetch("./templates/index_template.php")
+            .then((res) => res.text())
+            .then((text) =>{
+                $('.main').append(text);
+            })
+            .catch((e) => console.error(e));
     })
 
-    $('#portfolio').click(function(){
-        // $ sign distinguishes jQuery variables from other variables.
-        var $divStart = "<h1>test</h1>";
-        var $divCont = "<p>more info here</p>"
-        $('#pTest').html($divStart);
-        $('#pTest').append($divCont);
+    $('#nav-portfolio').click(function(){
+        $('.main').html("");
+        fetch("./templates/portfolio_template.php")
+            .then((res) => res.text())
+            .then((text) =>{
+                $('.main').append(text);
+            })
+            .catch((e) => console.error(e));
     })
 
-    $('#resume').click(function(){
-        // $ sign distinguishes jQuery variables from other variables.
-        var $divStart = "<h1>test</h1>";
-        var $divCont = "<p>more info here</p>"
-        $('#pTest').html($divStart);
-        $('#pTest').append($divCont);
+    $('#nav-resume').click(function(){
+        $('.main').html("");
+        fetch("./templates/resume_template.php")
+            .then((res) => res.text())
+            .then((text) =>{
+                $('.main').append(text);
+            })
+            .catch((e) => console.error(e));
     })
 
     $('#appender').click(function(){

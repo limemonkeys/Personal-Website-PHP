@@ -45,7 +45,6 @@ trigger = false;
 //TODO if permawait, corpse should not teleport to curr pos (to see bug kill while waiting about to walk)
 
 timerId = setInterval( function() { //This function is called by the browser every 33 milliseconds
-    updateLinks();
     //document.getElementById('nav-name').innerHTML = "" + landed;
     document.getElementById("killScore").innerHTML = score;
     document.getElementById("cleanScore").innerHTML = cleanScore;
@@ -128,7 +127,6 @@ timerId = setInterval( function() { //This function is called by the browser eve
                             imageName = imageNameSplit[imageNameSplit.length - 1]
                             if (!(imageName == 'tomb-1.png' || imageName == 'tomb-2.png' || imageName == 'tomb-3.png')){
                                 cleanScore++;
-                                updateLinks();
                                 document.getElementById("cleanScore").innerHTML = cleanScore;
                                 bellSfx = new Audio('./sfx/Bells/bell-' + getRandomInt(1,3) + '.mp3');
                                 bellSfx.volume = 0.2;
@@ -245,7 +243,6 @@ timerId = setInterval( function() { //This function is called by the browser eve
 function GFG_Fun() {
     //<img id="character" style="position:absolute;" src="./Images/Character/M0.png" onclick="GFG_Fun()" >
     score++;
-    updateLinks();
     document.getElementById("killScore").innerHTML = score;
     let img = document.createElement('img');
     img.id = 'corpse' + score;
@@ -270,12 +267,6 @@ function GFG_Fun() {
     screamSfx.volume = 0.2;
     screamSfx.play();
     
-}
-
-function updateLinks(){
-    document.getElementById("nav-index").setAttribute("href", "./index.html?k=" + score + "&c=" + cleanScore);
-    document.getElementById("nav-portfolio").setAttribute("href", "./portfolio.html?k=" + score + "&c=" + cleanScore);
-    document.getElementById("nav-resume").setAttribute("href", "./resume.html?k=" + score + "&c=" + cleanScore);
 }
 
 function getRandomInt(min, max) {
