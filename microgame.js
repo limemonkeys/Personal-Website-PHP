@@ -20,24 +20,7 @@ fallingCounter = 0;
 permaWait = false;
 firstCycle = true;
 landed = false;
-
-
-//console.log("product: " + product[0]);
-
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-console.log(urlParams);
-if (urlParams.size > 0){
-    const killScoreURL = urlParams.get('k');
-    score = killScoreURL;
-    console.log(score);
-    
-
-    const cleanScoreURL = urlParams.get('c');
-    cleanScore = cleanScoreURL;
-    console.log(cleanScore);
-    
-}
+ralseiCorpses = [];
 
 //Temp vars
 trigger = false;
@@ -45,18 +28,24 @@ trigger = false;
 //TODO if permawait, corpse should not teleport to curr pos (to see bug kill while waiting about to walk)
 
 timerId = setInterval( function() { //This function is called by the browser every 33 milliseconds
-    //document.getElementById('nav-name').innerHTML = "" + landed;
     document.getElementById("killScore").innerHTML = score;
     document.getElementById("cleanScore").innerHTML = cleanScore;
     var width = document.getElementById('nav-name').offsetWidth - 64;
+
+    //console.log(document.getElementById('body').offsetHeight);
+
+    // Check to reposition corpses
+    ralseiCorpses.forEach(function(ralsei) {
+        ralsei.style.top = (document.getElementById('body').offsetHeight - 52)+ "px";
+
+    });
 
     if (death){
         deathCounter++;
         if (landed){
             document.getElementById('character').style.opacity = "0.0";
             document.getElementById('character').style.visibility = "visible";
-            //document.getElementById("killScore").innerHTML = deathCounter;
-            
+
             landed=false;
             deathCounter = 0;
             death = false;
@@ -68,91 +57,86 @@ timerId = setInterval( function() { //This function is called by the browser eve
     }
 
     if (falling){
-        fallingCounter++;
-
-        //if (fallingCounter < 32){
-
+        fallingCounter++;           
+        if (isNaN(parseInt(document.getElementById('corpse' + score).style.top))){
+            if (!permaWait && !wait){
+                document.getElementById('corpse' + score).style.left =  guy.style.left = left + "px";
+            }
+            else{
+                permaWait = true;
+            }
+            document.getElementById('corpse' + score).style.top = (fallingCounter * fallingCounter)+ "px";
+            firstCycle = false;
+        }
+        else{
             
-        // This can probably be improved on
-        //if (fallingCounter < 32){
-            if (isNaN(parseInt(document.getElementById('corpse' + score).style.top))){
+            if (parseInt(document.getElementById('corpse' + score).style.top) < document.getElementById('body').scrollHeight - document.getElementsByClassName('footer')[0].offsetHeight){
+
                 if (!permaWait && !wait){
+                    // This HAS to get cleaned up VVV, however it works...
                     document.getElementById('corpse' + score).style.left =  guy.style.left = left + "px";
                 }
                 else{
                     permaWait = true;
                 }
-                document.getElementById('corpse' + score).style.top = (fallingCounter * fallingCounter)+ "px";
-                firstCycle = false;
-            }
-            else{
-                
-                if (parseInt(document.getElementById('corpse' + score).style.top) < document.getElementById('body').scrollHeight - document.getElementsByClassName('footer')[0].offsetHeight){
+                //document.getElementById('nav-name').innerHTML = fallingCounter * fallingCounter + "\n" + document.getElementById('body').scrollHeight
+                if (fallingCounter * fallingCounter > document.getElementById('body').scrollHeight - document.getElementsByClassName('footer')[0].offsetHeight){
+                    smackSfx = new Audio('./sfx/Smacks/smack-2.mp3');
+                    smackSfx.volume = 0.2;
+                    smackSfx.play();
+                    
+                    //document.getElementById('nav-name').innerHTML = document.getElementById('corpse' + score).clientHeight / 2;
+                    fallingCounter = 0;
+                    falling = false;
+                    permaWait = false;
+                    firstCycle = true;
+                    
+                    landed = true;
 
-                    if (!permaWait && !wait){
-                        document.getElementById('corpse' + score).style.left =  guy.style.left = left + "px";
+                    document.getElementById('corpse' + score).style.visibility = "hidden";
+                    
+                    let img = document.createElement('img');
+                    img.id = 'ralsei' + (score);
+                    //img.classList.add('corpses');
+                    img.style.position = 'absolute';
+                    img.src ='./Images/Character/D1.png';
+                    if (!right){
+                        img.style.transform = "scaleX(-1)";
                     }
-                    else{
-                        permaWait = true;
-                    }
-                    //document.getElementById('nav-name').innerHTML = fallingCounter * fallingCounter + "\n" + document.getElementById('body').scrollHeight
-                    if (fallingCounter * fallingCounter > document.getElementById('body').scrollHeight - document.getElementsByClassName('footer')[0].offsetHeight){
-                        smackSfx = new Audio('./sfx/Smacks/smack-2.mp3');
-                        smackSfx.volume = 0.2;
-                        smackSfx.play();
-                        
-                        //document.getElementById('nav-name').innerHTML = document.getElementById('corpse' + score).clientHeight / 2;
-                        fallingCounter = 0;
-                        falling = false;
-                        permaWait = false;
-                        firstCycle = true;
-                        
-                        landed = true;
+                    // Controls where the corpse lands. Putting an if check breaks it here...
+                    img.style.left = guy.style.left;
+                    //img.style.top = guy.style.left;
+                    img.style.top = (document.getElementById('body').offsetHeight - 52)+ "px";
 
-                        document.getElementById('corpse' + score).style.visibility = "hidden";
+                    //console.log("img.style: " + img.style);
+                    // ADD 3/4 of the size of the image
+                    img.onclick = function() {  
                         
-                        let img = document.createElement('img');
-                        img.id = 'corpse' + (score);
-                        //img.classList.add('corpses');
-                        img.style.position = 'absolute';
-                        img.src ='./Images/Character/D1.png';
-                        if (!right){
-                            img.style.transform = "scaleX(-1)";
+                        imageNameSplit = img.src.split("/");
+                        imageName = imageNameSplit[imageNameSplit.length - 1]
+                        if (!(imageName == 'tomb-1.png' || imageName == 'tomb-2.png' || imageName == 'tomb-3.png')){
+                            cleanScore++;
+                            document.getElementById("cleanScore").innerHTML = cleanScore;
+                            bellSfx = new Audio('./sfx/Bells/bell-' + getRandomInt(1,3) + '.mp3');
+                            bellSfx.volume = 0.2;
+                            bellSfx.play();
+                            img.src ='./Images/Tombstones/tomb-' + getRandomInt(1,3) + '.png';
                         }
-                        // Controls where the corpse lands. Putting an if check breaks it here...
-                        img.style.left = guy.style.left;
-                        img.onclick = function() { 
-                            
-                            imageNameSplit = img.src.split("/");
-                            imageName = imageNameSplit[imageNameSplit.length - 1]
-                            if (!(imageName == 'tomb-1.png' || imageName == 'tomb-2.png' || imageName == 'tomb-3.png')){
-                                cleanScore++;
-                                document.getElementById("cleanScore").innerHTML = cleanScore;
-                                bellSfx = new Audio('./sfx/Bells/bell-' + getRandomInt(1,3) + '.mp3');
-                                bellSfx.volume = 0.2;
-                                bellSfx.play();
-                                img.src ='./Images/Tombstones/tomb-' + getRandomInt(1,3) + '.png';
-                            }
-                        };
-                        
-                        document.getElementById('text-main').appendChild(img);
-                        
+                    };
+                    
+                    //document.getElementById('text-main').appendChild(img);
+                    document.getElementById('deathSpace').appendChild(img);
+                    ralseiCorpses.push(img)
 
-                        //document.getElementById('corpse' + score).style.top = document.getElementById('body').scrollHeight - document.getElementsByClassName('footer')[0].offsetHeight + "px";
-                    }
-                    else{
-                        document.getElementById('corpse' + score).style.top = (fallingCounter * fallingCounter)+ "px";
-                        
-                    }  
+                    //document.getElementById('corpse' + score).style.top = document.getElementById('body').scrollHeight - document.getElementsByClassName('footer')[0].offsetHeight + "px";
                 }
-                //document.getElementById('nav-name').innerHTML = document.getElementById('corpse' + score).style.top + "\n" + document.getElementById('body').scrollHeight;
+                else{
+                    document.getElementById('corpse' + score).style.top = (fallingCounter * fallingCounter)+ "px";
+                }  
             }
-        //}
-        
+            //document.getElementById('nav-name').innerHTML = document.getElementById('corpse' + score).style.top + "\n" + document.getElementById('body').scrollHeight;
+        }
     }
-
-    
-
 
     if (parseFloat(document.getElementById('character').style.opacity) < 1.0){
         document.getElementById('character').style.opacity = parseFloat(document.getElementById('character').style.opacity) + 0.1;
@@ -249,6 +233,7 @@ function GFG_Fun() {
     img.style.position = 'absolute';
     img.src ='./Images/Character/D0.png';
     img.style.left = guy.style.left;
+
     document.getElementById('deathSpace').appendChild(img);
     
     if (wait){
@@ -266,7 +251,12 @@ function GFG_Fun() {
     screamSfx = new Audio('./sfx/Screams/scream-' + getRandomInt(1,3) + '.mp3');
     screamSfx.volume = 0.2;
     screamSfx.play();
-    
+
+    /*
+    corpses.forEach(function(corpse) {
+        console.log(corpse.style.left)
+    });
+    */
 }
 
 function getRandomInt(min, max) {
