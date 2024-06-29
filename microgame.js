@@ -37,7 +37,10 @@ timerId = setInterval( function() { //This function is called by the browser eve
     // Check to reposition corpses
     ralseiCorpses.forEach(function(ralsei) {
         ralsei.style.top = (document.getElementById('body').offsetHeight - 52)+ "px";
-
+        console.log("ralsei.style.left: " + ralsei.style.left);
+        if (parseInt(ralsei.style.left) > (document.getElementById('body').offsetWidth - 76)){
+            ralsei.style.left = (document.getElementById('body').offsetWidth - 76) + "px";
+        }
     });
 
     if (death){
@@ -93,7 +96,8 @@ timerId = setInterval( function() { //This function is called by the browser eve
                     
                     landed = true;
 
-                    document.getElementById('corpse' + score).style.visibility = "hidden";
+                    //document.getElementById('corpse' + score).style.visibility = "hidden";
+                    document.getElementById('corpse' + score).remove();
                     
                     let img = document.createElement('img');
                     img.id = 'ralsei' + (score);
