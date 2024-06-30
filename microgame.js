@@ -21,6 +21,7 @@ permaWait = false;
 firstCycle = true;
 landed = false;
 ralseiCorpses = [];
+stopCorpseMovement = false;
 
 //Temp vars
 trigger = false;
@@ -37,7 +38,7 @@ timerId = setInterval( function() { //This function is called by the browser eve
     // Check to reposition corpses
     ralseiCorpses.forEach(function(ralsei) {
         ralsei.style.top = (document.getElementById('body').offsetHeight - 52)+ "px";
-        console.log("ralsei.style.left: " + ralsei.style.left);
+        //console.log("ralsei.style.left: " + ralsei.style.left);
         if (parseInt(ralsei.style.left) > (document.getElementById('body').offsetWidth - 76)){
             ralsei.style.left = (document.getElementById('body').offsetWidth - 76) + "px";
         }
@@ -63,21 +64,30 @@ timerId = setInterval( function() { //This function is called by the browser eve
         fallingCounter++;           
         if (isNaN(parseInt(document.getElementById('corpse' + score).style.top))){
             if (!permaWait && !wait){
+                
+                // See comment below.
                 document.getElementById('corpse' + score).style.left =  guy.style.left = left + "px";
             }
             else{
                 permaWait = true;
             }
             document.getElementById('corpse' + score).style.top = (fallingCounter * fallingCounter)+ "px";
+            
             firstCycle = false;
         }
         else{
             
             if (parseInt(document.getElementById('corpse' + score).style.top) < document.getElementById('body').scrollHeight - document.getElementsByClassName('footer')[0].offsetHeight){
 
-                if (!permaWait && !wait){
+                if (!permaWait){
+                    if (wait){
+                        stopCorpseMovement = true;
+                    }
+                    if (!stopCorpseMovement){
+                        document.getElementById('corpse' + score).style.left =  guy.style.left = left + "px";
+
+                    }
                     // This HAS to get cleaned up VVV, however it works...
-                    document.getElementById('corpse' + score).style.left =  guy.style.left = left + "px";
                 }
                 else{
                     permaWait = true;
@@ -93,11 +103,12 @@ timerId = setInterval( function() { //This function is called by the browser eve
                     falling = false;
                     permaWait = false;
                     firstCycle = true;
-                    
+                    stopCorpseMovement = false;
+
                     landed = true;
 
                     //document.getElementById('corpse' + score).style.visibility = "hidden";
-                    document.getElementById('corpse' + score).remove();
+                    
                     
                     let img = document.createElement('img');
                     img.id = 'ralsei' + (score);
@@ -108,7 +119,8 @@ timerId = setInterval( function() { //This function is called by the browser eve
                         img.style.transform = "scaleX(-1)";
                     }
                     // Controls where the corpse lands. Putting an if check breaks it here...
-                    img.style.left = guy.style.left;
+                    img.style.left = document.getElementById('corpse' + score).style.left;
+                    document.getElementById('corpse' + score).remove();
                     //img.style.top = guy.style.left;
                     img.style.top = (document.getElementById('body').offsetHeight - 52)+ "px";
 

@@ -53,6 +53,7 @@ $(document).ready(function(){
     })
 
     $('#nav-resume').click(function(){
+        //document.getElementById('deathSpace').style.visibility = "hidden";
         $('.main').html("");
         fetch("./templates/resume_template.php")
             .then((res) => res.text())
@@ -60,6 +61,8 @@ $(document).ready(function(){
                 $('.main').append(text);
             })
             .catch((e) => console.error(e));
+        //document.getElementById('deathSpace').style.visibility = "visible";
+
     })
 
     $('#appender').click(function(){
