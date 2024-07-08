@@ -33,14 +33,12 @@ timerId = setInterval( function() { //This function is called by the browser eve
     document.getElementById("cleanScore").innerHTML = cleanScore;
     var width = document.getElementById('nav-name').offsetWidth - 64;
 
-    //console.log(document.getElementById('body').offsetHeight);
 
     // Check to reposition corpses
     ralseiCorpses.forEach(function(ralsei) {
-        ralsei.style.top = (document.getElementById('body').offsetHeight - 52)+ "px";
-        //console.log("ralsei.style.left: " + ralsei.style.left);
-        if (parseInt(ralsei.style.left) > (document.getElementById('body').offsetWidth - 76)){
-            ralsei.style.left = (document.getElementById('body').offsetWidth - 76) + "px";
+        ralsei.style.top = (document.getElementById('gamespace').offsetHeight - 52)+ "px";
+        if (parseInt(ralsei.style.left) > (document.getElementById('gamespace').offsetWidth - 76)){
+            ralsei.style.left = (document.getElementById('gamespace').offsetWidth - 76) + "px";
         }
     });
 
@@ -77,7 +75,7 @@ timerId = setInterval( function() { //This function is called by the browser eve
         }
         else{
             
-            if (parseInt(document.getElementById('corpse' + score).style.top) < document.getElementById('body').scrollHeight - document.getElementsByClassName('footer')[0].offsetHeight){
+            if (parseInt(document.getElementById('corpse' + score).style.top) < document.getElementById('gamespace').scrollHeight - document.getElementsByClassName('footer')[0].offsetHeight){
 
                 if (!permaWait){
                     if (wait){
@@ -92,8 +90,7 @@ timerId = setInterval( function() { //This function is called by the browser eve
                 else{
                     permaWait = true;
                 }
-                //document.getElementById('nav-name').innerHTML = fallingCounter * fallingCounter + "\n" + document.getElementById('body').scrollHeight
-                if (fallingCounter * fallingCounter > document.getElementById('body').scrollHeight - document.getElementsByClassName('footer')[0].offsetHeight){
+                if (fallingCounter * fallingCounter > document.getElementById('gamespace').scrollHeight - document.getElementsByClassName('footer')[0].offsetHeight){
                     smackSfx = new Audio('./sfx/Smacks/smack-2.mp3');
                     smackSfx.volume = 0.2;
                     smackSfx.play();
@@ -122,7 +119,7 @@ timerId = setInterval( function() { //This function is called by the browser eve
                     img.style.left = document.getElementById('corpse' + score).style.left;
                     document.getElementById('corpse' + score).remove();
                     //img.style.top = guy.style.left;
-                    img.style.top = (document.getElementById('body').offsetHeight - 52)+ "px";
+                    img.style.top = (document.getElementById('gamespace').offsetHeight - 52)+ "px";
 
                     //console.log("img.style: " + img.style);
                     // ADD 3/4 of the size of the image
@@ -143,14 +140,11 @@ timerId = setInterval( function() { //This function is called by the browser eve
                     //document.getElementById('text-main').appendChild(img);
                     document.getElementById('deathSpace').appendChild(img);
                     ralseiCorpses.push(img)
-
-                    //document.getElementById('corpse' + score).style.top = document.getElementById('body').scrollHeight - document.getElementsByClassName('footer')[0].offsetHeight + "px";
                 }
                 else{
                     document.getElementById('corpse' + score).style.top = (fallingCounter * fallingCounter)+ "px";
                 }  
             }
-            //document.getElementById('nav-name').innerHTML = document.getElementById('corpse' + score).style.top + "\n" + document.getElementById('body').scrollHeight;
         }
     }
 
