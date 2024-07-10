@@ -24,13 +24,7 @@ $(document).ready(function(){
         })
         .catch((e) => console.error(e));
     */
-    fetch("./templates/index_template.php")
-        .then((res) => res.text())
-        .then((text) =>{
-            
-            $('.main').append(text);
-        })
-        .catch((e) => console.error(e));
+    
 
     $('#nav-index').click(function(){
         $('.main').html("");

@@ -1,4 +1,4 @@
-<h1>Index</h1>
+<h1 id="top-header">Index</h1>
 <p class="text">
     Welcome. Please enjoy the interactive game made entirely of HTML, CSS, and JS, found on the top and bottom of the screen. I made this website myself and it is locally hosted on my Raspberry Pi 3 B+ using Apache2.
 </p>

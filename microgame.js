@@ -23,6 +23,8 @@ landed = false;
 ralseiCorpses = [];
 stopCorpseMovement = false;
 
+logoMoveTimer = 0;
+
 //Temp vars
 trigger = false;
 
@@ -31,8 +33,40 @@ trigger = false;
 timerId = setInterval( function() { //This function is called by the browser every 33 milliseconds
     document.getElementById("killScore").innerHTML = score;
     document.getElementById("cleanScore").innerHTML = cleanScore;
-    var width = document.getElementById('nav-name').offsetWidth - 64;
+    var width = document.getElementById('navspace').offsetWidth - 64;
 
+    /* Not sure if I like this effect :/
+    // Move Mac Burton logo up and down
+    if (logoMoveTimer < 24){
+        logoMoveTimer+= 1;
+    }
+    else{
+        logoMoveTimer = 0;
+        if (document.getElementById('name-logo').style.paddingTop === ""){
+            document.getElementById('name-logo').style.paddingTop = "52px";
+        }
+        else if (parseInt(document.getElementById('name-logo').style.paddingTop) < 64){
+            document.getElementById('name-logo').style.paddingTop = "64px";
+        }
+        else{
+            document.getElementById('name-logo').style.paddingTop = "52px";
+        }
+
+        
+    }
+    */
+
+    
+
+    // Dynamically adjust main padding-top based on tree size LOL
+    document.getElementById('clickSign').style.paddingTop = (document.getElementById('tree1').offsetHeight - 64) + "px";
+    document.getElementById('character').style.paddingTop = (document.getElementById('tree1').offsetHeight - 64) + "px";
+
+    if (document.getElementById('corpse' + score) != null){
+        console.log(document.getElementById('corpse' + score).style.x);
+        console.log(document.getElementById('corpse' + score).style.y);
+    }
+    
 
     // Check to reposition corpses
     ralseiCorpses.forEach(function(ralsei) {
@@ -90,7 +124,7 @@ timerId = setInterval( function() { //This function is called by the browser eve
                 else{
                     permaWait = true;
                 }
-                if (fallingCounter * fallingCounter > document.getElementById('gamespace').scrollHeight - document.getElementsByClassName('footer')[0].offsetHeight){
+                if (fallingCounter * fallingCounter > document.getElementById('gamespace').scrollHeight - document.getElementsByClassName('footer')[0].offsetHeight - (document.getElementById('tree1').offsetHeight - 64)){
                     smackSfx = new Audio('./sfx/Smacks/smack-2.mp3');
                     smackSfx.volume = 0.2;
                     smackSfx.play();
@@ -168,7 +202,7 @@ timerId = setInterval( function() { //This function is called by the browser eve
                 
                 //clearInterval( timerId ); //Stop the interval because left is > 200
                 document.getElementById('character').style.transform = "scaleX(-1)";
-                left= document.getElementById("nav-name").offsetWidth - 64;
+                left= document.getElementById("navspace").offsetWidth - 64;
                 right = false;
                 wait = true;
             }
@@ -196,7 +230,7 @@ timerId = setInterval( function() { //This function is called by the browser eve
             //document.getElementById('nav-name').innerHTML = guy.style.left + "\n" + width + "BANG";
             //clearInterval( timerId ); //Stop the interval because left is > 200
             document.getElementById('character').style.transform = "scaleX(-1)";
-            left= document.getElementById("nav-name").offsetWidth - 64;
+            left= document.getElementById("navspace").offsetWidth - 64;
             right = false;
         }
 
@@ -243,6 +277,7 @@ function GFG_Fun() {
     img.style.position = 'absolute';
     img.src ='./Images/Character/D0.png';
     img.style.left = guy.style.left;
+    img.style.marginTop = (document.getElementById('tree1').offsetHeight - 64) + "px";
 
     document.getElementById('deathSpace').appendChild(img);
     

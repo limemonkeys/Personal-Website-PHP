@@ -84,9 +84,11 @@ Relevancy: All pages
 }
 
 .nav-logos{
-    padding-top: 10px;
-    height: 50px;
+    height: 75px;
     width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .nav-page{
@@ -105,7 +107,8 @@ Relevancy: All pages
 /* Should be split into individual IDs so left and right-most buttons don't have margin on outside*/
 .nav-page-button{
     color: #EDF5E1;
-    background-color: #05386B;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background-color: #EAA977;
     text-align: center;
     font-size: 25px;
     height: 75px;
@@ -127,6 +130,8 @@ Relevancy: All
 body {
     background-color: #6394C5;
     font-family: "Fredoka One", sans-serif;
+    padding: 0px;
+    margin: 0px;
 }
 
 iframe {
@@ -176,27 +181,10 @@ Relevancy: All
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
 #character{
     transform: scale(1);
     margin-top: 8px;
 }
-
-#character-space{
-    
-}
-
-
-
-
-
 
 #home{
     margin-left: -5px;
@@ -208,24 +196,9 @@ Relevancy: All
     margin-right: -5px;
 }
 
-
-
-
-
-
-
-
-
-
 .portfolioPics{
     border: 6px solid #05386B;
 }
-
-
-
-
-
-
 
 #text-background{
     background-color: #427ab3;
@@ -238,20 +211,12 @@ Relevancy: All
     border: 6px solid #05386B;
 }
 
-
-
-
 .text{
 
     padding-left: 25%;
     padding-right: 25%;
     text-align: left;
-
 }
-
-
-
-
 
 .text-space{
 
@@ -413,27 +378,7 @@ Relevancy: All
     
 }
 
-/* Finished */
 
-@media screen and (max-width: 1800px) {
-    .container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    
-}
-
-@media screen and (max-width: 1100px) {
-    .container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
 
 /* This makes the screen dark */
 .overlay {
@@ -543,13 +488,7 @@ Relevancy: All
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-@media screen and (max-width: 600px) {
-    .prev,
-    .next {
-        font-size: 18px;
-        padding: 8px;
-    }
-}
+
 
 .below-text{
     padding-top: 275px;
@@ -604,9 +543,82 @@ Relevancy: All
     text-decoration: none;
 }
 
+#name-logo{
+    padding-top: 64px;
+    width: 40%;
+    margin: auto;
+    position: absolute;
+    left: 30%;
+}
+
+#cloud{
+    position: absolute;
+}
+
+
+#tree1{
+    padding-top: 7px;
+    left: 0px;
+    z-index:-5;
+}
+
+#dirttest{
+    background-image: url("../Dirt\ W\ Grass.png");
+    height: 64px;
+}
+
+#dirt{
+    background-image: url("../Dirt.png");
+    height: 128px;
+    
+}
+
+#stone{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .9) 100%), url("../Rock.png");
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+#top-header{
+    margin-top: 0px;
+}
+
+
+
+
+
+
 /*
 Mobile View Specific Changes
 */
+@media screen and (max-width: 1800px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    
+}
+
+@media screen and (max-width: 1100px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .prev,
+    .next {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     #profile {
         width: 150px;
@@ -618,6 +630,9 @@ Mobile View Specific Changes
         padding-top: 15px;
         height: 35px;
         width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     .text{
 
@@ -639,7 +654,8 @@ Mobile View Specific Changes
 
     .nav-page-button{
         color: #EDF5E1;
-        background-color: #05386B;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        background-color: #EAA977;
         text-align: center;
         font-size: 20px;
         height: 75px;
@@ -657,8 +673,6 @@ Mobile View Specific Changes
         height: 420px;
         
     }
-
-    
 
     #resume-text{
         font-size: 12px;
