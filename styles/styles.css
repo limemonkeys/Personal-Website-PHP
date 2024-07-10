@@ -544,11 +544,11 @@ Relevancy: All
 }
 
 #name-logo{
-    padding-top: 64px;
-    width: 40%;
+    padding-top: 10vh;
+    width: 30vw;
     margin: auto;
     position: absolute;
-    left: 30%;
+    left: 35%;
 }
 
 #cloud{
@@ -569,7 +569,7 @@ Relevancy: All
 
 #dirt{
     background-image: url("../Dirt.png");
-    height: 128px;
+    height: 25vh;
     
 }
 
@@ -584,7 +584,9 @@ Relevancy: All
 }
 
 
-
+#navspace{
+    height: 30vh;
+}
 
 
 

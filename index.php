@@ -60,7 +60,7 @@
 
             <!--Main-->
             <!-- Opacity: 0 tree causing clickable issues -->
-            <img id="" style="opacity:0;" src="./Images/Tree.png">
+            <img id="" style="opacity:0; height:35vh;" src="./Images/Tree.png">
             
             <img id="tree1" style="position:absolute;" src="./Images/Tree.png">
             <div id="dirttest">
