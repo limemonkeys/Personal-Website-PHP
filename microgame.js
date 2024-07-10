@@ -55,7 +55,17 @@ timerId = setInterval( function() { //This function is called by the browser eve
         
     }
     */
-
+    if (document.getElementById('cloud').style.marginLeft === ""){
+        document.getElementById('cloud').style.marginLeft = "-128px";
+    }
+    else if (parseInt(document.getElementById('cloud').style.marginLeft) < document.getElementById('gamespace').offsetWidth){
+        console.log(document.getElementById('gamespace').offsetWidth);
+        console.log(document.getElementById('cloud').style.marginLeft);
+        document.getElementById('cloud').style.marginLeft = (parseInt(document.getElementById('cloud').style.marginLeft) + 2) + "px";
+    }
+    else{
+        document.getElementById('cloud').style.marginLeft = "-128px";
+    }
     
 
     // Dynamically adjust main padding-top based on tree size LOL

@@ -22,8 +22,9 @@
                 <h2 id="killScore">0</h2>
             </div>
             <div>
-                <img id="cloud" src="./Images/Character/M0.png" alt="Cloud">
-                
+                <img id="cloud1" src="./Cloud.png" alt="Cloud">
+                <img id="cloud2" src="./Cloud.png" alt="Cloud">
+                <img id="cloud" src="./Cloud.png" alt="Cloud">
             </div>
             <img id="name-logo" src="./Images/Mac Burton Logo.png" alt="Mac Burton">
             <img id="" style="opacity:0; height:300px;" src="./Images/Mac Burton Logo.png" alt="Mac Burton">

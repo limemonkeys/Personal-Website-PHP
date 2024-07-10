@@ -551,8 +551,23 @@ Relevancy: All
     left: 35%;
 }
 
+#cloud1{
+    position: absolute;
+    padding-top: 5vh;
+    height: 64px;
+}
+
+#cloud2{
+    position: absolute;
+    padding-top: 15vh;
+    padding-left: 25vw;
+    height: 64px;
+}
+
 #cloud{
     position: absolute;
+    float:left;
+    margin-left:-128px; 
 }
 
 
@@ -599,17 +614,25 @@ Mobile View Specific Changes
     }
 
     
+    
 }
 
 @media screen and (max-width: 1100px) {
     .container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    #body{
+        background-color: #FF0000;
+    }
 }
 
 @media screen and (max-width: 750px) {
     .container {
         grid-template-columns: repeat(1, 1fr);
+    }
+    #body{
+        background-color: #00FF00;
     }
 }
 
@@ -618,6 +641,10 @@ Mobile View Specific Changes
     .next {
         font-size: 18px;
         padding: 8px;
+    }
+
+    #body{
+        background-color: #0000FF;
     }
 }
 
