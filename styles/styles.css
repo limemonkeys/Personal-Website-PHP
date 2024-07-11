@@ -591,13 +591,13 @@ Relevancy: All
 
 #dirt{
     background-image: url("../Dirt.png");
-    height: 33vh;
+    height: 0vh;
     
 }
 
 #dirtindex{
     background-image: url("../Dirt.png");
-    height: 200px;
+    height: 128px;
 }
 
 #stone{

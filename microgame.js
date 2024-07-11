@@ -78,7 +78,9 @@ timerId = setInterval( function() { //This function is called by the browser eve
     //document.getElementById('character').style.paddingTop = (document.getElementById('tree1').offsetHeight - 64) + "px";
 
 
-    document.getElementById('navspace').style.height = (((Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) - 256) - 64) * 0.66) + "px";
+    document.getElementById('navspace').style.height = (((Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) * 0.67)- 256) - 64) + "px";
+    document.getElementById('dirt').style.height = (((Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) * 0.33) - 64) - 256) + "px";
+
     document.getElementById('character').style.paddingTop = (document.getElementById('tree1').offsetHeight - 64) + "px";
     document.getElementById('clickSign').style.paddingTop = (document.getElementById('tree1').offsetHeight - 64) + "px";
 
