@@ -21,13 +21,15 @@
                 <img id="killIcon" src="./Images/Character/D0.png" alt="Death Icon">
                 <h2 id="killScore">0</h2>
             </div>
+            <!--
             <div>
                 <img id="cloud1" src="./Cloud.png" alt="Cloud">
                 <img id="cloud2" src="./Cloud.png" alt="Cloud">
                 <img id="cloud" src="./Cloud.png" alt="Cloud">
             </div>
+            -->
             <img id="name-logo" src="./Images/Mac Burton Logo.png" alt="Mac Burton">
-            <img id="" style="opacity:0; height:300px;" src="./Images/Mac Burton Logo.png" alt="Mac Burton">
+            <img id="" style="opacity:0; " src="./Images/Mac Burton Logo.png" alt="Mac Burton">
             <!--
             <h1 id="nav-name">MAC BURTON</h1>
             
@@ -61,15 +63,15 @@
 
             <!--Main-->
             <!-- Opacity: 0 tree causing clickable issues -->
-            <img id="" style="opacity:0; height:35vh;" src="./Images/Tree.png">
+            <img id="treeHitbox" src="./Images/Tree.png">
             
-            <img id="tree1" style="position:absolute;" src="./Images/Tree.png">
+            <img id="tree1" src="./Images/Tree.png">
             <div id="dirttest">
             </div>
             <div id="dirt">
                 <div id="icons_section" class="row"></div>
             </div>
-            <div id="dirt">
+            <div id="dirtindex">
             <div class="row">
                 <button id="nav-index" class="nav-page-button col-3">Index</button>
                 <button id="nav-portfolio" class="nav-page-button col-3">Portfolio</button>
@@ -77,7 +79,7 @@
             </div>
             </div>
             <div id="stone">
-            <h1 id="top-header">Index</h1>
+                <h1 id="top-header">Index</h1>
                 <p class="text">
                     Welcome. Please enjoy the interactive game made entirely of HTML, CSS, and JS, found on the top and bottom of the screen. I made this website myself and it is locally hosted on my Raspberry Pi 3 B+ using Apache2.
                 </p>
@@ -109,21 +111,16 @@
                     The Loaded Ladle serves upwards of 300 people each day. I have also run a team for the Iron Ladle: A cooking competition in which I assembled a team and planned a recipe for one of the services.
                 </p>
                 <!-- Same here but army -->
-                <p class="text">
+                <p class="text bottom">
                     I am a part time musician with the 36 Canadian Brigade Group Band with the Department of National Defense as a Army Reservist at the rank of Corporal.
                     I have attended the Canadian Forces School of Music at Canadian Forces Base Borden in Ontario.
                 </p>
-                <img id="cleanSign" src="./Images/Signs/S2.png">
-                <p id="text-main" class="text hidden-text">
-                    I am the one who stops.<br>
-                    I am the one who stops<br>
-                    I
-                </p>
+                <!-- <img id="cleanSign" src="./Images/Signs/S2.png"> -->
+                
             </div>
-            
-            
-            
-
+        </div>
+        <div id="stone bottom">
+            <p class= "bottom" style="text-align: center; background-color: #000000;">Buzzwords.<br>SEO.<br></p>
         </div>
     </body>
     <footer class="footer">

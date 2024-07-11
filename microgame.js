@@ -55,22 +55,36 @@ timerId = setInterval( function() { //This function is called by the browser eve
         
     }
     */
+
+    /*
+    // Check if float right or float left
     if (document.getElementById('cloud').style.marginLeft === ""){
         document.getElementById('cloud').style.marginLeft = "-128px";
     }
-    else if (parseInt(document.getElementById('cloud').style.marginLeft) < document.getElementById('gamespace').offsetWidth){
+    else if (parseInt(document.getElementById('cloud').style.marginLeft) < document.getElementById('gamespace').offsetWidth - 128){
         console.log(document.getElementById('gamespace').offsetWidth);
         console.log(document.getElementById('cloud').style.marginLeft);
         document.getElementById('cloud').style.marginLeft = (parseInt(document.getElementById('cloud').style.marginLeft) + 2) + "px";
     }
     else{
-        document.getElementById('cloud').style.marginLeft = "-128px";
+        document.getElementById('cloud').style.float = "left";
+        document.getElementById('cloud').style.marginRight = "128px";
+         
     }
-    
+    */
 
     // Dynamically adjust main padding-top based on tree size LOL
-    document.getElementById('clickSign').style.paddingTop = (document.getElementById('tree1').offsetHeight - 64) + "px";
+    //document.getElementById('clickSign').style.paddingTop = (document.getElementById('tree1').offsetHeight - 64) + "px";
+    //document.getElementById('character').style.paddingTop = (document.getElementById('tree1').offsetHeight - 64) + "px";
+
+
+    document.getElementById('navspace').style.height = (((Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) - 256) - 64) * 0.66) + "px";
     document.getElementById('character').style.paddingTop = (document.getElementById('tree1').offsetHeight - 64) + "px";
+    document.getElementById('clickSign').style.paddingTop = (document.getElementById('tree1').offsetHeight - 64) + "px";
+
+
+    console.log(Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0));
+    
 
     if (document.getElementById('corpse' + score) != null){
         console.log(document.getElementById('corpse' + score).style.x);

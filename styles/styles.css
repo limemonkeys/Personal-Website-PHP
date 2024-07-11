@@ -177,8 +177,10 @@ Relevancy: All
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     background-color: #001b36;
-    color: white; /*TODO: Update to off-white*/
+    color: black; /*TODO: Update to off-white*/
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
     text-align: center;
+    background-image: url("../Footrock.png");
 }
 
 #character{
@@ -501,12 +503,12 @@ Relevancy: All
 #killScore{
     color: #EDF5E1;
     position: absolute; 
-    margin-top: 16px;
+    margin: 0px;
     right: 24px;
 }
 #killIcon{
     position: absolute; 
-    margin-top: 14px;
+    margin: 0px;
     right: 56px;
     width: 32px;
 }
@@ -514,13 +516,13 @@ Relevancy: All
 #cleanScore{
     color: #EDF5E1;
     position: absolute; 
-    margin-top: 48px;
+    margin: 0px;
     right: 24px;
 }
 
 #cleanIcon{
     position: absolute; 
-    margin-top: 52px;
+    margin: 0px;
     right: 56px;
     width: 32px;
 }
@@ -544,22 +546,22 @@ Relevancy: All
 }
 
 #name-logo{
-    padding-top: 10vh;
+    padding-top: 0vh;
     width: 30vw;
-    margin: auto;
     position: absolute;
     left: 35%;
+    margin: 0px;
 }
 
 #cloud1{
     position: absolute;
-    padding-top: 5vh;
+    padding-top: 0vh;
     height: 64px;
 }
 
 #cloud2{
     position: absolute;
-    padding-top: 15vh;
+    padding-top: 0vh;
     padding-left: 25vw;
     height: 64px;
 }
@@ -572,9 +574,14 @@ Relevancy: All
 
 
 #tree1{
-    padding-top: 7px;
+    position:absolute;
     left: 0px;
     z-index:-5;
+}
+
+#treeHitbox{
+    opacity:0; 
+    height:256px;
 }
 
 #dirttest{
@@ -584,8 +591,13 @@ Relevancy: All
 
 #dirt{
     background-image: url("../Dirt.png");
-    height: 25vh;
+    height: 33vh;
     
+}
+
+#dirtindex{
+    background-image: url("../Dirt.png");
+    height: 200px;
 }
 
 #stone{
@@ -600,10 +612,19 @@ Relevancy: All
 
 
 #navspace{
-    height: 30vh;
+    height: 0vh;
 }
 
+.bottom{
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
 
+#clickSign{
+    padding-top: 0vh;
+}
 
 /*
 Mobile View Specific Changes
@@ -722,7 +743,10 @@ Mobile View Specific Changes
     }
 
     .footer{
+        color: #000;
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
         font-size: 12px;
+        background-image: url("../Footrock.png");
     }
 
     .portfolioPics{
