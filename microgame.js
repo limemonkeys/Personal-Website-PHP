@@ -74,15 +74,16 @@ timerId = setInterval( function() { //This function is called by the browser eve
     */
 
     // Dynamically adjust main padding-top based on tree size LOL
-    //document.getElementById('clickSign').style.paddingTop = (document.getElementById('tree1').offsetHeight - 64) + "px";
-    //document.getElementById('character').style.paddingTop = (document.getElementById('tree1').offsetHeight - 64) + "px";
+    // NOTE: This is now done in CSS. If tree size is dynamic, this should eb reimplemented
+    //document.getElementById('navspace').style.height = (((Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) * 0.67)- 256) - 64) + "px";
+    //document.getElementById('dirt').style.height = (((Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) * 0.33) - 64)) + "px";
+    
+    
+    document.getElementById('footer').style.width = document.getElementById("navspace").offsetWidth + "px";
 
-
-    document.getElementById('navspace').style.height = (((Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) * 0.67)- 256) - 64) + "px";
-    document.getElementById('dirt').style.height = (((Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) * 0.33) - 64) - 256) + "px";
-
-    document.getElementById('character').style.paddingTop = (document.getElementById('tree1').offsetHeight - 64) + "px";
-    document.getElementById('clickSign').style.paddingTop = (document.getElementById('tree1').offsetHeight - 64) + "px";
+    
+    document.getElementById('character').style.paddingTop = (document.getElementById('tree1').offsetHeight) + "px";
+    document.getElementById('clickSign').style.paddingTop = (document.getElementById('tree1').offsetHeight) + "px";
 
 
     console.log(Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0));
@@ -303,7 +304,7 @@ function GFG_Fun() {
     img.style.position = 'absolute';
     img.src ='./Images/Character/D0.png';
     img.style.left = guy.style.left;
-    img.style.marginTop = (document.getElementById('tree1').offsetHeight - 64) + "px";
+    img.style.marginTop = (document.getElementById('tree1').offsetHeight) + "px";
 
     document.getElementById('deathSpace').appendChild(img);
     

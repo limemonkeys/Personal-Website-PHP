@@ -63,9 +63,13 @@
 
             <!--Main-->
             <!-- Opacity: 0 tree causing clickable issues -->
-            <img id="treeHitbox" src="./Images/Tree.png">
             
-            <img id="tree1" src="./Images/Tree.png">
+            <div id="greenery">
+                <img id="treeHitbox" src="./Images/Tree.png">
+                <img id="tree1" src="./Images/Tree.png">
+            </div>
+            
+            
             <div id="dirttest">
             </div>
             <div id="dirt">
@@ -123,7 +127,7 @@
             <p class= "bottom" style="text-align: center; background-color: #000000;">Buzzwords.<br>SEO.<br></p>
         </div>
     </body>
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <p>Sour Simian Studios 2023 &#x2022; 902-476-4883 &#x2022; macburton1000@gmail.com</p>
     </footer>
 </html>
