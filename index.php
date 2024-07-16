@@ -21,13 +21,13 @@
                 <img id="killIcon" src="./Images/Character/D0.png" alt="Death Icon">
                 <h2 id="killScore">0</h2>
             </div>
-            <!--
+            
             <div>
                 <img id="cloud1" src="./Cloud.png" alt="Cloud">
                 <img id="cloud2" src="./Cloud.png" alt="Cloud">
                 <img id="cloud" src="./Cloud.png" alt="Cloud">
             </div>
-            -->
+            
             <img id="name-logo" src="./Images/Mac Burton Logo.png" alt="Mac Burton">
             <img id="" style="opacity:0; " src="./Images/Mac Burton Logo.png" alt="Mac Burton">
             <!--
@@ -67,6 +67,10 @@
             <div id="greenery">
                 <img id="treeHitbox" src="./Images/Tree.png">
                 <img id="tree1" src="./Images/Tree.png">
+                <img id="bush1" src="./Bush1.png">
+                <img id="bush2" src="./Bush2.png">
+                <img id="bush3" src="./Bush3.png">
+                <img id="tree2" src="./Images/Tree.png">
             </div>
             
             
@@ -77,48 +81,32 @@
             </div>
             <div id="dirtindex">
             <div class="row">
-                <button id="nav-index" class="nav-page-button col-3">Index</button>
+                <button id="nav-index" class="nav-page-button col-3">Home</button>
                 <button id="nav-portfolio" class="nav-page-button col-3">Portfolio</button>
                 <button id="nav-resume" class="nav-page-button col-3">Resume</button>
             </div>
             </div>
             <div id="stone">
-                <h1 id="top-header">Index</h1>
-                <p class="text">
-                    Welcome. Please enjoy the interactive game made entirely of HTML, CSS, and JS, found on the top and bottom of the screen. I made this website myself and it is locally hosted on my Raspberry Pi 3 B+ using Apache2.
-                </p>
+                <h1 id="top-header">About</h1>
                 <h1 class="text-space">
                     About Me
                 </h1>
-                <img id="profile" src="./Images/Headshot 1.jpeg" alt="Selfie">
-                <p class="text">
-                    My name is Mac Burton.
-                </p>
-                <p class="text">
-                    I am a New Grad who recieved a Bachelors of Computer Science and Certificate of User Experience Design and Evaluation from Dalhousie University.
-                </p>
-                <p class="text">
-                    I love to keep myself busy with my free time with personal projects relating to my studies.
-                    More specifically, I have a passion for game development and find myself participating in game jams when I can.
-                </p>
-                <!-- Include visuals of trading cards within the dirt/rock -->
-                <p class="text">
-                    I recently retired as President and Founder of the Dalhousie
-                    Trading Card Game Society. Has been going strong for four years.
-                    My Trading Card Game of choice is Magic the Gathering and I enjoy
-                    casual EDH and competitive modern.
-                </p>
-                <!-- Same here but food -->
-                <p class="text">
-                    I volunteered frequently with the Loaded Ladle for the past year.
-                    The Loaded Ladle is a non-profit open food cooperative, providing free meal services to the community from Tuesday to Friday. 
-                    The Loaded Ladle serves upwards of 300 people each day. I have also run a team for the Iron Ladle: A cooking competition in which I assembled a team and planned a recipe for one of the services.
-                </p>
-                <!-- Same here but army -->
-                <p class="text bottom">
-                    I am a part time musician with the 36 Canadian Brigade Group Band with the Department of National Defense as a Army Reservist at the rank of Corporal.
-                    I have attended the Canadian Forces School of Music at Canadian Forces Base Borden in Ontario.
-                </p>
+                <div class="row">
+                    <img id="profile" src="./Images/Headshot 1.jpeg" alt="Selfie">
+                    <img id="profile" src="./Images/Headshot 1.jpeg" alt="Selfie">
+                    <img id="profile" src="./Images/Headshot 1.jpeg" alt="Selfie">
+                </div>
+                <div id="text-zone" class="row">
+                    <p class="col-3 text">
+                        One
+                    </p>
+                    <p class="col-3 text">
+                        Two
+                    </p>
+                    <p class="col-3 text">
+                        Three
+                    </p>
+                </div>
                 <!-- <img id="cleanSign" src="./Images/Signs/S2.png"> -->
                 
             </div>

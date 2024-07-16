@@ -56,22 +56,23 @@ timerId = setInterval( function() { //This function is called by the browser eve
     }
     */
 
-    /*
+    
     // Check if float right or float left
     if (document.getElementById('cloud').style.marginLeft === ""){
+        document.getElementById('cloud').style.float = "left";
         document.getElementById('cloud').style.marginLeft = "-128px";
     }
     else if (parseInt(document.getElementById('cloud').style.marginLeft) < document.getElementById('gamespace').offsetWidth - 128){
-        console.log(document.getElementById('gamespace').offsetWidth);
-        console.log(document.getElementById('cloud').style.marginLeft);
         document.getElementById('cloud').style.marginLeft = (parseInt(document.getElementById('cloud').style.marginLeft) + 2) + "px";
     }
+    
     else{
-        document.getElementById('cloud').style.float = "left";
-        document.getElementById('cloud').style.marginRight = "128px";
+        document.getElementById('cloud').style.float = "right";
+        document.getElementById('cloud').style.marginRight = document.getElementById('gamespace').offsetWidth + "px";
+        
          
     }
-    */
+    
 
     // Dynamically adjust main padding-top based on tree size LOL
     // NOTE: This is now done in CSS. If tree size is dynamic, this should eb reimplemented
