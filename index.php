@@ -12,6 +12,11 @@
         <!--<script src="functions.js"></script>-->
     </head>
     <body id="body">
+        <div id="cloudspace">
+            <!--<img id="cloud1" src="./Cloud.png" alt="Cloud">-->
+            <!--<img id="cloud2" src="./Cloud.png" alt="Cloud">-->
+            <img id="cloud" src="./Cloud.png" alt="Cloud">
+        </div>
         <div id="navspace">
             <div>
                 <img id="cleanIcon" src="./Images/Tombstones/tomb-1.png" alt="Tombstone Icon">
@@ -22,14 +27,9 @@
                 <h2 id="killScore">0</h2>
             </div>
             
-            <div>
-                <img id="cloud1" src="./Cloud.png" alt="Cloud">
-                <img id="cloud2" src="./Cloud.png" alt="Cloud">
-                <img id="cloud" src="./Cloud.png" alt="Cloud">
-            </div>
+            
             
             <img id="name-logo" src="./Images/Mac Burton Logo.png" alt="Mac Burton">
-            <img id="" style="opacity:0; " src="./Images/Mac Burton Logo.png" alt="Mac Burton">
             <!--
             <h1 id="nav-name">MAC BURTON</h1>
             
@@ -88,25 +88,7 @@
             </div>
             <div id="stone">
                 <h1 id="top-header">About</h1>
-                <h1 class="text-space">
-                    About Me
-                </h1>
-                <div class="row">
-                    <img id="profile" src="./Images/Headshot 1.jpeg" alt="Selfie">
-                    <img id="profile" src="./Images/Headshot 1.jpeg" alt="Selfie">
-                    <img id="profile" src="./Images/Headshot 1.jpeg" alt="Selfie">
-                </div>
-                <div id="text-zone" class="row">
-                    <p class="col-3 text">
-                        One
-                    </p>
-                    <p class="col-3 text">
-                        Two
-                    </p>
-                    <p class="col-3 text">
-                        Three
-                    </p>
-                </div>
+                <p id="seo-padding"></p>
                 <!-- <img id="cleanSign" src="./Images/Signs/S2.png"> -->
                 
             </div>

@@ -22,7 +22,7 @@ firstCycle = true;
 landed = false;
 ralseiCorpses = [];
 stopCorpseMovement = false;
-
+cloud1Toggle = false;
 logoMoveTimer = 0;
 
 //Temp vars
@@ -59,19 +59,28 @@ timerId = setInterval( function() { //This function is called by the browser eve
     
     // Check if float right or float left
     if (document.getElementById('cloud').style.marginLeft === ""){
-        document.getElementById('cloud').style.float = "left";
+        console.log("BEGINNING")
         document.getElementById('cloud').style.marginLeft = "-128px";
     }
-    else if (parseInt(document.getElementById('cloud').style.marginLeft) < document.getElementById('gamespace').offsetWidth - 128){
+    
+    else if (parseInt(document.getElementById('cloud').style.marginLeft) < document.getElementById('gamespace').offsetWidth + 128 && !cloud1Toggle){
+        console.log("INCREASE MARGIN LEFT")
         document.getElementById('cloud').style.marginLeft = (parseInt(document.getElementById('cloud').style.marginLeft) + 2) + "px";
     }
-    
     else{
-        document.getElementById('cloud').style.float = "right";
-        document.getElementById('cloud').style.marginRight = document.getElementById('gamespace').offsetWidth + "px";
-        
-         
+        document.getElementById('cloud').style.marginLeft = "-128px";
     }
+    
+    /*
+    if (cloud1Toggle){
+        console.log("DECREASE RIGHT");
+        console.log(parseInt(document.getElementById('cloud').style.right) - 2);
+        document.getElementById('cloud').style.right = (parseInt(document.getElementById('cloud').style.right - 2));
+    }
+    */
+    
+    
+    
     
 
     // Dynamically adjust main padding-top based on tree size LOL
@@ -87,13 +96,14 @@ timerId = setInterval( function() { //This function is called by the browser eve
     document.getElementById('clickSign').style.paddingTop = (document.getElementById('tree1').offsetHeight) + "px";
 
 
-    console.log(Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0));
+    //console.log(Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0));
     
-
+    /*
     if (document.getElementById('corpse' + score) != null){
         console.log(document.getElementById('corpse' + score).style.x);
         console.log(document.getElementById('corpse' + score).style.y);
     }
+    */
     
 
     // Check to reposition corpses

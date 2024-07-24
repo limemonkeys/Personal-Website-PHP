@@ -134,6 +134,7 @@ body {
     font-family: "Fredoka One", sans-serif;
     padding: 0px;
     margin: 0px;
+    overflow: hidden;
 }
 
 iframe {
@@ -578,7 +579,7 @@ Relevancy: All
 
 #tree2{
     position:absolute;
-    left: calc(100vw - 224px);
+    left: calc(100vw - 256px);
     padding-top: 8px;
     z-index:-5;
 }
@@ -640,6 +641,7 @@ Relevancy: All
     padding-bottom: 1%;
     width: 25vw;
     margin:auto;
+    padding-bottom: 0px;
     
 }
 
@@ -659,6 +661,10 @@ Relevancy: All
     position: absolute;
     left: 35vw;
     margin: 0px;
+}
+
+#seo-padding{
+    background-color: black;
 }
 
 #navspace{
