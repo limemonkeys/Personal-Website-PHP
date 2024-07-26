@@ -25,6 +25,10 @@ stopCorpseMovement = false;
 cloud1Toggle = false;
 logoMoveTimer = 0;
 
+cloudDelay = 128;
+cloudCount = 0;
+clouds = [];
+
 //Temp vars
 trigger = false;
 
@@ -55,29 +59,56 @@ timerId = setInterval( function() { //This function is called by the browser eve
         
     }
     */
-
-    
-    // Check if float right or float left
-    if (document.getElementById('cloud').style.marginLeft === ""){
-        console.log("BEGINNING")
-        document.getElementById('cloud').style.marginLeft = "-128px";
-    }
-    
-    else if (parseInt(document.getElementById('cloud').style.marginLeft) < document.getElementById('gamespace').offsetWidth + 128 && !cloud1Toggle){
-        console.log("INCREASE MARGIN LEFT")
-        document.getElementById('cloud').style.marginLeft = (parseInt(document.getElementById('cloud').style.marginLeft) + 2) + "px";
+    if (cloudDelay >= 128){
+        cloudDelay = 0;
+        cloudCount++;
+        let cloudImg = document.createElement('img');
+        cloudImg.id = 'cloud' + cloudCount;
+        cloudImg.style.position = 'absolute';
+        cloudImg.src ='./Cloud.png';
+        cloudImg.style.marginLeft = -128 + "px";
+        document.getElementById('cloudspace').appendChild(cloudImg);
     }
     else{
-        document.getElementById('cloud').style.marginLeft = "-128px";
+        cloudDelay++;
     }
+    for (var i = 1; i < cloudCount + 1; i++) {
+        document.getElementById('cloud' + i).style.marginLeft = (parseInt(document.getElementById('cloud' + i).style.marginLeft) + 2) + "px";
+        
+        // Do stuff
+    }
+
+    
     
     /*
-    if (cloud1Toggle){
-        console.log("DECREASE RIGHT");
-        console.log(parseInt(document.getElementById('cloud').style.right) - 2);
-        document.getElementById('cloud').style.right = (parseInt(document.getElementById('cloud').style.right - 2));
+    // Cloud priority(GTL): 1, 2, 3
+    // Check if float right or float left
+    if (document.getElementById('cloud1').style.marginLeft === ""){
+        document.getElementById('cloud1').style.marginLeft = "-128px";
+    }
+    
+    else if (parseInt(document.getElementById('cloud1').style.marginLeft) < document.getElementById('gamespace').offsetWidth + 128){
+        document.getElementById('cloud1').style.marginLeft = (parseInt(document.getElementById('cloud1').style.marginLeft) + 2) + "px";
+    }
+    else{
+        document.getElementById('cloud1').style.marginLeft = "-128px";
+    }
+    
+    
+    if (document.getElementById('cloud2').style.marginLeft === ""){
+        document.getElementById('cloud2').style.marginLeft = "-128px";
+    }
+    
+    else if (parseInt(document.getElementById('cloud2').style.marginLeft) < document.getElementById('gamespace').offsetWidth + 128){
+        if (parseInt(document.getElementById('cloud1').style.marginLeft)  > parseInt(document.getElementById('cloud2').style.marginLeft) + 256){
+            document.getElementById('cloud2').style.marginLeft = (parseInt(document.getElementById('cloud2').style.marginLeft) + 2) + "px";
+        }
+    }
+    else{
+        document.getElementById('cloud2').style.marginLeft = "-128px";
     }
     */
+
     
     
     

@@ -134,7 +134,7 @@ body {
     font-family: "Fredoka One", sans-serif;
     padding: 0px;
     margin: 0px;
-    overflow: hidden;
+    
 }
 
 iframe {
@@ -552,21 +552,27 @@ Relevancy: All
 
 #cloud1{
     position: absolute;
-    padding-top: 0vh;
-    height: 64px;
+    float:left;
+    margin-left:-128px; 
+    margin-top: 0px;
 }
 
 #cloud2{
     position: absolute;
-    padding-top: 0vh;
-    padding-left: 25vw;
-    height: 64px;
+    float:left;
+    margin-top: 64px;
 }
 
-#cloud{
+#cloud3{
     position: absolute;
     float:left;
-    margin-left:-128px; 
+    margin-top: 128px;
+
+}
+
+
+body {
+    overflow-x:hidden;
 }
 
 

@@ -13,9 +13,7 @@
     </head>
     <body id="body">
         <div id="cloudspace">
-            <!--<img id="cloud1" src="./Cloud.png" alt="Cloud">-->
-            <!--<img id="cloud2" src="./Cloud.png" alt="Cloud">-->
-            <img id="cloud" src="./Cloud.png" alt="Cloud">
+            
         </div>
         <div id="navspace">
             <div>
