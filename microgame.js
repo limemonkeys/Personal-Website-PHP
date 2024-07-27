@@ -27,6 +27,9 @@ logoMoveTimer = 0;
 
 cloudDelay = 128;
 cloudCount = 0;
+cloudClass = "";
+prevCloudClass = "";
+cloudClasses = ["cloud-top", "cloud-middle", "cloud-bottom"];
 clouds = [];
 
 //Temp vars
@@ -59,15 +62,32 @@ timerId = setInterval( function() { //This function is called by the browser eve
         
     }
     */
-    if (cloudDelay >= 160){
+    if (cloudDelay >= 128 - getRandomInt(0, 16)){
         cloudDelay = 0;
         cloudCount++;
         let cloudImg = document.createElement('img');
         cloudImg.id = 'cloud' + cloudCount;
+        
+        /*
+        Check if prev cloud exists. If so, create clone of list and remove it from it
+        Select random cloud, that's it's class
+        */
+        selectedCloudClass = cloudClasses[0];
+        if (prevCloudClass != ""){
+            cloudClasses.splice(cloudClasses.indexOf(prevCloudClass), 1);
+            selectedCloudClass = cloudClasses[getRandomInt(0,cloudClasses.length - 1)];
+            cloudClasses.push(prevCloudClass);
+            cloudImg.style.paddingTop = getRandomInt(0, 32) + "px"; 
+        }
+        
+        cloudImg.className = selectedCloudClass;
         cloudImg.style.position = 'absolute';
         cloudImg.src ='./Cloud.png';
         cloudImg.style.marginLeft = -160 + "px";
+        
         document.getElementById('cloudspace').appendChild(cloudImg);
+
+        prevCloudClass = selectedCloudClass;
     }
     else{
         cloudDelay++;

@@ -564,7 +564,31 @@ Relevancy: All
 }
 
 
+.cloud-top{
+    position: absolute;
+    float:left;
+    margin-left:-160px; 
+    margin-top: 0px;
+    z-index:-6;
+}
 
+.cloud-middle{
+    position: absolute;
+    float:left;
+    margin-left:-160px; 
+    margin-top: 64px;
+    z-index:-6;
+}
+
+.cloud-bottom{
+    position: absolute;
+    float:left;
+    margin-left:-160px; 
+    margin-top: 128px;
+    z-index:-6;
+}
+
+/*
 #cloud1{
     position: absolute;
     float:left;
@@ -584,7 +608,7 @@ Relevancy: All
     margin-top: 128px;
 
 }
-
+*/
 
 body {
     overflow-x:hidden;
