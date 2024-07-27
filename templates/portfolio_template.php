@@ -8,39 +8,91 @@
 <div class="container">
     <div class="column">
         <a href="https://limemonkeys.itch.io/bunger-burger-bistro" target="_blank">
-            <img class="portfolioPics" src="./Images/Itch Games/Bunger Burger Bistro.png">
+            <img class="portfolioPics portfolioFrame" src="./Images/Itch Games/Bunger Burger Bistro.png">
         </a>
-        <p>Bunger Burger Bistro<br>NOKIA 3310 JAM 6<br>Februrary 16th, 2024</p>
+        <div class="gameInfoContainer">
+            <img class="gameInfoBackgroundImg" src="../Images/Signs/SB.png">
+            <p class="gameInfo">
+                Bunger Burger Bistro<br>NOKIA 3310 JAM 6<br>Februrary 16th, 2024
+            </p>
+            <p class="gameAward gold">
+                Top 5% in Innovation
+            </p>
+        </div>
     </div>
     <div class="column">
         <a href="https://globalgamejam.org/games/2024/date-night-bernies-3" target="_blank">
             <img class="portfolioPics" src="./Images/Itch Games/Date Night at Bernies.png">
         </a>
-        <p>Date Night at Bernie's<br>Global Game Jam 2024<br>January 28th, 2024</p>
+        <div class="gameInfoContainer">
+            <img class="gameInfoBackgroundImg" src="../Images/Signs/SB.png">
+            <p class="gameInfo">
+                Entangled<br>Global Game Jam 2024<br>January 28th, 2024
+            </p>
+            <p class="gameAward gold">
+                People's Choice Award: Most Creative
+            </p>
+        </div>
     </div>
     <div class="column">
         <a href="https://limemonkeys.itch.io/entangled" target="_blank">
             <img class="portfolioPics" src="./Images/Itch Games/Entangled.png">
         </a>
-        <p>Entangled<br>Global Game Jam 2023<br>Februrary 5th, 2023</p>
+        <div class="gameInfoContainer">
+            <img class="gameInfoBackgroundImg" src="../Images/Signs/SB.png">
+            <p class="gameInfo">
+                Entangled<br>Global Game Jam 2023<br>Februrary 5th, 2023
+            </p>
+            <p class="gameAward gold">
+                Ubisoft's Choice Award
+            </p>
+        </div>
+        
     </div>
     <div class="column">
         <a href="https://limemonkeys.itch.io/oh-btw-glasses-stack-prototype">
             <img class="portfolioPics" src="./Images/Itch Games/Oh BTW Glasses Stack.png">
         </a>
-        <p>Oh BTW Glasses Stack<br>IndieCade Greenlight Jam<br>June 19th, 2022</p>
+        <div class="gameInfoContainer">
+            <img class="gameInfoBackgroundImg" src="../Images/Signs/SB.png">
+            <p class="gameInfo">
+                Oh BTW Glasses Stack<br>IndieCade Greenlight Jam<br>June 19th, 2022
+            </p>
+            <p class="gameAward gold">
+                1st Place in Best Plan for Diversifiers
+            </p>
+        </div>
     </div>
     <div class="column">
         <a href="https://limemonkeys.itch.io/project-z-ero" target="_blank">
             <img class="portfolioPics" src="./Images/Itch Games/Patient Z-ero.png">
         </a>
-        <p>Patient Z-ero<br>Atlantic Game Jam<br>February 27th, 2022</p>
+        <div class="gameInfoContainer">
+            <img class="gameInfoBackgroundImg" src="../Images/Signs/SB.png">
+            <p class="gameInfo">
+                Patient Z-ero<br>Atlantic Game Jam<br>February 27th, 2022
+            </p>
+            <p class="gameAward">
+                3rd Place Overall
+            </p>
+            <p class="gameAward gold">
+                1st Place in Game Mechanics
+            </p>
+        </div>
     </div>
     <div class="column">
         <a href="https://limemonkeys.itch.io/doorquest" target="_blank">
             <img class="portfolioPics" src="./Images/Itch Games/Door Quest.png">
         </a>
-        <p>Door Quest<br>Jame Gam #15<br>January 29th, 2022</p>
+        <div class="gameInfoContainer">
+            <img class="gameInfoBackgroundImg" src="../Images/Signs/SB.png">
+            <p class="gameInfo">
+                Door Quest<br>Jame Gam #15<br>January 29th, 2022
+            </p>
+            <p class="gameAward">
+                10th Place in Theme Implementation
+            </p>
+        </div>
     </div>
     <div class="column">
         <a href="https://limemonkeys.itch.io/crypto-crunch-pizza-co" target="_blank">

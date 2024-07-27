@@ -86,8 +86,17 @@
                 <button id="nav-resume" class="nav-page-button col-3">Resume</button>
             </div>
             </div>
-            <div id="stone">
+            <div id="stone" class="main">
                 <h1 id="top-header">About</h1>
+                <div class="col-4">
+
+                </div>
+                <div class="col-4">
+
+                </div>          
+                <div class="col-4">
+
+                </div>
                 <p id="seo-padding"></p>
                 <img id="cleanSign" src="./Images/Signs/S2.png">
                 

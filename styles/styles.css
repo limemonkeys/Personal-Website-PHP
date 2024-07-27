@@ -148,16 +148,7 @@ Section: Main
 Relevancy: All
 */
 
-.main{
-    color: #EDF5E1;
-    text-align: center;
-    height: 500px; 
-    border-radius: 25px;
-    height: auto;
-    margin-bottom: 65px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
+
 
 .border{
     /* THIS DOESN'T WORK ON CHROME. ACCENT COLOR APPEARS BLACK. CURSE YOU CHROME!!! */
@@ -203,9 +194,7 @@ Relevancy: All
     margin-right: -5px;
 }
 
-.portfolioPics{
-    border: 6px solid #05386B;
-}
+
 
 #text-background{
     background-color: #427ab3;
@@ -502,7 +491,39 @@ Relevancy: All
     text-align: left;
 }
 
+.gold{
+    color: #FAF306;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 
+.gameInfo{
+    font-size: 1.2em;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 75%;
+}
+
+.gameAward{
+    font-size: 1.2em;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height:25%;
+}
+
+.gameInfoContainer{
+    position: relative;
+    text-align: center;
+}
 
 
 #killIcon{
@@ -699,11 +720,12 @@ body {
 }
 
 #name-logo{
-    padding-top: 10vh;
-    width: 30vw;
+    padding-top: 5vh;
     position: absolute;
-    left: 35vw;
-    margin: 0px;
+    height: 50vh;
+    margin: auto;
+    left: 0;
+    right: 0;
 }
 
 #seo-padding{
@@ -711,6 +733,7 @@ body {
 }
 
 #navspace{
+    /* Minus: Dirt with Grass, Dirt Area, A little extra */
     height: calc(75vh - (128px + 256px));
 }
 
