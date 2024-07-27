@@ -89,7 +89,7 @@
             <div id="stone">
                 <h1 id="top-header">About</h1>
                 <p id="seo-padding"></p>
-                <!-- <img id="cleanSign" src="./Images/Signs/S2.png"> -->
+                <img id="cleanSign" src="./Images/Signs/S2.png">
                 
             </div>
         </div>

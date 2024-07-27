@@ -32,6 +32,8 @@ prevCloudClass = "";
 cloudClasses = ["cloud-top", "cloud-middle", "cloud-bottom"];
 clouds = [];
 
+maxVW = 0;
+
 //Temp vars
 trigger = false;
 
@@ -93,9 +95,18 @@ timerId = setInterval( function() { //This function is called by the browser eve
         cloudDelay++;
     }
     for (var i = 1; i < cloudCount + 1; i++) {
-        document.getElementById('cloud' + i).style.marginLeft = (parseInt(document.getElementById('cloud' + i).style.marginLeft) + 2) + "px";
-        
-        // Do stuff
+        if (document.getElementById('cloud' + i) != null){
+            if (maxVW < Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)){
+                maxVW  = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+            }
+            if (parseInt(document.getElementById('cloud' + i).style.marginLeft) <  maxVW){
+                document.getElementById('cloud' + i).style.marginLeft = (parseInt(document.getElementById('cloud' + i).style.marginLeft) + 2) + "px";
+            }
+            else{
+                var element = document.getElementById('cloud' + i);
+                element.parentNode.removeChild(element);
+            }
+        }
     }
 
     

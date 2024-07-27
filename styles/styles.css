@@ -546,9 +546,7 @@ Relevancy: All
 }
 
 #cleanSign{
-    position: absolute;
     left: 32px;
-    padding-top: 0px;
 }
 
 #nav-index{
@@ -713,7 +711,7 @@ body {
 }
 
 #navspace{
-    height: calc(75vh - (64px + 256px));
+    height: calc(75vh - (128px + 256px));
 }
 
 
