@@ -16,6 +16,8 @@
             
         </div>
         <div id="navspace">
+            <img id="sunContainer" src="./Sun.png" alt="Mac Burton">
+
             <div>
                 <img id="cleanIcon" src="./Images/Tombstones/tomb-1.png" alt="Tombstone Icon">
                 <h2 id="cleanScore">0</h2>

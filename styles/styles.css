@@ -502,32 +502,47 @@ Relevancy: All
     text-align: left;
 }
 
-#killScore{
-    color: #05386B;
-    position: absolute; 
-    padding-top: 36px;
-    margin: 0px;
-    right: 24px;
-}
+
+
+
 #killIcon{
     position: absolute; 
+    padding-top: 52px;
     margin: 0px;
-    right: 56px;
+    right: 80px;
     width: 32px;
 }
 
-#cleanScore{
-    color: #05386B;
+#killScore{
+    color: #A84000;
     position: absolute; 
+    padding-top: 54px;
     margin: 0px;
-    right: 24px;
+    right: 54px;
 }
+
 
 #cleanIcon{
     position: absolute; 
     margin: 0px;
-    right: 56px;
+    right: 80px;
     width: 32px;
+    padding-top: 90px;
+}
+
+#cleanScore{
+    color: #A84000;
+    position: absolute; 
+    margin: 0px;
+    right: 54px;
+    padding-top: 84px;
+}
+
+
+#sunContainer{
+    position: absolute; 
+    margin: 0px;
+    right: 0px;
 }
 
 #cleanSign{

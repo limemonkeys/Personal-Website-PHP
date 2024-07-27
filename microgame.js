@@ -59,14 +59,14 @@ timerId = setInterval( function() { //This function is called by the browser eve
         
     }
     */
-    if (cloudDelay >= 128){
+    if (cloudDelay >= 160){
         cloudDelay = 0;
         cloudCount++;
         let cloudImg = document.createElement('img');
         cloudImg.id = 'cloud' + cloudCount;
         cloudImg.style.position = 'absolute';
         cloudImg.src ='./Cloud.png';
-        cloudImg.style.marginLeft = -128 + "px";
+        cloudImg.style.marginLeft = -160 + "px";
         document.getElementById('cloudspace').appendChild(cloudImg);
     }
     else{
