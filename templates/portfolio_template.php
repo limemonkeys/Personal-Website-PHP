@@ -1,10 +1,4 @@
-<h1>Portfolio</h1>
-<p class="text">
-    Below is a list of projects I've worked on. This list includes projects I've programmed on my free time along with some projects from my academic studies.
-    <br><br>
-    Clicking on the images will redirect you to the coorisponding deployed project. If the project is no longer publicly deployed, it will instead attempt to redirect to the coorisponding Github repository with the project code.
-</p>
-<h1 class="text-space">Games — Personal</h1>
+<h1 id="top-header">Games — Personal</h1>
 <div class="container">
     <div class="column">
         <a href="https://limemonkeys.itch.io/bunger-burger-bistro" target="_blank">
@@ -15,7 +9,7 @@
             <p class="gameInfo">
                 Bunger Burger Bistro<br>NOKIA 3310 JAM 6<br>Februrary 16th, 2024
             </p>
-            <p class="gameAward gold">
+            <p class="gameAward silver">
                 Top 5% in Innovation
             </p>
         </div>
@@ -58,7 +52,7 @@
             <p class="gameInfo">
                 Oh BTW Glasses Stack<br>IndieCade Greenlight Jam<br>June 19th, 2022
             </p>
-            <p class="gameAward gold">
+            <p class="gameAward silver">
                 1st Place in Best Plan for Diversifiers
             </p>
         </div>
@@ -69,13 +63,13 @@
         </a>
         <div class="gameInfoContainer">
             <img class="gameInfoBackgroundImg" src="../Images/Signs/SB.png">
-            <p class="gameInfo">
+            <p class="twoGameAwardGameInfo">
                 Patient Z-ero<br>Atlantic Game Jam<br>February 27th, 2022
             </p>
-            <p class="gameAward">
+            <p class="firstGameAward bronze">
                 3rd Place Overall
             </p>
-            <p class="gameAward gold">
+            <p class="secondGameAward gold">
                 1st Place in Game Mechanics
             </p>
         </div>
@@ -89,7 +83,7 @@
             <p class="gameInfo">
                 Door Quest<br>Jame Gam #15<br>January 29th, 2022
             </p>
-            <p class="gameAward">
+            <p class="gameAward bronze">
                 10th Place in Theme Implementation
             </p>
         </div>
@@ -98,50 +92,92 @@
         <a href="https://limemonkeys.itch.io/crypto-crunch-pizza-co" target="_blank">
             <img class="portfolioPics" src="./Images/Itch Games/Crypto Crunch Pizza Co.png">
         </a>
-        <p>Crypto Crunch Pizza Co.<br>Low Effort Jam 18<br>January 18th, 2022</p>
+        <div class="gameInfoContainer">
+            <img class="gameInfoBackgroundImg" src="../Images/Signs/SB.png">
+            <p class="gameInfo">
+                Crypto Crunch Pizza Co.<br>Low Effort Jam 18<br>January 18th, 2022
+            </p>
+            <p class="gameAward bronze">
+                3rd Place in Fun
+            </p>
+        </div>
     </div>
     <div class="column">
         <a href="https://limemonkeys.itch.io/dimension-dysfunction" target="_blank">
             <img class="portfolioPics" src="./Images/Itch Games/Dimension Dysfunction.png">
         </a>
-        <p>Dimension Dysfunction<br>Secret Santa Jam 2021<br>December 19th, 2021</p>
+        <div class="gameInfoContainer">
+            <img class="gameInfoBackgroundImg" src="../Images/Signs/SB.png">
+            <p class="gameInfo">
+                Dimension Dysfunction<br>Secret Santa Jam 2021<br>December 19th, 2021
+            </p>
+            <p class="gameAward">
+                The Gift of Giving
+            </p>
+        </div>
     </div>
     <div class="column">
         <a href="https://limemonkeys.itch.io/curse-of-the-low-effort-lake" target="_blank">
             <img class="portfolioPics" src="./Images/Itch Games/Curse of the Low Effort Lake.png">
         </a>
-        <p>Curse of the Low Effort Lake<br>Low Effort Jam 16<br>November 16th 2021</p>
+        <div class="gameInfoContainer">
+            <img class="gameInfoBackgroundImg" src="../Images/Signs/SB.png">
+            <p class="gameInfo">
+                Curse of the Low Effort Lake<br>Low Effort Jam 16<br>November 16th 2021
+            </p>
+            <p class="gameAward">
+                First Game Jam
+            </p>
+        </div>
     </div>
 </div>
-
-<h1 class="text-space">Games — Studies</h1>
+<h1 id="top-header">Games — Studies</h1>
 <div class="container">
     <div class="column">
         <a href="https://dalaccessibility.itch.io/a-visual-novel-for-invisible-disabilities" target="_blank">
             <img class="portfolioPics" src="./Images/School Games/Accessibility Week.png">
         </a>
-        <p>Dalhousie Accessibility Week Visual Novel<br>Introductory Project CSCI 2691<br>December 2022</p>
+        <div class="gameInfoContainer">
+            <img class="gameInfoBackgroundImg" src="../Images/Signs/SB.png">
+            <p class="gameInfo">
+                Accessibility Visual Novel<br>Dal Accessibility Week<br>December 2022
+            </p>
+            <p class="gameAward">
+                First Game Dev Interview
+            </p>
+        </div>
     </div>
     <div class="column">
         <a href="https://github.com/limemonkeys/ShipGame" target="_blank">
             <img class="portfolioPics" src="./Images/School Games/Boattle Royale.png">
         </a>
-        <p>Boatle Royale<br>Game Design and Development CSCI 4168<br>December 2021</p>
+        <div class="gameInfoContainer">
+            <img class="gameInfoBackgroundImg" src="../Images/Signs/SB.png">
+            <p class="gameInfo">
+                Boatle Royale<br>CSCI 4168<br>December 2021
+            </p>
+            <p class="gameAward">
+                First Game Dev Experience
+            </p>
+        </div>
     </div>
 </div>
 
-
-<h1 class="text-space">Android Apps — Personal</h1>
+<h1 id="top-header">Mobile Apps — Personal</h1>
 <div class="container">
     <div class="column">
         <a href="https://github.com/limemonkeys/AppointmentApp" target="_blank">
             <img class="portfolioPics" src="./Images/Android Apps/Dalplex Fitness Hall Application.png">
         </a>
-        <p>Dalhousie Fitness Hall Application<br>Personal Project<br>July 2021</p>
+        <div class="gameInfoContainer">
+            <img class="gameInfoBackgroundImg" src="../Images/Signs/SB.png">
+            <p class="gameInfo">
+                Dalplex Mobile App<br>Pandemic Solutions Project<br>July 2021
+            </p>
+            <p class="gameAward">
+                Praise for QOL Improvement
+            </p>
+        </div>
     </div>
 </div>
 <img id="cleanSign" src="./Images/Signs/S2.png">
-<p id="text-main" class="text hidden-text">
-    I am the one who stops.<br>
-    I am the one who stops.
-</p>

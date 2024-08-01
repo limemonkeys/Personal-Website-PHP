@@ -1,12 +1,8 @@
 <h1>Resume</h1>
 <div>
-    <p  class="text ">You should see a resume below. If you don't, your web browser doesn't
-        have a PDF plugin or does not support &#x003C;iframe&#x003E;
-        for security reasons. 
-        <br><br>
-        In the event you have any issues accessing the embedded content, you can
-        <a id="download-resume" href="./Resumes/Mac Burton Resume.pdf">click here to download a PDF File of my resume.</a>                      
-    </p>
+
+                             
+    <a id="download-resume" href="./Resumes/Mac Burton Resume.pdf">Download Resume PDF</a> 
     <div id="resume-container-tabs" class="row">
         <div id="general-resume" class="col-6 resume-container-tab">
             <p id="resume-text">Resume</p>
