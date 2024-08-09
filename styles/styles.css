@@ -816,71 +816,46 @@ body {
 }
 
 #indexContainer{
+    margin-top: 5vh;
 
-    margin-top: auto;
-    margin-bottom: auto;
-
-    
-    flex: 66%;
-    height: 60vh;
     text-align: center;
-    line-height: 12pt;
+    line-height: 48pt;
 
-    display: table;
-    margin: 0 auto;
-
-    
+    /* Full width minus padding for headshot and headshot size itself (determined by vh)*/
+    width: 90vw;    
 }
 
-
-
-
-#indexContainer span{
+#indexContainer p{
     
     font-size: 2rem;
-    /*
-    color:#333333;
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-    
-    color:#fff;
-    text-shadow: -1px -1px 0 #333333, 1px -1px 0 #333333, -1px 1px 0 #333333, 1px 1px 0 #333333;
-    */
+
     color:#c7c7c7;
     text-shadow: -2px -2px 0 #333333, 2px -2px 0 #333333, -2px 2px 0 #333333, 2px 2px 0 #333333;
 
-
-
-    padding-top: 25vh;
-    padding-bottom: 25vh;
-
-    max-height:50vh;
-
-}
-
-#indexContainer span br{
-    margin-bottom:24pt;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
 }
 
 .profileContainer {
     flex: 33%;
-    height: 50vh;
-    max-height:50vh;
     margin-top: 25vw;
     margin-bottom: 25vw;
 }
 
 #profile{
     height: 50vh;
+    min-height: 50vh;
     width: auto;
-    margin-left: 5vw;
-   
-    
+    margin-left: 7vw;
+    padding-bottom: 10vh;
 }
 
 
 /*
 Mobile View Specific Changes
 */
+
 @media screen and (max-width: 1800px) {
     .container {
         grid-template-columns: repeat(4, 1fr);
@@ -908,10 +883,23 @@ Mobile View Specific Changes
         background-color: #FF0000;
     }
 
+
+
     #indexContainer{
-        font-size: 1.75rem;    
-        max-height: 40vh;
-        margin-bottom: 7vh;
+        margin-top: 5vh;
+        line-height: 32pt;
+    }
+    
+    #indexContainer p{
+        
+        font-size: 1.25rem;
+    
+        color:#c7c7c7;
+        text-shadow: -2px -2px 0 #333333, 2px -2px 0 #333333, -2px 2px 0 #333333, 2px 2px 0 #333333;
+    
+        display: block;
+        margin-left: auto;
+        margin-right: auto;  
     }
 
     #profileContainer{
@@ -920,8 +908,11 @@ Mobile View Specific Changes
     }
 
     #profile{
-        max-height: 40vh;
-        margin-bottom: 0px;
+        height: 40vh;
+        min-height: 40vh;
+        width: auto;
+        margin-left: 7vw;
+        padding-bottom: 10vh;
     }
 }
 
@@ -939,14 +930,20 @@ Mobile View Specific Changes
         margin-bottom: 7vh;
     }
 
+    #infoContainer{
+        display:block;
+    }
+
     #profileContainer{
         max-height: 30vh;
         margin-bottom: 7vh;
     }
 
     #profile{
-        max-height: 30vh;
-        margin-bottom: 0px;
+        height: 40vh;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;    
     }
 
 }
