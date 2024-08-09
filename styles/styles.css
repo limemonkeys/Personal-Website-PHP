@@ -200,13 +200,7 @@ Relevancy: All
     background-color: #427ab3;
 }
 
-#profile{
-    height: 50vh;
-    width: auto;
-    padding-bottom: 10vh;
-    padding-left: 5vw;
-    
-}
+
 
 .text{
 
@@ -673,6 +667,12 @@ Relevancy: All
 }
 */
 
+span{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
 body {
     overflow-x:hidden;
 }
@@ -736,7 +736,7 @@ body {
 #stone{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .9) 120%), url("../Rock.png");
     margin-top: 0px;
-    padding-top: 16px;
+    padding-top: 0px;
 }
 
 #top-header{
@@ -816,15 +816,67 @@ body {
 }
 
 #indexContainer{
+
+    margin-top: auto;
+    margin-bottom: auto;
+
+    
+    flex: 66%;
+    height: 60vh;
+    text-align: center;
+    line-height: 12pt;
+
+    display: table;
+    margin: 0 auto;
+
+    
 }
 
+
+
+
+#indexContainer span{
+    
+    font-size: 2rem;
+    /*
+    color:#333333;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    
+    color:#fff;
+    text-shadow: -1px -1px 0 #333333, 1px -1px 0 #333333, -1px 1px 0 #333333, 1px 1px 0 #333333;
+    */
+    color:#c7c7c7;
+    text-shadow: -2px -2px 0 #333333, 2px -2px 0 #333333, -2px 2px 0 #333333, 2px 2px 0 #333333;
+
+
+
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+
+    max-height:50vh;
+
+}
+
+#indexContainer span br{
+    margin-bottom:24pt;
+}
 
 .profileContainer {
     flex: 33%;
+    height: 50vh;
+    max-height:50vh;
+    margin-top: 25vw;
+    margin-bottom: 25vw;
 }
 
-.profileContainer {
+#profile{
+    height: 50vh;
+    width: auto;
+    margin-left: 5vw;
+   
+    
 }
+
 
 /*
 Mobile View Specific Changes
@@ -855,6 +907,22 @@ Mobile View Specific Changes
     #body{
         background-color: #FF0000;
     }
+
+    #indexContainer{
+        font-size: 1.75rem;    
+        max-height: 40vh;
+        margin-bottom: 7vh;
+    }
+
+    #profileContainer{
+        max-height: 40vh;
+        margin-bottom: 7vh;
+    }
+
+    #profile{
+        max-height: 40vh;
+        margin-bottom: 0px;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -864,6 +932,23 @@ Mobile View Specific Changes
     #body{
         background-color: #00FF00;
     }
+
+    #indexContainer{
+        font-size: 1.5rem;    
+        max-height: 30vh;
+        margin-bottom: 7vh;
+    }
+
+    #profileContainer{
+        max-height: 30vh;
+        margin-bottom: 7vh;
+    }
+
+    #profile{
+        max-height: 30vh;
+        margin-bottom: 0px;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -879,9 +964,7 @@ Mobile View Specific Changes
 }
 
 @media only screen and (max-width: 600px) {
-    #profile {
-        width: 150px;
-    }
+
     #nav-name{
         font-size: 65px;
     }
