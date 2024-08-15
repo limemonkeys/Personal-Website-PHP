@@ -1,4 +1,4 @@
-<h1 id="top-header">Games — Personal</h1>
+<h1>Games</h1>
 <div class="container">
     <div class="column">
         <a href="https://limemonkeys.itch.io/bunger-burger-bistro" target="_blank">
@@ -130,9 +130,6 @@
             </p>
         </div>
     </div>
-</div>
-<h1 id="top-header">Games — Studies</h1>
-<div class="container">
     <div class="column">
         <a href="https://dalaccessibility.itch.io/a-visual-novel-for-invisible-disabilities" target="_blank">
             <img class="portfolioPics" src="./Images/School Games/Accessibility Week.png">
@@ -162,8 +159,7 @@
         </div>
     </div>
 </div>
-
-<h1 id="top-header">Mobile Apps — Personal</h1>
+<h1>Other</h1>
 <div class="container">
     <div class="column">
         <a href="https://github.com/limemonkeys/AppointmentApp" target="_blank">

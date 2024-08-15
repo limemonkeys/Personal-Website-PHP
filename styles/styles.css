@@ -130,7 +130,10 @@ Relevancy: All
 */
 
 body {
-    background-color: #6394C5;
+    /*background-color: #6394C5;*/
+    background: #6394C5;
+    background-image: linear-gradient(#6394C5 40vh, #000 );
+
     font-family: "Fredoka One", sans-serif;
     padding: 0px;
     margin: 0px;
@@ -261,40 +264,15 @@ Relevancy: All
 }
 
 #resume-container {
-    width: 80%;
-    height: 1050px;
-    border-bottom-left-radius: 32px;
-    border-bottom-right-radius: 32px;
-    border-top-right-radius: 32px;
-    /* fix for safari rounded corners */
-    position: relative;
+    height: 80vh;
+    width: 70vw;
+
+    border-radius: 32px;
     overflow: hidden;
-    margin: auto;
-    mask-image: -webkit-radial-gradient(#054b92, black);
+    margin:auto;
 }
 
-#resume-container-tabs {
-    width: 80%;
-    
-    
-    /* fix for safari rounded corners */
-    position: relative;
-    overflow: hidden;
-    margin: auto;
-    
-}
 
-.resume-container-tab {
-    background-color: #05386B;
-    text-align: center;
-    font-size: 20px;
-    height: 24px;
-    margin-top: 0px;
-    padding-top: 8px;
-    border-top-left-radius: 32px;
-    border-top-right-radius: 32px;
-    
-}
 
 #resume-text{
     margin: 0px;
@@ -307,6 +285,10 @@ Relevancy: All
 
 .hidden-text{
     color: rgba(0,0,0,0);
+}
+
+#download-resume{
+    
 }
 
 #download-resume:link{
@@ -605,7 +587,6 @@ Relevancy: All
 }
 
 #cleanSign{
-    left: 32px;
 }
 
 #nav-index{
@@ -666,6 +647,17 @@ Relevancy: All
 
 }
 */
+
+h1{
+    margin: 0;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    font-size: 3.5rem;
+    text-align: center;
+
+    color:#c7c7c7;
+    text-shadow: -2px -2px 0 #333333, 2px -2px 0 #333333, -2px 2px 0 #333333, 2px 2px 0 #333333;
+}
 
 span{
     display: inline-block;
@@ -773,7 +765,7 @@ body {
 }
 
 #seo-padding{
-    background-color: black;
+    margin: 0;
 }
 
 #navspace{
@@ -788,10 +780,10 @@ body {
 }
 
 .bottom{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75) 0%, rgba(0, 0, 0, .8) 100%), url("../Rock.png");
     margin-top: 0px;
     padding-top: 0px;
     margin-bottom: 0px;
-    padding-bottom: 0px;
 }
 
 #clickSign{
@@ -1008,29 +1000,10 @@ Mobile View Specific Changes
         margin-bottom: 5px;
     }
 
-
-    #resume-container {
-        height: 420px;
-        
-    }
-
     #resume-text{
         font-size: 12px;
     }
 
-    .resume-container-tab {
-        background-color: #05386B;
-        text-align: center;
-        height: 20px;
-        margin-top: 0px;
-        padding-top: 8px;
-        
-        border-top-left-radius: 16px;
-        border-top-right-radius: 16px;
-        
-        /* Manual override to col-3 */
-        flex: 33.3%;
-    }
 
     .footer{
         color: #000;

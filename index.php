@@ -102,8 +102,8 @@
                 
             </div>
         </div>
-        <div id="stone bottom">
-            <p class= "bottom" style="text-align: center; background-color: #000000;">Buzzwords.<br>SEO.<br></p>
+        <div id="bottom">
+            <p class= "bottom">Buzzwords.<br>SEO.<br></p>
         </div>
     </body>
     <footer id="footer" class="footer">

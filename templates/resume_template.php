@@ -1,29 +1,7 @@
 <h1>Resume</h1>
-<div>
-
-                             
-    <a id="download-resume" href="./Resumes/Mac Burton Resume.pdf">Download Resume PDF</a> 
-    <div id="resume-container-tabs" class="row">
-        <div id="general-resume" class="col-6 resume-container-tab">
-            <p id="resume-text">Resume</p>
-        </div>
-        <div class="hidden col-6 resume-container-tab" href="./index.html">
-            <div class="">
-                Game Dev
-            </div>
-        </div>
-        <div class="hidden col-2 resume-container-tab" href="./index.html">
-            <div class="">
-                Rest
-            </div>
-        </div>
-    </div>
+<a id="download-resume" class="nav-page-button" href="./Resumes/Mac Burton Resume.pdf">Download Resume PDF</a> 
+<div class="row">
     <iframe id="resume-container" src="./Resumes/Mac Burton Resume.pdf"></iframe>                    
-
-
 </div>
+
 <img id="cleanSign" src="./Images/Signs/S2.png">
-<p id="text-main" class="text hidden-text">
-    I am the one who stops.<br>
-    I am the one who stops.
-</p>

@@ -14,3 +14,4 @@
         </p>
     </div>    
 </div>
+<img id="cleanSign" src="./Images/Signs/S2.png">
