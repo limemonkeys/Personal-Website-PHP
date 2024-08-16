@@ -15,6 +15,14 @@ $(document).ready(function(){
         })
         .catch((e) => console.error(e));
 
+    $('.stone').html("");
+    fetch("./templates/index_template.php")
+        .then((res) => res.text())
+        .then((text) =>{
+            
+            $('#stone').append(text);
+        })
+        .catch((e) => console.error(e));
     /*
     fetch("./templates/nav_template.php")
         .then((res) => res.text())

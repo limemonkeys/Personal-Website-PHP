@@ -87,19 +87,6 @@
             </div>
             </div>
             <div id="stone" class="main">
-                <h1 id="top-header">About</h1>
-                <div class="col-4">
-
-                </div>
-                <div class="col-4">
-
-                </div>          
-                <div class="col-4">
-
-                </div>
-                <p id="seo-padding"></p>
-                <img id="cleanSign" src="./Images/Signs/S2.png">
-                
             </div>
         </div>
         <div id="bottom">
