@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="styles/styles.css">
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script src="jQuery.js"></script>
-        <!--<script src="functions.js"></script>-->
     </head>
     <body id="body">
         <div id="cloudspace">
