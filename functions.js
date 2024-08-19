@@ -6,7 +6,15 @@ taken the time to make this dynamic. I'd rather spend my time on other projects.
 */
 
 
-
+function download(url) {
+  console.log("IN");
+  const a = document.createElement('a')
+  a.href = url
+  a.download = url.split('/').pop()
+  document.body.appendChild(a)
+  a.click()
+  document.body.removeChild(a)
+}
 
 /*
 Initialization of variables and overlays

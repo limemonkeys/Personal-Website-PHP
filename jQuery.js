@@ -67,6 +67,7 @@ $(document).ready(function(){
 
     })
 
+    
     $('#appender').click(function(){
         // $ sign distinguishes jQuery variables from other variables.
         var $divStart = "<p>Append Successful :D</p>";

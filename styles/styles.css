@@ -287,20 +287,46 @@ Relevancy: All
     color: rgba(0,0,0,0);
 }
 
+.buttonContainer{
+    position: relative;
+}
+
+.buttonCentered{
+    position: absolute;
+}
+
 #download-resume{
     
+    color: #c7c7c7;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background-color: #858585;
+    text-align: center;
+
+    font-size: 1.75rem;
+    height: 5vh;
+    
+    border-radius: 25px;
+    font-family: "Fredoka One", sans-serif;
+    border: none;
+    
+    margin-top: 5vh;
+
+    border: 2px solid #000000;
+    outline: 2px solid #ffffff;
+
+    text-decoration: none;
 }
 
 #download-resume:link{
-    color:#6394C5;
+    color:#c7c7c7;
 }
 
 #download-resume:visited{
-    color:#6394C5;
+    color:#c7c7c7;
 }
 
 #download-resume:active{
-    color:#427ab3;
+    color:#c7c7c7;
 }
 
 #border-inner-date{
