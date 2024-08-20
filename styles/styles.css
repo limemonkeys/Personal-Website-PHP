@@ -8,8 +8,7 @@ Summary:
 */
 @import url('https://fonts.googleapis.com/css?family=Fredoka One');
 /*
-Section: Rows and Columns
-Relevancy: All pages
+Section: Rows and Columns (Effects all pages)
 */
 .row {
     display: flex;
@@ -45,17 +44,9 @@ Relevancy: All pages
     padding: 5px;
 }
 
-#nav-name{
-    color: #EDF5E1;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border-radius: 25px;
-    font-size: 100px;
-    margin: 0;
-}
-
-
+/*
+Section: Navigation (Effects all pages)
+*/
 
 .nav-logos{
     height: 75px;
@@ -82,8 +73,31 @@ Relevancy: All pages
     margin-left: 40px;
     margin-right: 40px;
     margin-bottom: 5px;
+
+    text-decoration: none;
 }
 
+/*
+Section: Generic Stylings
+*/
+.hidden{
+    opacity: 0;
+}
+
+h1{
+    margin: 0;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    font-size: 3.5rem;
+    text-align: center;
+
+    color:#c7c7c7;
+    text-shadow: -2px -2px 0 #333333, 2px -2px 0 #333333, -2px 2px 0 #333333, 2px 2px 0 #333333;
+}
+
+/*
+Section: Body (Effects all pages)
+*/
 
 body {
     /*background-color: #6394C5;*/
@@ -94,57 +108,12 @@ body {
     padding: 0px;
     margin: 0px;
     
+    overflow-x:hidden;
 }
 
-iframe {
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-}
-
-
-.footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    background-color: #001b36;
-    color: black; /*TODO: Update to off-white*/
-    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
-    text-align: center;
-    background-image: url("../Footrock.png");
-}
-
-#character{
-    transform: scale(1);
-    margin-top: 8px;
-    z-index:5;
-}
-
-.container {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* adjust as needed */
-    grid-gap: 20px; /* adjust as needed */
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.column img {
-    width: 300px;  
-    height: auto;  
-    object-fit: cover;
-    object-position: center;
-    margin-bottom: 10px;
-}
+/*
+Section: Resume
+*/
 
 #resume-container {
     height: 80vh;
@@ -153,11 +122,6 @@ iframe {
     border-radius: 32px;
     overflow: hidden;
     margin:auto;
-}
-
-
-.hidden{
-    opacity: 0;
 }
 
 #download-resume{
@@ -192,6 +156,111 @@ iframe {
 
 #download-resume:active{
     color:#c7c7c7;
+}
+
+iframe {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+
+
+
+/*
+Section: Footer
+*/
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: #001b36;
+    color: black; /*TODO: Update to off-white*/
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+    text-align: center;
+    background-image: url("../Footrock.png");
+}
+
+/*
+Section: Micro Game
+*/
+
+#character{
+    transform: scale(1);
+    margin-top: 8px;
+    z-index:5;
+}
+
+
+#killIcon{
+    position: absolute; 
+    padding-top: 52px;
+    margin: 0px;
+    right: 80px;
+    width: 32px;
+}
+
+#killScore{
+    color: #A84000;
+    position: absolute; 
+    padding-top: 54px;
+    margin: 0px;
+    right: 54px;
+}
+
+
+#cleanIcon{
+    position: absolute; 
+    margin: 0px;
+    right: 80px;
+    width: 32px;
+    padding-top: 90px;
+}
+
+#cleanScore{
+    color: #A84000;
+    position: absolute; 
+    margin: 0px;
+    right: 54px;
+    padding-top: 84px;
+}
+
+
+#sunContainer{
+    position: absolute; 
+    margin: 0px;
+    right: 0px;
+}
+
+/*
+Section: Portfolio
+*/
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* adjust as needed */
+    grid-gap: 20px; /* adjust as needed */
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.column img {
+    width: 300px;  
+    height: auto;  
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 10px;
 }
 
 .gold{
@@ -268,64 +337,16 @@ iframe {
     height:15%;
 }
 
+/* Rename (Used for sign sizing) */
 .gameInfoContainer{
     position: relative;
     text-align: center;
 }
 
 
-#killIcon{
-    position: absolute; 
-    padding-top: 52px;
-    margin: 0px;
-    right: 80px;
-    width: 32px;
-}
-
-#killScore{
-    color: #A84000;
-    position: absolute; 
-    padding-top: 54px;
-    margin: 0px;
-    right: 54px;
-}
-
-
-#cleanIcon{
-    position: absolute; 
-    margin: 0px;
-    right: 80px;
-    width: 32px;
-    padding-top: 90px;
-}
-
-#cleanScore{
-    color: #A84000;
-    position: absolute; 
-    margin: 0px;
-    right: 54px;
-    padding-top: 84px;
-}
-
-
-#sunContainer{
-    position: absolute; 
-    margin: 0px;
-    right: 0px;
-}
-
-#nav-index{
-    text-decoration: none;
-}
-
-#nav-portfolio{
-    text-decoration: none;
-}
-
-#nav-resume{
-    text-decoration: none;
-}
-
+/*
+Section: Clouds
+*/
 
 .cloud-top{
     position: absolute;
@@ -352,21 +373,13 @@ iframe {
 }
 
 
-h1{
-    margin: 0;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    font-size: 3.5rem;
-    text-align: center;
+/*
+Section: Greenery
+*/
 
-    color:#c7c7c7;
-    text-shadow: -2px -2px 0 #333333, 2px -2px 0 #333333, -2px 2px 0 #333333, 2px 2px 0 #333333;
+#clickSign{
+    position: absolute;
 }
-
-body {
-    overflow-x:hidden;
-}
-
 
 #tree1{
     position:absolute;
@@ -412,6 +425,16 @@ body {
     z-index:-5;
 }
 
+/*
+Section: Navspace (Dirt and Stone)
+*/ 
+
+#navspace{
+    /* Minus: Dirt with Grass, Dirt Area, A little extra */
+    height: calc(75vh - (128px + 256px));
+}
+
+/* Rename required. Used for dirt with grass/ */
 #dirttest{
     background-image: url("../Dirt\ W\ Grass.png");
     height: 64px;
@@ -423,11 +446,27 @@ body {
     height: 128px;
 }
 
+#dirt{
+    background-image: url("../Dirt.png");
+    height: calc(25vh);
+}
+
 #stone{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .9) 120%), url("../Rock.png");
     margin-top: 0px;
     padding-top: 0px;
 }
+
+.bottom{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75) 0%, rgba(0, 0, 0, .8) 100%), url("../Rock.png");
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*
+Section: Landing Page Name/Logo
+*/
 
 #name-logo{
     padding-top: 5vh;
@@ -438,27 +477,14 @@ body {
     right: 0;
 }
 
-#navspace{
-    /* Minus: Dirt with Grass, Dirt Area, A little extra */
-    height: calc(75vh - (128px + 256px));
-}
 
 
-#dirt{
-    background-image: url("../Dirt.png");
-    height: calc(25vh);
-}
 
-.bottom{
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75) 0%, rgba(0, 0, 0, .8) 100%), url("../Rock.png");
-    margin-top: 0px;
-    padding-top: 0px;
-    margin-bottom: 0px;
-}
 
-#clickSign{
-    position: absolute;
-}
+
+
+
+
 
 #indexContainer{
     margin-top: 5vh;

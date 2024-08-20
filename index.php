@@ -26,22 +26,7 @@
                 <h2 id="killScore">0</h2>
             </div>
             
-            
-            
             <img id="name-logo" src="./Images/Mac Burton Logo.png" alt="Mac Burton">
-            <!--
-            <h1 id="nav-name">MAC BURTON</h1>
-            
-            <div id="nav-links">
-                <div id="icons_section" class="row"></div>
-            </div>
-            
-            <div class="row">
-                <button id="nav-index" class="nav-page-button col-3">Index</button>
-                <button id="nav-portfolio" class="nav-page-button col-3">Portfolio</button>
-                <button id="nav-resume" class="nav-page-button col-3">Resume</button>
-            </div>
-            -->
         </div>
         
         <div id="gamespace">
