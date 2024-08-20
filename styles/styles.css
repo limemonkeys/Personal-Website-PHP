@@ -7,6 +7,8 @@ Summary:
     There are comments grouping related stylings together.
 */
 @import url('https://fonts.googleapis.com/css?family=Fredoka One');
+
+
 /*
 Section: Rows and Columns (Effects all pages)
 */
@@ -44,6 +46,7 @@ Section: Rows and Columns (Effects all pages)
     padding: 5px;
 }
 
+
 /*
 Section: Navigation (Effects all pages)
 */
@@ -77,6 +80,7 @@ Section: Navigation (Effects all pages)
     text-decoration: none;
 }
 
+
 /*
 Section: Generic Stylings
 */
@@ -94,6 +98,7 @@ h1{
     color:#c7c7c7;
     text-shadow: -2px -2px 0 #333333, 2px -2px 0 #333333, -2px 2px 0 #333333, 2px 2px 0 #333333;
 }
+
 
 /*
 Section: Body (Effects all pages)
@@ -165,8 +170,6 @@ iframe {
 }
 
 
-
-
 /*
 Section: Footer
 */
@@ -184,6 +187,7 @@ Section: Footer
     text-align: center;
     background-image: url("../Footrock.png");
 }
+
 
 /*
 Section: Micro Game
@@ -235,6 +239,7 @@ Section: Micro Game
     margin: 0px;
     right: 0px;
 }
+
 
 /*
 Section: Portfolio
@@ -390,7 +395,8 @@ Section: Greenery
 
 #tree2{
     position:absolute;
-    left: calc(100vw - 256px);
+    right: 0px;
+    /*left: calc(100vw - 248px);*/
     padding-top: 8px;
     z-index:-5;
 }
@@ -399,7 +405,7 @@ Section: Greenery
     position:absolute;
     padding-top: 200px;
 
-    right: calc(75vw);
+    left: 256px;
     z-index:-5;
 }
 
@@ -407,15 +413,14 @@ Section: Greenery
     position:absolute;
     padding-top: 220px;
 
-    right: calc(50vw);
+    right: calc(50vw - 64px);
     z-index:-5;
 }
 
 #bush3{
     position:absolute;
     padding-top: 200px;
-    left: auto;
-    right: calc(25vw);
+    right: 256px;
     z-index:-5;
 }
 
@@ -424,6 +429,7 @@ Section: Greenery
     height:256px;
     z-index:-5;
 }
+
 
 /*
 Section: Navspace (Dirt and Stone)
@@ -464,6 +470,7 @@ Section: Navspace (Dirt and Stone)
     margin-bottom: 0px;
 }
 
+
 /*
 Section: Landing Page Name/Logo
 */
@@ -478,13 +485,9 @@ Section: Landing Page Name/Logo
 }
 
 
-
-
-
-
-
-
-
+/*
+Section: Index 
+*/
 
 #indexContainer{
     margin-top: 5vh;
@@ -527,23 +530,20 @@ Section: Landing Page Name/Logo
 Mobile View Specific Changes
 */
 
+
 @media screen and (max-width: 1800px) {
     .container {
         grid-template-columns: repeat(4, 1fr);
-    }
-
-    
-    
+    } 
 }
+
 
 @media screen and (max-width: 1300px) {
     .container {
         grid-template-columns: repeat(3, 1fr);
     }
-
-    
-    
 }
+
 
 @media screen and (max-width: 1000px) {
     .container {
@@ -554,7 +554,9 @@ Mobile View Specific Changes
         background-color: #FF0000;
     }
 
-
+    #bush2{
+        opacity: 0;
+    }
 
     #indexContainer{
         margin-top: 5vh;
@@ -584,6 +586,15 @@ Mobile View Specific Changes
         width: auto;
         margin-left: 7vw;
         padding-bottom: 10vh;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #bush3{
+        opacity: 0;
+    }
+    #bush2{
+        right: calc(50vw - 128px);
     }
 }
 
@@ -619,6 +630,7 @@ Mobile View Specific Changes
 
 }
 
+
 @media screen and (max-width: 600px) {
     .prev,
     .next {
@@ -631,9 +643,8 @@ Mobile View Specific Changes
     }
 }
 
+
 @media only screen and (max-width: 600px) {
-
-
     .nav-logos{
         padding-top: 15px;
         height: 35px;
