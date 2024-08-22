@@ -8,7 +8,6 @@
     
     <p class="col-3"></p>
     <a id="download-resume" class="col-3" href="../Resumes/Mac Burton Resume.pdf" download="../Resumes/Mac Burton Resume.pdf">Download</a>
-
     <p class="col-3"></p>
 </div>
 <img id="cleanSign" src="./Images/Signs/S2.png">

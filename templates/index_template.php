@@ -1,8 +1,8 @@
 <div id="infoContainer" class="row">
-    <div id="profileContainer">
+    <div id="headshotContainer" class="col-3">
         <img id="profile" src="./Headshots/Modified Headshot V3.png" alt="Selfie">
     </div>
-    <div id="indexContainer">
+    <div id="indexContainer" class="col-twothirds">
         <p>
             My name is Mac Burton
             <br>

@@ -78,7 +78,7 @@
         </div>
     </body>
     <footer id="footer" class="footer">
-        <p>Sour Simian Studios 2023 &#x2022; 902-476-4883 &#x2022; macburton1000@gmail.com</p>
+        <p>Designed, illustrated, coded, and hosted by Mac &#x2022; 902-476-4883 &#x2022; macburton1000@gmail.com</p>
     </footer>
 </html>
 

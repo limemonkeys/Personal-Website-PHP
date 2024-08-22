@@ -21,6 +21,11 @@ Section: Rows and Columns (Effects all pages)
     padding: 5px;
 }
 
+.col-twothirds{
+    flex: 66.6%;
+    padding: 5px;
+}
+
 .col-2 {
     flex: 50%;
     padding: 5px;
@@ -134,21 +139,20 @@ Section: Resume
     color: #c7c7c7;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     background-color: #858585;
-    text-align: center;
+    
 
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     height: 5vh;
     
     border-radius: 25px;
     font-family: "Fredoka One", sans-serif;
     border: none;
-    
-    margin-top: 5vh;
 
     border: 2px solid #000000;
     outline: 2px solid #ffffff;
 
     text-decoration: none;
+    text-align: center;
 }
 
 #download-resume:link{
@@ -490,13 +494,13 @@ Section: Index
 */
 
 #indexContainer{
-    margin-top: 5vh;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    line-height: 48pt;
-
-    /* Full width minus padding for headshot and headshot size itself (determined by vh)*/
-    width: 90vw;    
+    vertical-align: middle;
+    line-height: 7vh;
+    /*line-height: 48pt;*/
 }
 
 #indexContainer p{
@@ -507,8 +511,7 @@ Section: Index
     text-shadow: -2px -2px 0 #333333, 2px -2px 0 #333333, -2px 2px 0 #333333, 2px 2px 0 #333333;
 
     display: block;
-    margin-left: auto;
-    margin-right: auto;  
+    margin: auto;
 }
 
 .profileContainer {
@@ -521,10 +524,19 @@ Section: Index
     height: 50vh;
     min-height: 50vh;
     width: auto;
-    margin-left: 7vw;
-    padding-bottom: 10vh;
+    margin: auto;
 }
 
+#headshotContainer{
+    /* Half Works (Vert only)
+    display: block;
+    margin: auto;
+    */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /*
 Mobile View Specific Changes
@@ -559,8 +571,9 @@ Mobile View Specific Changes
     }
 
     #indexContainer{
-        margin-top: 5vh;
         line-height: 32pt;
+        max-height: 50vh;
+        
     }
     
     #indexContainer p{
@@ -571,8 +584,8 @@ Mobile View Specific Changes
         text-shadow: -2px -2px 0 #333333, 2px -2px 0 #333333, -2px 2px 0 #333333, 2px 2px 0 #333333;
     
         display: block;
-        margin-left: auto;
-        margin-right: auto;  
+        text-align: center;
+        vertical-align: middle;
     }
 
     #profileContainer{
