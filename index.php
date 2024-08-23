@@ -64,7 +64,7 @@
                 <div id="icons_section" class="row"></div>
             </div>
             <div id="dirtindex">
-            <div class="row">
+            <div class="row navContainer">
                 <button id="nav-index" class="nav-page-button col-3">Home</button>
                 <button id="nav-portfolio" class="nav-page-button col-3">Portfolio</button>
                 <button id="nav-resume" class="nav-page-button col-3">Resume</button>
