@@ -170,7 +170,7 @@ timerId = setInterval( function() { //This function is called by the browser eve
 
     // Check to reposition corpses
     ralseiCorpses.forEach(function(ralsei) {
-        ralsei.style.top = (document.getElementById('gamespace').offsetHeight - 52)+ "px";
+        ralsei.style.top = (document.getElementById('gamespace').offsetHeight - 64)+ "px";
         if (parseInt(ralsei.style.left) > (document.getElementById('gamespace').offsetWidth - 76)){
             ralsei.style.left = (document.getElementById('gamespace').offsetWidth - 76) + "px";
         }
@@ -254,7 +254,7 @@ timerId = setInterval( function() { //This function is called by the browser eve
                     img.style.left = document.getElementById('corpse' + score).style.left;
                     document.getElementById('corpse' + score).remove();
                     //img.style.top = guy.style.left;
-                    img.style.top = (document.getElementById('gamespace').offsetHeight - 52)+ "px";
+                    img.style.top = (document.getElementById('gamespace').offsetHeight - 64)+ "px";
 
                     //console.log("img.style: " + img.style);
                     // ADD 3/4 of the size of the image
