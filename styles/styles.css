@@ -200,7 +200,7 @@ Section: Footer
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     background-color: #001b36;
-    color: black; /*TODO: Update to off-white*/
+    color: black;
     text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
     text-align: center;
     background-image: url("../Footrock.png");
@@ -798,9 +798,18 @@ Mobile View Specific Changes
     }
 
     .footer{
-        color: #000;
-        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-        font-size: 12px;
+        position: fixed; 
+        bottom: 0;
+        left: 0;
+        right: 0;
+    
+        text-align: center;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    
+        font-size: 0.75rem;
+        color: black;
+        text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
         background-image: url("../Footrock.png");
     }
 }
