@@ -798,10 +798,13 @@ Mobile View Specific Changes
     }
 
     .footer{
-        position: fixed; 
+        position: sticky; 
         bottom: 0;
-    
+        
         text-align: center;
+        height: 50px;
+    
+        
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
 
@@ -809,5 +812,10 @@ Mobile View Specific Changes
         color: black;
         text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
         background-image: url("../Footrock.png");
+    }
+
+    .footer p{
+        margin: 0;
+        
     }
 }
