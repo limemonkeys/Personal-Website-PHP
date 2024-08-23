@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
         <title>Mac's Website - Home</title>
         <link rel="icon" href="./Images/Character/D0.png">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka One">
@@ -75,7 +75,6 @@
                 </div>
             </div>
             <div id="bottom">
-                <p class= "bottom">Buzzwords.<br>SEO.<br></p>
             </div>
         </div>
     </body>
