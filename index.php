@@ -74,7 +74,8 @@
                 <div id="stone" class="main">
                 </div>
             </div>
-            <div class= "bottom">
+            <div id="bottom">
+                <p class= "bottom">Buzzwords.<br>SEO.<br></p>
             </div>
         </div>
     </body>
