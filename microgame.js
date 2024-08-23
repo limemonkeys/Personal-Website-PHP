@@ -154,8 +154,8 @@ timerId = setInterval( function() { //This function is called by the browser eve
     document.getElementById('footer').style.width = document.getElementById("navspace").offsetWidth + "px";
 
     
-    document.getElementById('character').style.paddingTop = (document.getElementById('tree1').offsetHeight) + "px";
-    document.getElementById('clickSign').style.paddingTop = (document.getElementById('tree1').offsetHeight) + "px";
+    document.getElementById('character').style.paddingTop = (document.getElementById('treeHitbox').offsetHeight) + "px";
+    document.getElementById('clickSign').style.paddingTop = (document.getElementById('treeHitbox').offsetHeight) + "px";
 
 
     //console.log(Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0));

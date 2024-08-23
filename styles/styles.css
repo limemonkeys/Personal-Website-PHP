@@ -241,7 +241,7 @@ Section: Micro Game
     position: absolute; 
     margin: 0px;
     right: 54px;
-    padding-top: 84px;
+    padding-top: 85px;
 }
 
 
@@ -489,7 +489,7 @@ Section: Landing Page Name/Logo
 #name-logo{
     padding-top: 5vh;
     position: absolute;
-    height: 50vh;
+    height: 45vh;
     margin: auto;
     left: 0;
     right: 0;
@@ -643,11 +643,78 @@ Mobile View Specific Changes
 
 
 @media only screen and (max-width: 600px) {
+    #navspace{
+        /* Minus: #character-space #greenery*/
+        height: calc(57vh - (96px + 208px));
+    }
 
+    #name-logo{
+        height: 30vh;
+    }
+    
+    #sunContainer{
+        opacity: 0;
+    }
+
+    #killIcon{
+        position: absolute; 
+        padding-top: 1vh;
+        margin: 0px;
+        right: 6vw;
+        width: 32px;
+    }
+    
+    #killScore{
+        color: #085DB2;
+        position: absolute; 
+        padding-top: 1vh;
+        margin: 0px;
+        right: 1vw;
+    }
+    
+    
+    #cleanIcon{
+        position: absolute; 
+        margin: 0px;
+        right: 6vw;
+        width: 32px;
+        padding-top: calc(3vh + 32px);
+        
+    }
+    
+    #cleanScore{
+        color: #085DB2;
+        position: absolute; 
+        margin: 0px;
+        right: 1vw;
+        padding-top: calc(3vh + 27px);
+    }
+
+    #tree1{
+        opacity:0;
+    }
+    
+    #tree2{
+        opacity:0;
+    }
+    
+    #bush1{
+        opacity:0;
+    }
+    
+    #bush2{
+        opacity:0;
+    }
+    
+    #bush3{
+        opacity:0;
+    }
+
+    
 
     #dirt{
         background-image: url("../Dirt.png");
-        min-height: 22vh;
+        min-height: 33vh;
     }
 
     #dirttest{
@@ -663,15 +730,25 @@ Mobile View Specific Changes
         height: 312px;
     }
 
-    #navspace{
-        /* Minus: Dirt with Grass, Dirt Area, A little extra */
-        height: calc(75vh - (400px));
+    .logoContainer{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1vh;
+    }
+
+    .nav-logo-column{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;    
     }
 
     .nav-logos{
-        max-height: 6.5vh;
-        min-height: 48px;
-        width: auto;
+        max-width: 20vw;
+        min-width: 48px;
+        height: auto;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -692,6 +769,7 @@ Mobile View Specific Changes
         margin-bottom: 5px;
     }
 
+    
     .navContainer{
         margin: 0 auto;
         display: grid;

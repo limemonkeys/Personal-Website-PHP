@@ -61,7 +61,7 @@
             <div id="dirttest">
             </div>
             <div id="dirt">
-                <div id="icons_section" class="row"></div>
+                <div id="icons_section" class="logoContainer row"></div>
             </div>
             <div id="dirtindex">
             <div class="row navContainer">
