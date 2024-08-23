@@ -198,13 +198,15 @@ Section: Footer
     width: 100vw;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    background-color: #001b36;
     color: black;
     text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
     text-align: center;
+    z-index: 2;
     background-image: url("../Footrock.png");
     
 }
+
+footer
 
 
 /*
@@ -660,6 +662,7 @@ Mobile View Specific Changes
     }
 
     #name-logo{
+        padding-top: 10vh;
         height: 30vh;
     }
     
