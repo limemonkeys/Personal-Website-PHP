@@ -246,6 +246,7 @@ timerId = setInterval( function() { //This function is called by the browser eve
                     //img.classList.add('corpses');
                     img.style.position = 'absolute';
                     img.src ='./Images/Character/D1.png';
+                    img.style.zIndex = 1;
                     if (!right){
                         img.style.transform = "scaleX(-1)";
                     }
@@ -267,8 +268,11 @@ timerId = setInterval( function() { //This function is called by the browser eve
                             bellSfx = new Audio('./sfx/Bells/bell-' + getRandomInt(1,3) + '.mp3');
                             bellSfx.volume = 0.2;
                             bellSfx.play();
+                            img.style.zIndex = 0;
                             img.src ='./Images/Tombstones/tomb-' + getRandomInt(1,3) + '.png';
+                            
                         }
+                        
                     };
                     
                     //document.getElementById('text-main').appendChild(img);
