@@ -23,7 +23,10 @@ $(document).ready(function(){
             $('#stone').append(text);
         })
         .catch((e) => console.error(e));
-    /*
+        $('#nav-index').css('background-color', '#EA893F');
+        $('#nav-portfolio').css('background-color', '#EAA977');
+        $('#nav-resume').css('background-color', '#EAA977');
+        /*
     fetch("./templates/nav_template.php")
         .then((res) => res.text())
         .then((text) =>{
@@ -42,6 +45,9 @@ $(document).ready(function(){
                 $('.main').append(text);
             })
             .catch((e) => console.error(e));
+        $('#nav-index').css('background-color', '#EA893F');
+        $('#nav-portfolio').css('background-color', '#EAA977');
+        $('#nav-resume').css('background-color', '#EAA977');
     })
 
     $('#nav-portfolio').click(function(){
@@ -52,6 +58,9 @@ $(document).ready(function(){
                 $('.main').append(text);
             })
             .catch((e) => console.error(e));
+        $('#nav-index').css('background-color', '#EAA977');
+        $('#nav-portfolio').css('background-color', '#EA893F');
+        $('#nav-resume').css('background-color', '#EAA977');
     })
 
     $('#nav-resume').click(function(){
@@ -64,6 +73,9 @@ $(document).ready(function(){
             })
             .catch((e) => console.error(e));
         //document.getElementById('deathSpace').style.visibility = "visible";
+        $('#nav-index').css('background-color', '#EAA977');
+        $('#nav-portfolio').css('background-color', '#EAA977');
+        $('#nav-resume').css('background-color', '#EA893F');
 
     })
 
