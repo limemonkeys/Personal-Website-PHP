@@ -800,13 +800,12 @@ Mobile View Specific Changes
     .footer{
         position: fixed; 
         bottom: 0;
-        left: 0;
-        right: 0;
     
         text-align: center;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
-    
+
+        -webkit-backface-visibility: hidden;
         font-size: 0.75rem;
         color: black;
         text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
