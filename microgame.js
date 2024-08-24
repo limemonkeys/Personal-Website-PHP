@@ -150,12 +150,13 @@ timerId = setInterval( function() { //This function is called by the browser eve
     //document.getElementById('navspace').style.height = (((Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) * 0.67)- 256) - 64) + "px";
     //document.getElementById('dirt').style.height = (((Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) * 0.33) - 64)) + "px";
     
+    //TODO: UNfuck this
     
     document.getElementById('footer').style.width = document.getElementById("navspace").offsetWidth + "px";
 
     
-    document.getElementById('character').style.paddingTop = (document.getElementById('treeHitbox').offsetHeight) + "px";
-    document.getElementById('clickSign').style.paddingTop = (document.getElementById('treeHitbox').offsetHeight) + "px";
+    document.getElementById('character').style.paddingTop = ((document.getElementById('treeHitbox').offsetHeight) + 8) + "px";
+    document.getElementById('clickSign').style.paddingTop = ((document.getElementById('treeHitbox').offsetHeight) + 8) + "px";
 
 
     //console.log(Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0));

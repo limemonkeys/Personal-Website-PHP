@@ -450,6 +450,7 @@ Section: Greenery
 #treeHitbox{
     opacity:0; 
     height:256px;
+    position: relative;
     z-index:-5;
 }
 
