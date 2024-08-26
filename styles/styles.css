@@ -368,6 +368,9 @@ Section: Portfolio
     text-align: center;
 }
 
+.gameInfoBackgroundImg{
+    z-index: -1;
+}
 
 /*
 Section: Clouds

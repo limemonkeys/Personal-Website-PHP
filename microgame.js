@@ -383,6 +383,7 @@ function GFG_Fun() {
     img.style.position = 'absolute';
     img.src ='./Images/Character/D0.png';
     img.style.left = guy.style.left;
+    img.style.zIndex = 5;
     img.style.marginTop = (document.getElementById('tree1').offsetHeight) + "px";
 
     document.getElementById('deathSpace').appendChild(img);
