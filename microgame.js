@@ -226,7 +226,7 @@ timerId = setInterval( function() { //This function is called by the browser eve
                 else{
                     permaWait = true;
                 }
-                if (fallingCounter * fallingCounter > document.getElementById('gamespace').scrollHeight - document.getElementsByClassName('footer')[0].offsetHeight - (document.getElementById('tree1').offsetHeight - 64)){
+                if (fallingCounter * fallingCounter > document.getElementById('gamespace').scrollHeight - document.getElementsByClassName('footer')[0].offsetHeight - (document.getElementById('tree1').offsetHeight)){
                     smackSfx = new Audio('./sfx/Smacks/smack-2.mp3');
                     smackSfx.volume = 0.2;
                     smackSfx.play();
