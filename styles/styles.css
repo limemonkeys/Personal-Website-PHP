@@ -517,10 +517,11 @@ Section: Index
 #indexContainer{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 7vh;
+    align-items: left;
+    justify-content: center;
+    text-align: left; 
+    grid-template-columns: repeat(1, 1fr);
+    
     /*line-height: 48pt;*/
 }
 
@@ -533,9 +534,21 @@ Section: Index
 
     display: block;
     margin: auto;
+
+    padding: 0px;
+
 }
 
+.bulletPointIcon{
+    margin:auto;
+    height: 48px;
+    width: 48px;
+}
 
+.infoContainer{
+    width: 100%;
+    margin: auto;
+}
 
 #profile{
     height: 50vh;
