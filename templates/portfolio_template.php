@@ -66,12 +66,13 @@
             <p class="twoGameAwardGameInfo">
                 Patient Z-ero<br>Atlantic Game Jam<br>February 27th, 2022
             </p>
-            <p class="firstGameAward bronze">
-                3rd Place Overall
-            </p>
-            <p class="secondGameAward gold">
+            <p class="firstGameAward gold">
                 1st Place in Game Mechanics
             </p>
+            <p class="secondGameAward bronze">
+                3rd Place Overall
+            </p>
+            
         </div>
     </div>
     <div class="column">
@@ -162,6 +163,34 @@
 <h1>Other</h1>
 <div class="container">
     <div class="column">
+        <a href="https://github.com/limemonkeys/sad-libs/" target="_blank">
+            <img class="portfolioPics" src="./Images/Itch Games/Sad Libs.png">
+        </a>
+        <div class="gameInfoContainer">
+            <img class="gameInfoBackgroundImg" src="../Images/Signs/SB.png">
+            <p class="gameInfo">
+                Sad Libs<br>Job Application Project<br>January 2024
+            </p>
+            <p class="gameAward">
+                Increased Application Productivity
+            </p>
+        </div>
+    </div>
+    <div class="column">
+        <a href="https://github.com/limemonkeys/Personal-Website" target="_blank">
+            <img class="portfolioPics" src="./Images/Itch Games/Sad Libs.png">
+        </a>
+        <div class="gameInfoContainer">
+            <img class="gameInfoBackgroundImg" src="../Images/Signs/SB.png">
+            <p class="gameInfo">
+                Sad Libs<br>Porfolio Showcase Project<br>December 2023
+            </p>
+            <p class="gameAward">
+                Increased Application Productivity
+            </p>
+        </div>
+    </div>
+    <div class="column">
         <a href="https://github.com/limemonkeys/AppointmentApp" target="_blank">
             <img class="portfolioPics" src="./Images/Android Apps/Dalplex Fitness Hall Application.png">
         </a>
@@ -171,7 +200,21 @@
                 Dalplex Mobile App<br>Pandemic Solutions Project<br>July 2021
             </p>
             <p class="gameAward">
-                Praise for QOL Improvement
+                First Published Mobile App
+            </p>
+        </div>
+    </div>
+    <div class="column">
+        <a href="https://github.com/limemonkeys/StormMTG/" target="_blank">
+            <img class="portfolioPics" src="./Images/Itch Games/Storm Tracker.png">
+        </a>
+        <div class="gameInfoContainer">
+            <img class="gameInfoBackgroundImg" src="../Images/Signs/SB.png">
+            <p class="gameInfo">
+                Storm Tracker App<br>FNM Assistant Project<br>June 2021
+            </p>
+            <p class="gameAward">
+                First Context-Driven Testing
             </p>
         </div>
     </div>
