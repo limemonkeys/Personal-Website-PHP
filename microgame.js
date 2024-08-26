@@ -157,7 +157,8 @@ timerId = setInterval( function() { //This function is called by the browser eve
     
     document.getElementById('character').style.paddingTop = ((document.getElementById('treeHitbox').offsetHeight) + 8) + "px";
     document.getElementById('clickSign').style.paddingTop = ((document.getElementById('treeHitbox').offsetHeight) + 8) + "px";
-
+    
+    
 
     //console.log(Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0));
     
