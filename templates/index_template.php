@@ -8,6 +8,10 @@
             <p class="bulletPointText col-1">Mac Burton</p>
         </div>
         <div class="row infoContainer">
+            <img class="bulletPointIcon" src="../Images/Bullet Point Icons/Pin.png">
+            <p class="bulletPointText col-1">Nova Scotia, CA | Open to remote work/relocation</p>
+        </div>
+        <div class="row infoContainer">
             <img class="bulletPointIcon" src="../Images/Bullet Point Icons/Grad Cap.png">
             <p class="bulletPointText col-1">Bachelor of Computer Science, Dalhousie</p>
         </div>
