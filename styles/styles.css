@@ -828,6 +828,10 @@ Mobile View Specific Changes
         margin-right: 7%;
     }
 
+    #resume-container{
+        width: 90vw;
+    }
+
     .footer{
         position: fixed; 
         bottom: 0;
