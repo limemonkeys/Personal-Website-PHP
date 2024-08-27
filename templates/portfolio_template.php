@@ -163,6 +163,20 @@
 <h1>Other</h1>
 <div class="container">
     <div class="column">
+        <a href="https://github.com/limemonkeys/Personal-Website-PHP" target="_blank">
+            <img class="portfolioPics" src="./Images/Itch Games/Website V2.png">
+        </a>
+        <div class="gameInfoContainer">
+            <img class="gameInfoBackgroundImg" src="../Images/Signs/SB.png">
+            <p class="gameInfo">
+                Personal Website V2<br>Job Application Project<br>January 2024
+            </p>
+            <p class="gameAward">
+                Longest Personal Project (Labor of Love)
+            </p>
+        </div>
+    </div>
+    <div class="column">
         <a href="https://github.com/limemonkeys/sad-libs/" target="_blank">
             <img class="portfolioPics" src="./Images/Itch Games/Sad Libs.png">
         </a>
@@ -178,15 +192,15 @@
     </div>
     <div class="column">
         <a href="https://github.com/limemonkeys/Personal-Website" target="_blank">
-            <img class="portfolioPics" src="./Images/Itch Games/Sad Libs.png">
+            <img class="portfolioPics" src="./Images/Itch Games/Website V1.png">
         </a>
         <div class="gameInfoContainer">
             <img class="gameInfoBackgroundImg" src="../Images/Signs/SB.png">
             <p class="gameInfo">
-                Sad Libs<br>Porfolio Showcase Project<br>December 2023
+                Personal Website V1<br>Porfolio Showcase Project<br>December 2023
             </p>
             <p class="gameAward">
-                Increased Application Productivity
+                First Website
             </p>
         </div>
     </div>
