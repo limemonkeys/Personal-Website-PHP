@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Mac's Website - Home</title>
-        <link rel="icon" href="./Images/Character/D0.png">
+        <link rel="icon" href="./img/character/D0.png">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka One">
         <link rel="stylesheet" href="styles/styles.css">
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-        <script src="jQuery.js"></script>
+        <script src="./scripts/jQuery.js"></script>
     </head>
     <body id="body">
         <div id="wrapper">
@@ -16,46 +16,46 @@
                 
             </div>
             <div id="navspace">
-                <img id="sunContainer" src="./Sun.png" alt="Mac Burton">
+                <img id="sunContainer" src="./img/space/Sun.png" alt="Mac Burton">
 
                 <div>
-                    <img id="cleanIcon" src="./Images/Tombstones/tomb-1.png" alt="Tombstone Icon">
+                    <img id="cleanIcon" src="./img/tombstones/tomb-1.png" alt="Tombstone Icon">
                     <h2 id="cleanScore">0</h2>
                 </div>
                 <div>
-                    <img id="killIcon" src="./Images/Character/D0.png" alt="Death Icon">
+                    <img id="killIcon" src="./img/character/D0.png" alt="Death Icon">
                     <h2 id="killScore">0</h2>
                 </div>
                 
-                <img id="name-logo" src="./Images/Mac Burton Logo.png" alt="Mac Burton">
+                <img id="name-logo" src="./img/centerpiece/mac-burton.png" alt="Mac Burton">
             </div>
             
             <div id="gamespace">
                 
-                <img id="clickSign" src="./Images/Signs/S1.png" style="position:absolute;">
+                <img id="clickSign" src="./img/signs/S1.png" style="position:absolute;">
                 <div id="deathSpace" style="position:absolute;">
                     
                 </div>
-                <img id="character" style="position:absolute;" src="./Images/Character/M0.png" onclick="GFG_Fun()" >
+                <img id="character" style="position:absolute;" src="./img/character/M0.png" onclick="GFG_Fun()" >
                 
                 <div id="deathSpawner" style="position:absolute;">
                     
                 </div>
                 
-                <img id="character-space" style="visibility: hidden;" src="./Images/Character/M0.png" onclick="GFG_Fun()">
+                <img id="character-space" style="visibility: hidden;" src="./img/character/M0.png" onclick="GFG_Fun()">
                 
-                <script src="microgame.js"></script>
+                <script src="./scripts/microgame.js"></script>
 
                 <!--Main-->
                 <!-- Opacity: 0 tree causing clickable issues -->
                 
                 <div id="greenery">
-                    <img id="treeHitbox" src="./Images/Tree.png">
-                    <img id="tree1" src="./Images/Tree.png">
-                    <img id="bush1" src="./Bush1.png">
-                    <img id="bush2" src="./Bush2.png">
-                    <img id="bush3" src="./Bush3.png">
-                    <img id="tree2" src="./Images/Tree.png">
+                    <img id="treeHitbox" src="./img/greenery/Tree.png">
+                    <img id="tree1" src="./img/greenery/Tree.png">
+                    <img id="bush1" src="./img/greenery/Bush1.png">
+                    <img id="bush2" src="./img/greenery/Bush2.png">
+                    <img id="bush3" src="./img/greenery/Bush3.png">
+                    <img id="tree2" src="./img/greenery/Tree.png">
                 </div>
                 
                 

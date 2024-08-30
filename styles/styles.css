@@ -201,12 +201,10 @@ Section: Footer
     color: black;
     text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
     text-align: center;
-    z-index: 2;
-    background-image: url("../Footrock.png");
+    z-index: 6;
+    background-image: url("../img/background-texture/footrock.png");
     
 }
-
-footer
 
 
 /*
@@ -469,30 +467,30 @@ Section: Navspace (Dirt and Stone)
 
 /* Rename required. Used for dirt with grass/ */
 #dirttest{
-    background-image: url("../Dirt\ W\ Grass.png");
+    background-image: url("../img/background-texture/grassy-dirt.png");
     height: 64px;
 }
 
 
 #dirtindex{
-    background-image: url("../Dirt.png");
+    background-image: url("../img/background-texture/dirt.png");
     height: 128px;
 }
 
 #dirt{
-    background-image: url("../Dirt.png");
+    background-image: url("../img/background-texture/dirt.png");
     height: calc(25vh);
 }
 
 #stone{
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .9) 120%), url("../Rock.png");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .9) 120%), url("../img/background-texture/rock.png");
     margin-top: 0px;
     padding-top: 0px;
     z-index: -5;
 }
 
 .bottom{
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75) 0%, rgba(0, 0, 0, .8) 100%), url("../Rock.png");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75) 0%, rgba(0, 0, 0, .8) 100%), url("../img/background-texture/rock.png");
     margin-top: 0px;
     padding-top: 0px;
     margin-bottom: 0px;
@@ -747,12 +745,12 @@ Mobile View Specific Changes
     
 
     #dirt{
-        background-image: url("../Dirt.png");
+        background-image: url("../img/background-texture/dirt.png");
         min-height: 33vh;
     }
 
     #dirttest{
-        background-image: url("../Dirt\ W\ Grass.png");
+        background-image: url("../img/background-texture/grassy-dirt.png");
         height: 10vh;
         max-height: 64px;
         
@@ -760,7 +758,7 @@ Mobile View Specific Changes
     }
 
     #dirtindex{
-        background-image: url("../Dirt.png");
+        background-image: url("../img/background-texture/dirt.png");
         height: 312px;
     }
 
@@ -843,6 +841,6 @@ Mobile View Specific Changes
         font-size: 0.75rem;
         color: black;
         text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
-        background-image: url("../Footrock.png");
+        background-image: url("../img/background-texture/footrock.png");
     }
 }
