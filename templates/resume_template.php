@@ -11,4 +11,4 @@
 
     <p class="col-3"></p>
 </div>
-<img id="cleanSign" src="../img/Signs/S2.png">
+<img id="cleanSign" src="../img/signs/S2.png">

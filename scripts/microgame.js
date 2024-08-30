@@ -84,7 +84,7 @@ timerId = setInterval( function() { //This function is called by the browser eve
         
         cloudImg.className = selectedCloudClass;
         cloudImg.style.position = 'absolute';
-        cloudImg.src ='../img/clouds/Cloud.png';
+        cloudImg.src ='../img/clouds/cloud.png';
         cloudImg.style.marginLeft = -160 + "px";
         
         document.getElementById('cloudspace').appendChild(cloudImg);

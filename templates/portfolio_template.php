@@ -5,7 +5,7 @@
             <img class="portfolioPics portfolioFrame" src="../img/portfolio-frames/Bunger Burger Bistro.png">
         </a>
         <div class="gameInfoContainer">
-            <img class="gameInfoBackgroundImg" src="../img/Signs/SB.png">
+            <img class="gameInfoBackgroundImg" src="../img/signs/SB.png">
             <p class="gameInfo">
                 Bunger Burger Bistro<br>NOKIA 3310 JAM 6<br>Februrary 16th, 2024
             </p>
@@ -19,7 +19,7 @@
             <img class="portfolioPics" src="../img/portfolio-frames/Date Night at Bernies.png">
         </a>
         <div class="gameInfoContainer">
-            <img class="gameInfoBackgroundImg" src="../img/Signs/SB.png">
+            <img class="gameInfoBackgroundImg" src="../img/signs/SB.png">
             <p class="gameInfo">
                 Entangled<br>Global Game Jam 2024<br>January 28th, 2024
             </p>
@@ -33,7 +33,7 @@
             <img class="portfolioPics" src="../img/portfolio-frames/Entangled.png">
         </a>
         <div class="gameInfoContainer">
-            <img class="gameInfoBackgroundImg" src="../img/Signs/SB.png">
+            <img class="gameInfoBackgroundImg" src="../img/signs/SB.png">
             <p class="gameInfo">
                 Entangled<br>Global Game Jam 2023<br>Februrary 5th, 2023
             </p>
@@ -48,7 +48,7 @@
             <img class="portfolioPics" src="../img/portfolio-frames/Oh BTW Glasses Stack.png">
         </a>
         <div class="gameInfoContainer">
-            <img class="gameInfoBackgroundImg" src="../img/Signs/SB.png">
+            <img class="gameInfoBackgroundImg" src="../img/signs/SB.png">
             <p class="gameInfo">
                 Oh BTW Glasses Stack<br>IndieCade Greenlight Jam<br>June 19th, 2022
             </p>
@@ -62,7 +62,7 @@
             <img class="portfolioPics" src="../img/portfolio-frames/Patient Z-ero.png">
         </a>
         <div class="gameInfoContainer">
-            <img class="gameInfoBackgroundImg" src="../img/Signs/SB.png">
+            <img class="gameInfoBackgroundImg" src="../img/signs/SB.png">
             <p class="twoGameAwardGameInfo">
                 Patient Z-ero<br>Atlantic Game Jam<br>February 27th, 2022
             </p>
@@ -80,7 +80,7 @@
             <img class="portfolioPics" src="../img/portfolio-frames/Door Quest.png">
         </a>
         <div class="gameInfoContainer">
-            <img class="gameInfoBackgroundImg" src="../img/Signs/SB.png">
+            <img class="gameInfoBackgroundImg" src="../img/signs/SB.png">
             <p class="gameInfo">
                 Door Quest<br>Jame Gam #15<br>January 29th, 2022
             </p>
@@ -94,7 +94,7 @@
             <img class="portfolioPics" src="../img/portfolio-frames/Crypto Crunch Pizza Co.png">
         </a>
         <div class="gameInfoContainer">
-            <img class="gameInfoBackgroundImg" src="../img/Signs/SB.png">
+            <img class="gameInfoBackgroundImg" src="../img/signs/SB.png">
             <p class="gameInfo">
                 Crypto Crunch Pizza Co.<br>Low Effort Jam 18<br>January 18th, 2022
             </p>
@@ -108,7 +108,7 @@
             <img class="portfolioPics" src="../img/portfolio-frames/Dimension Dysfunction.png">
         </a>
         <div class="gameInfoContainer">
-            <img class="gameInfoBackgroundImg" src="../img/Signs/SB.png">
+            <img class="gameInfoBackgroundImg" src="../img/signs/SB.png">
             <p class="gameInfo">
                 Dimension Dysfunction<br>Secret Santa Jam 2021<br>December 19th, 2021
             </p>
@@ -122,7 +122,7 @@
             <img class="portfolioPics" src="../img/portfolio-frames/Curse of the Low Effort Lake.png">
         </a>
         <div class="gameInfoContainer">
-            <img class="gameInfoBackgroundImg" src="../img/Signs/SB.png">
+            <img class="gameInfoBackgroundImg" src="../img/signs/SB.png">
             <p class="gameInfo">
                 Curse of the Low Effort Lake<br>Low Effort Jam 16<br>November 16th 2021
             </p>
@@ -136,7 +136,7 @@
             <img class="portfolioPics" src="../img/portfolio-frames/Accessibility Week.png">
         </a>
         <div class="gameInfoContainer">
-            <img class="gameInfoBackgroundImg" src="../img/Signs/SB.png">
+            <img class="gameInfoBackgroundImg" src="../img/signs/SB.png">
             <p class="gameInfo">
                 Accessibility Visual Novel<br>Dal Accessibility Week<br>December 2022
             </p>
@@ -150,7 +150,7 @@
             <img class="portfolioPics" src="../img/portfolio-frames/Boattle Royale.png">
         </a>
         <div class="gameInfoContainer">
-            <img class="gameInfoBackgroundImg" src="../img/Signs/SB.png">
+            <img class="gameInfoBackgroundImg" src="../img/signs/SB.png">
             <p class="gameInfo">
                 Boatle Royale<br>CSCI 4168<br>December 2021
             </p>
@@ -167,7 +167,7 @@
             <img class="portfolioPics" src="../img/portfolio-frames/Website V2.png">
         </a>
         <div class="gameInfoContainer">
-            <img class="gameInfoBackgroundImg" src="../img/Signs/SB.png">
+            <img class="gameInfoBackgroundImg" src="../img/signs/SB.png">
             <p class="gameInfo">
                 Personal Website V2<br>Job Application Project<br>January 2024
             </p>
@@ -181,7 +181,7 @@
             <img class="portfolioPics" src="../img/portfolio-frames/Sad Libs.png">
         </a>
         <div class="gameInfoContainer">
-            <img class="gameInfoBackgroundImg" src="../img/Signs/SB.png">
+            <img class="gameInfoBackgroundImg" src="../img/signs/SB.png">
             <p class="gameInfo">
                 Sad Libs<br>Job Application Project<br>January 2024
             </p>
@@ -195,7 +195,7 @@
             <img class="portfolioPics" src="../img/portfolio-frames/Website V1.png">
         </a>
         <div class="gameInfoContainer">
-            <img class="gameInfoBackgroundImg" src="../img/Signs/SB.png">
+            <img class="gameInfoBackgroundImg" src="../img/signs/SB.png">
             <p class="gameInfo">
                 Personal Website V1<br>Porfolio Showcase Project<br>December 2023
             </p>
@@ -209,7 +209,7 @@
             <img class="portfolioPics" src="../img/portfolio-frames/Dalplex Fitness Hall Application.png">
         </a>
         <div class="gameInfoContainer">
-            <img class="gameInfoBackgroundImg" src="../img/Signs/SB.png">
+            <img class="gameInfoBackgroundImg" src="../img/signs/SB.png">
             <p class="gameInfo">
                 Dalplex Mobile App<br>Pandemic Solutions Project<br>July 2021
             </p>
@@ -223,7 +223,7 @@
             <img class="portfolioPics" src="../img/portfolio-frames/Storm Tracker.png">
         </a>
         <div class="gameInfoContainer">
-            <img class="gameInfoBackgroundImg" src="../img/Signs/SB.png">
+            <img class="gameInfoBackgroundImg" src="../img/signs/SB.png">
             <p class="gameInfo">
                 Storm Tracker App<br>FNM Assistant Project<br>June 2021
             </p>
@@ -233,4 +233,4 @@
         </div>
     </div>
 </div>
-<img id="cleanSign" src="../img/Signs/S2.png">
+<img id="cleanSign" src="../img/signs/S2.png">
