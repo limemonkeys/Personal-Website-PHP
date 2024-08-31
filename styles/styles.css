@@ -675,6 +675,13 @@ Mobile View Specific Changes
         max-width: 90px;
         min-width: 90px;
     }
+
+    .footer p{
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        display: block;
+        
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -784,7 +791,7 @@ Mobile View Specific Changes
     }
 
     #bush2{
-        right: 64px;
+        right: 5vw;
     }
     
     #bush3{
@@ -893,8 +900,5 @@ Mobile View Specific Changes
         background-image: url("../img/background-texture/footrock.png");
     }
 
-    .footer p{
-        display: block;
-        
-    }
+    
 }
