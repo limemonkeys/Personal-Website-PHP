@@ -204,6 +204,10 @@ Section: Footer
     
 }
 
+.footer p{
+
+    display: inline-block;
+}
 
 /*
 Section: Micro Game
@@ -553,7 +557,7 @@ Section: Index
 }
 
 #profile{
-    height: 50vh;
+    max-height: 60vh;
     min-height: 50vh;
     width: auto;
     margin: auto;
@@ -887,5 +891,10 @@ Mobile View Specific Changes
         color: black;
         text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
         background-image: url("../img/background-texture/footrock.png");
+    }
+
+    .footer p{
+        display: block;
+        
     }
 }

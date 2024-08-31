@@ -80,7 +80,7 @@
         </div>
     </body>
     <footer id="footer" class="footer">
-        <p>Self Designed, Illustrated, Coded, and Hosted. &#x2022; 902-476-4883 &#x2022; macburton1000@gmail.com</p>
+        <p>Self Designed, Illustrated, Coded, and Hosted</p><p>902-476-4883 &#x2022; macburton1000@gmail.com</p>
     </footer>
 </html>
 
