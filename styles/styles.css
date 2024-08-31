@@ -57,10 +57,8 @@ Section: Navigation (Effects all pages)
 */
 
 .nav-logos{
-    max-height: 14vh;
-    min-height: 48px;
-    max-width: 13.3vw;
-    min-width: 48px;
+    max-width: 120px;
+    min-width: 120px;
     
     display: block;
     margin-left: auto;
@@ -599,6 +597,11 @@ Mobile View Specific Changes
     #bush2{
         opacity: 0;
     }
+    
+    .nav-logos{
+        max-width: 100px;
+        min-width: 100px;
+    }
 
     #indexContainer{
         line-height: 5vh;
@@ -627,6 +630,11 @@ Mobile View Specific Changes
     }
     #bush2{
         right: calc(50vw - 128px);
+    }
+
+    .nav-logos{
+        max-width: 90px;
+        min-width: 90px;
     }
 }
 
@@ -778,8 +786,8 @@ Mobile View Specific Changes
     }
 
     .nav-logos{
-        max-width: 20vw;
-        min-width: 48px;
+        max-width: 100px;
+        min-width: 100px;
         height: auto;
         display: block;
         margin-left: auto;

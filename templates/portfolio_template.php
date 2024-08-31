@@ -169,10 +169,10 @@
         <div class="gameInfoContainer">
             <img class="gameInfoBackgroundImg" src="../img/signs/SB.png">
             <p class="gameInfo">
-                Personal Website V2<br>Job Application Project<br>January 2024
+                Personal Website V2<br>Porfolio Showcase Project<br>January 2024
             </p>
             <p class="gameAward">
-                Longest Personal Project (Labor of Love)
+                Longest Personal Project
             </p>
         </div>
     </div>
