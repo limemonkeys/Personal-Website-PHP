@@ -108,18 +108,19 @@ timerId = setInterval( function() { //This function is called by the browser eve
             }
         }
     }
-
-    //TODO: UNfuck this
-    
-    document.getElementById('footer').style.width = document.getElementById("navspace").offsetWidth + "px";
-
-    
-    document.getElementById('character').style.paddingTop = ((document.getElementById('treeHitbox').offsetHeight) + 8) + "px";
-    document.getElementById('clickSign').style.paddingTop = ((document.getElementById('treeHitbox').offsetHeight) + 8) + "px";
-    
+        
     // Check to reposition corpses
     ralseiCorpses.forEach(function(ralsei) {
-        ralsei.style.top = (document.getElementById('gamespace').offsetHeight - 52)+ "px";
+        // Footer changes sizes based for mobile (800px or less)
+        console.log("offsetWidth: " + document.getElementById('gamespace').offsetWidth);
+        if (document.getElementById('gamespace').offsetWidth <= 800){
+            console.log("IN");
+            ralsei.style.top = (document.getElementById('gamespace').offsetHeight - 64)+ "px";
+        }
+        else{
+            ralsei.style.top = (document.getElementById('gamespace').offsetHeight - 52)+ "px";
+        }
+        
         if (parseInt(ralsei.style.left) > (document.getElementById('gamespace').offsetWidth - 76)){
             ralsei.style.left = (document.getElementById('gamespace').offsetWidth - 76) + "px";
         }
@@ -173,7 +174,7 @@ timerId = setInterval( function() { //This function is called by the browser eve
                 else{
                     permaWait = true;
                 }
-                if (fallingCounter * fallingCounter > document.getElementById('gamespace').scrollHeight - document.getElementsByClassName('footer')[0].offsetHeight - (document.getElementById('tree1').offsetHeight)){
+                if (fallingCounter * fallingCounter > document.getElementById('gamespace').scrollHeight - document.getElementsByClassName('footer')[0].offsetHeight - (document.getElementById('treeHitbox').offsetHeight)){
                     smackSfx = new Audio('../sfx/Smacks/smack-2.mp3');
                     smackSfx.volume = 0.2;
                     smackSfx.play();
@@ -317,7 +318,7 @@ timerId = setInterval( function() { //This function is called by the browser eve
     
 }, 33 );
 
-function GFG_Fun() {
+function onKill() {
     score++;
     document.getElementById("killScore").innerHTML = score;
     let img = document.createElement('img');
@@ -326,7 +327,7 @@ function GFG_Fun() {
     img.src ='../img/character/D0.png';
     img.style.left = guy.style.left;
     img.style.zIndex = 5;
-    img.style.marginTop = (document.getElementById('tree1').offsetHeight) + "px";
+    img.style.marginTop = ((document.getElementById('treeHitbox').offsetHeight) - 32) + "px";
 
     document.getElementById('deathSpace').appendChild(img);
     

@@ -36,7 +36,7 @@
                 <div id="deathSpace" style="position:absolute;">
                     
                 </div>
-                <img id="character" style="position:absolute;" src="./img/character/M0.png" onclick="GFG_Fun()" >
+                <img id="character" style="position:absolute;" src="./img/character/M0.png" onclick="onKill()" >
                 
                 <div id="deathSpawner" style="position:absolute;">
                     
