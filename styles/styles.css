@@ -142,8 +142,8 @@ Section: Resume
 
     border-radius: 32px;
 
-    border: 2px solid #cccccc;
-    box-shadow: 0 0 0 2px #000000;
+    border: 2px solid #000000;
+    box-shadow: 0 0 0 2px #cccccc;
 
     margin:auto;
 }
