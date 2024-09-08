@@ -202,7 +202,6 @@ Section: Footer
     width: 100vw;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    color: black;
     text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
     text-align: center;
     z-index: 6;
@@ -211,7 +210,8 @@ Section: Footer
 }
 
 .footer p{
-
+    color: #000000;
+    text-decoration: none;
     display: inline-block;
 }
 
