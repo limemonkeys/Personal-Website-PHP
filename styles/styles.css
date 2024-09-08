@@ -713,7 +713,10 @@ Mobile View Specific Changes
 
     .footer p{
         display: block;
-        
+    }
+
+    .footer #spacing{
+        display: none;
     }
 }
 

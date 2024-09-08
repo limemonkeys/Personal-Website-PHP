@@ -15,7 +15,7 @@
     </a>
 </div>
 <div class="nav-logo-column col-6">
-    <a href="https://www.linkedin.com/in/mac-burton-uiux" target="_blank">
+    <a href="https://linkedin.com/in/mac-burton-uiux" target="_blank">
         <img class="nav-logos" src="./img/logos/linkedin.png" alt="LinkedIn Logo">     
     </a>
 </div>

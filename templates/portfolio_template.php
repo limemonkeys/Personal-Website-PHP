@@ -171,7 +171,7 @@
             <p class="gameInfo">
                 Personal Website V2<br>Porfolio Showcase Project<br>January 2024
             </p>
-            <p class="gameAward">
+            <p class="gameAward gold">
                 Longest Personal Project
             </p>
         </div>
@@ -199,7 +199,7 @@
             <p class="gameInfo">
                 Personal Website V1<br>Porfolio Showcase Project<br>December 2023
             </p>
-            <p class="gameAward">
+            <p class="gameAward silver">
                 First Website
             </p>
         </div>
@@ -213,7 +213,7 @@
             <p class="gameInfo">
                 Dalplex Mobile App<br>Pandemic Solutions Project<br>July 2021
             </p>
-            <p class="gameAward">
+            <p class="gameAward gold">
                 First Published Mobile App
             </p>
         </div>
