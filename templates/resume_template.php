@@ -1,8 +1,21 @@
 <h1>Resume</h1>
 
-<div class="row">
-    <iframe id="resume-container" src="./Resumes/Mac Burton Resume.pdf"></iframe>                    
+<div id="side">
+    <div class="row">
+        <img id="resume-container" src="../resumes/P1.png">
+        <img id="resume-container" src="../resumes/P2.png">
+    </div>
 </div>
+
+<div id="top">
+    <div class="row">
+        <img id="resume-container" src="../resumes/P1.png">
+    </div>
+    <div class="row">
+        <img id="resume-container" src="../resumes/P2.png">
+    </div>
+</div>
+
 <!-- If you're seeing this, I'm sorry -->
 <div id="downloadContainer" class="row">
     

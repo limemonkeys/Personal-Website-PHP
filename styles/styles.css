@@ -135,8 +135,6 @@ Section: Resume
 */
 
 #resume-container {
-    height: 80vh;
-    width: 70vw;
 
     background-color: #707070;
 
@@ -145,7 +143,16 @@ Section: Resume
     border: 2px solid #000000;
     box-shadow: 0 0 0 2px #cccccc;
 
-    margin:auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#side {
+    display: block;
+}
+
+#top {
+    display: none;
 }
 
 #download-resume{
@@ -618,6 +625,21 @@ Mobile View Specific Changes
     .container {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    #side {
+        display: none;
+    }
+
+    #top {
+        display: block;
+    }
+
+    #resume-container{
+        margin-top: 5vh;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 
@@ -755,6 +777,9 @@ Mobile View Specific Changes
         margin-right: auto;    
     }
 
+    #resume-container{
+        width: 90vw;
+    }
 }
 
 
@@ -936,9 +961,7 @@ Mobile View Specific Changes
         margin-right: 7%;
     }
 
-    #resume-container{
-        width: 90vw;
-    }
+    
 }
 
 /* Prevents trees and bushes from pushing into grassy dirt/dirt area */
