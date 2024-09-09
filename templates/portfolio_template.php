@@ -21,7 +21,7 @@
         <div class="gameInfoContainer">
             <img class="gameInfoBackgroundImg" src="../img/signs/SB.png">
             <p class="gameInfo">
-                Entangled<br>Global Game Jam 2024<br>January 28th, 2024
+                Date Night at Bernies<br>Global Game Jam 2024<br>January 28th, 2024
             </p>
             <p class="gameAward gold">
                 People's Choice Award: Most Creative
