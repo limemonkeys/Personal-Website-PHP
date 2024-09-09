@@ -2,17 +2,17 @@
 
 <div id="side">
     <div class="row">
-        <img id="resume-container" src="../resumes/P1.png">
-        <img id="resume-container" src="../resumes/P2.png">
+        <img id="resume-container" src="../Resumes/P1.png">
+        <img id="resume-container" src="../Resumes/P2.png">
     </div>
 </div>
 
 <div id="top">
     <div class="row">
-        <img id="resume-container" src="../resumes/P1.png">
+        <img id="resume-container" src="../Resumes/P1.png">
     </div>
     <div class="row">
-        <img id="resume-container" src="../resumes/P2.png">
+        <img id="resume-container" src="../Resumes/P2.png">
     </div>
 </div>
 
