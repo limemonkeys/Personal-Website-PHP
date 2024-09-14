@@ -324,7 +324,7 @@ Section: Portfolio
 }
 
 .gameInfo{
-    font-size: 1.2em;
+    font-size: calc(min(1.2em, 20px));
     padding: 0px;
     margin: 0px;
     position: absolute;
@@ -335,7 +335,7 @@ Section: Portfolio
     height: 75%;
 }
 .twoGameAwardGameInfo{
-    font-size: 1.2em;
+    font-size: calc(min(1.2em, 20px));
     padding: 0px;
     margin: 0px;
     position: absolute;
@@ -347,7 +347,7 @@ Section: Portfolio
 }
 
 .gameAward{
-    font-size: 1.2em;
+    font-size: calc(min(1.2em, 20px));
     padding: 0px;
     margin: 0px;
     position: absolute;
@@ -359,7 +359,7 @@ Section: Portfolio
 }
 
 .firstGameAward{
-    font-size: 1.2em;
+    font-size: calc(min(1.2em, 20px));
     padding: 0px;
     margin: 0px;
     position: absolute;
@@ -371,7 +371,7 @@ Section: Portfolio
 }
 
 .secondGameAward{
-    font-size: 1.2em;
+    font-size: calc(min(1.2em, 20px));
     padding: 0px;
     margin: 0px;
     position: absolute;
