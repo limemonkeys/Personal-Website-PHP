@@ -107,7 +107,7 @@ $(document).ready(function(){
     let month = d.getMonth();
 
 
-    if (month == 11){
+    if (month == 12){
         console.log("It's December!");
         document.getElementById('dirttest').style.backgroundImage = 'url("../img/background-texture/snow-dirt.png")';
         

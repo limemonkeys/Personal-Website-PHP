@@ -58,7 +58,17 @@
                     <img id="tree2" src="./img/greenery/Tree.png">
                 </div>
                 
-                
+                <script>
+                    const d = new Date();
+                    let month = d.getMonth();
+
+                    console.log("Month: " + month);
+
+                    if (month == 10){
+                        console.log("It's December!");
+                        document.getElementById("dirttest").style.backgroundImage = "../img/background-texture/snow-dirt.png"
+                    }
+                </script>
                 <div id="dirttest">
                 </div>
                 <div id="dirt">
