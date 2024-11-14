@@ -26,6 +26,11 @@ $(document).ready(function(){
         $('#nav-index').css('background-color', '#EA893F');
         $('#nav-portfolio').css('background-color', '#EAA977');
         $('#nav-resume').css('background-color', '#EAA977');
+
+        
+
+        
+
         /*
     fetch("./templates/nav_template.php")
         .then((res) => res.text())
@@ -97,4 +102,14 @@ $(document).ready(function(){
     $('#nuke').click(function(){
         $('.main').html("");
     })
+
+    const d = new Date();
+    let month = d.getMonth();
+
+
+    if (month == 11){
+        console.log("It's December!");
+        document.getElementById('dirttest').style.backgroundImage = 'url("../img/background-texture/snow-dirt.png")';
+        
+    }
 });
