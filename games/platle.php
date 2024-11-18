@@ -12,6 +12,7 @@
     </head>
     <body id="body">
         <h1>Website</>
+        <img src="../img/platle/plate.png"></img>
         <div class="digits">
             <input id="digit1" name="digit1" class="digit-input" data-indx="0" data-next-id="digit2" value="" size="1" maxlength="1" autocomplete="off" type="text">
             <input id="digit2" name="digit2" data-prev-id="digit1" class="digit-input" data-indx="1" data-next-id="digit3" value="" size="1" maxlength="1" autocomplete="off" type="text">
