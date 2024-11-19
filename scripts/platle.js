@@ -63,75 +63,36 @@ $(document).ready(function(){
 
                 $('#results').html("");
 
-                //let currLen = verifiedResults[0].length;\
-                // This is the beginning of the fix
-                /*
-                let maxLen = 0;
-                let currList = [];
-                verifiedResults.forEach(function (word){
-                    if (maxLen < word.length){
-                        
-                    }
-                });
-                */
+
                 
-                let currLen = verifiedResults[0].length;
-                console.log(verifiedResults[0].length);
+                // Checking to see if the first result 
+
+                let maxLen = verifiedResults[0].length;
                 let currList = [];
 
-                if (verifiedResults[0] == inputCharacters){
-                    currLen = 3;
-
-                    let collapsibleButton = document.createElement('button');
-                    collapsibleButton.type = "button";
-                    collapsibleButton.className = "collapsible";
-
-                    collapsibleButton.innerHTML = inputCharacters.length + " Letter Word(s)";
-
-                    collapsibleButton.addEventListener("click", function() {
-                        this.classList.toggle("active");
-                        var content = this.nextElementSibling;
-                        if (content.style.display === "block") {
-                            content.style.display = "none";
-                        } else {
-                            content.style.display = "block";
-                        }
-                    });
-
-                    let collapsibleDiv = document.createElement('div');
-                    collapsibleDiv.className = "content";
-
-                    let collapsibleContent = document.createElement('p');
-                    collapsibleContent.innerHTML = inputCharacters;
-                    currList = [];
-
-                    collapsibleDiv.append(collapsibleContent);
-
-                    $('#results').append(collapsibleDiv);
-                    $('#results').append(collapsibleButton);
+                if (maxLen == 3){
+                    currList.push(verifiedResults[0]);
+                    verifiedResults = verifiedResults.slice(1);
                 }
 
-
                 
                 verifiedResults.forEach(function (word){
-                    console.log(word);
-                    if(currLen < word.length){
-                        
-                        currLen = word.length;
-
+                    // The next word in queue will qualify for new row
+                    if (word.length > maxLen){
+    
                         let collapsibleButton = document.createElement('button');
                         collapsibleButton.type = "button";
                         collapsibleButton.className = "collapsible";
 
-                        collapsibleButton.innerHTML = word.length + " Letter Word(s)";
+                        collapsibleButton.innerHTML = maxLen + " Letter Word(s)";
 
                         collapsibleButton.addEventListener("click", function() {
                             this.classList.toggle("active");
                             var content = this.nextElementSibling;
                             if (content.style.display === "block") {
-                              content.style.display = "none";
+                                content.style.display = "none";
                             } else {
-                              content.style.display = "block";
+                                content.style.display = "block";
                             }
                         });
 
@@ -139,19 +100,22 @@ $(document).ready(function(){
                         collapsibleDiv.className = "content";
 
                         let collapsibleContent = document.createElement('p');
-                        collapsibleContent.innerHTML = currList.join("\n");
+                        collapsibleContent.innerHTML = currList.join(" ");
                         currList = [];
 
                         collapsibleDiv.append(collapsibleContent);
 
-                        $('#results').append(collapsibleDiv);
                         $('#results').append(collapsibleButton);
+                        $('#results').append(collapsibleDiv);
+
+                        maxLen = word.length;
+                        currList.push(word);
                     }
+                    // Word belongs to current row
                     else{
-                        currList.push(word)
+                        currList.push(word);
                     }
                 });
-                
             }).fail(function () {
                 $('#results').text("Error loading dictionary file.");
             });
