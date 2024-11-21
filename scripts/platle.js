@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    let sound = true;
+
     $(".digit-input").keyup(function() {
         if (this.value.length == this.maxLength) {
             $(this).next('.digit-input').focus();
@@ -26,8 +28,22 @@ $(document).ready(function(){
     .then(res => res.json())
     .then(json => console.log(json));*/
     
+    $('#sound').on('click', function () {
+
+        if (sound){
+            document.getElementById("sound").src = "../img/platle/sound off.png";
+            sound = false;
+        }
+        else{
+            document.getElementById("sound").src = "../img/platle/sound on.png";
+            sound = true;
+        }
+    });
 
     $('#searchButton').on('click', function () {
+
+        
+
         // Get the 3-letter input from the user
         const digit1 = $('#digit1').val().trim().toLowerCase();
         const digit2 = $('#digit2').val().trim().toLowerCase();
@@ -37,6 +53,10 @@ $(document).ready(function(){
 
         
         if (inputCharacters.length == 3){
+
+            respawnSfx = new Audio('../sfx/Platle/car horn.mp3');
+            respawnSfx.volume = 1;
+            respawnSfx.play();
             const inputSet = new Set(inputCharacters);
             // Load the dictionary JSON file using AJAX
             $.getJSON('../json/dictionary.json', function (dictionary) {
@@ -84,7 +104,7 @@ $(document).ready(function(){
                         collapsibleButton.type = "button";
                         collapsibleButton.className = "collapsible";
 
-                        collapsibleButton.innerHTML = maxLen + " Letter Word(s)";
+                        
 
                         collapsibleButton.addEventListener("click", function() {
                             this.classList.toggle("active");
@@ -99,8 +119,10 @@ $(document).ready(function(){
                         let collapsibleDiv = document.createElement('div');
                         collapsibleDiv.className = "content";
 
+                        collapsibleButton.innerHTML = maxLen + " Letter Words " + '&#11167;';      
+
                         let collapsibleContent = document.createElement('p');
-                        collapsibleContent.innerHTML = currList.join(" ");
+                        collapsibleContent.innerHTML = '<ul><li>' + currList.join("</li><li>"); + + '</li></ul>';
                         currList = [];
 
                         collapsibleDiv.append(collapsibleContent);
@@ -119,6 +141,11 @@ $(document).ready(function(){
             }).fail(function () {
                 $('#results').text("Error loading dictionary file.");
             });
+        }
+        else{
+            respawnSfx = new Audio('../sfx/Platle/car crash.mp3');
+            respawnSfx.volume = 1;
+            respawnSfx.play();
         }
     });
     

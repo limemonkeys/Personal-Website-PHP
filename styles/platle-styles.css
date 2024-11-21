@@ -1,22 +1,193 @@
+.row {
+  display: flex;
+}
+
+.col-1 {
+  flex: 100%;
+  padding: 5px;
+}
+
+.col-twothirds{
+  flex: 66.6%;
+  padding: 5px;
+}
+
+.col-2 {
+  flex: 50%;
+  padding: 5px;
+}
+
+.col-3 {
+  flex: 33.3%;
+  padding: 5px;
+}
+
+.col-4 {
+  flex: 25%;
+  padding: 5px;
+}
+
+.col-5 {
+  flex: 20%;
+  padding: 5px;
+}
+
+.col-6 {
+  flex: 16.66%;
+  padding: 5px;
+}
+
 .collapsible {
-    background-color: #777;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-  }
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+
+  font-family: 'Highway Gothic', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+
+  color: #ffffff;
+  background-color: #037046;
+
+  border: 5px solid #ffffff;
+  box-shadow: 0 0 0 5px #04AA6D;
+
+  border-radius: 10px;
+
+  margin-bottom: 15px;
+}
+
+#plateContainer{
+  position: relative;
+  height: 66vh;
+}
+
+body{
+  color: #ffffff;
+  background-image: url("../img/platle/asphalt 2.png");
+}
+
+#plate{
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  width: fit-content;
+
+  margin: 0 auto 0 auto;
+
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.digits{
+
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  width: fit-content;
+
+  margin: 0 auto 0 auto;
+
   
-  .active, .collapsible:hover {
-    background-color: #555;
-  }
+
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.digits input{
+  height: 128px; 
+  width: 72px;
+
+  font-family: 'Highway Gothic', sans-serif;
+  font-weight: bold;
+  font-size: 6em;
+  text-transform: uppercase;
+
+  color: #0B2875;
+  background: transparent;
+  border-style: dashed;
+  border-color: #0B2875;
+
+  text-align: center;
+}
+
+#digit3{
+  margin-right: 64px;
+}
+
+
+
+.collapsible{
+  font-family: 'Highway Gothic', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+
+  color: #ffffff;
+  background-color: #04AA6D;
+
+  border: 5px solid #ffffff;
+  box-shadow: 0 0 0 5px #04AA6D;
+
+  border-radius: 10px;
+
+  margin-bottom: 15px;
+}
+
+.collapsible:hover{
+  font-family: 'Highway Gothic', sans-serif;
+
+  color: #ffffff;
+  background-color: #037046;
   
-  .content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
-  }
+  border: 5px solid #ffffff;
+  box-shadow: 0 0 0 5px #04AA6D;
+
+  border-radius: 10px;
+
+  margin-bottom: 15px;
+}
+
+#searchButton{
+  height: 128px;
+  width: 128px;
+
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#help{
+  height: 64px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sound{
+  height: 64px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#interactables{
+
+}

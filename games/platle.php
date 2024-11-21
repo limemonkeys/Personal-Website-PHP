@@ -11,25 +11,34 @@
         <script src="../scripts/platle.js"></script>
     </head>
     <body id="body">
-        <h1>Website</>
-        <img src="../img/platle/plate.png"></img>
-        <div class="digits">
-            <input id="digit1" name="digit1" class="digit-input" data-indx="0" data-next-id="digit2" value="" size="1" maxlength="1" autocomplete="off" type="text">
-            <input id="digit2" name="digit2" data-prev-id="digit1" class="digit-input" data-indx="1" data-next-id="digit3" value="" size="1" maxlength="1" autocomplete="off" type="text">
-            <input id="digit3" name="digit3" data-prev-id="digit2" class="digit-input" data-indx="2" data-next-id="digit4" value="" size="1" maxlength="1" autocomplete="off" type="text">
-            <input value="" size="1" maxlength="1" autocomplete="off" type="text" placeholder="1" readonly>
-            <input value="" size="1" maxlength="1" autocomplete="off" type="text" placeholder="2" readonly>
-            <input value="" size="1" maxlength="1" autocomplete="off" type="text" placeholder="3" readonly>
+               
+        
+        <div id="plateContainer">
+            <img id="plate" src="../img/platle/plate.png"></img>
+            <div class="digits">
+                <input id="digit1" name="digit1" class="digit-input" data-indx="0" data-next-id="digit2" value="" size="1" maxlength="1" autocomplete="off" type="text">
+                <input id="digit2" name="digit2" data-prev-id="digit1" class="digit-input" data-indx="1" data-next-id="digit3" value="" size="1" maxlength="1" autocomplete="off" type="text">
+                <input id="digit3" name="digit3" data-prev-id="digit2" class="digit-input" data-indx="2" data-next-id="digit4" value="" size="1" maxlength="1" autocomplete="off" type="text">
+                <input value="" size="1" maxlength="1" autocomplete="off" type="text" placeholder="1" readonly>
+                <input value="" size="1" maxlength="1" autocomplete="off" type="text" placeholder="2" readonly>
+                <input value="" size="1" maxlength="1" autocomplete="off" type="text" placeholder="3" readonly>
+            </div>
         </div>
-        <button id="searchButton" type="button">Click Me!</button> 
+        <div id="interactables">
+            <img id="searchButton" src="../img/platle/Wheel.png"></img>
+            <img id="sound"  src="../img/platle/sound on.png"></img>        
+            <img id="help" src="../img/platle/qmark.png"></img> 
+        </div>
+        
         <h2>Results</h2>
         <div id="results">
             
         </div>  
+        <footer id="footer" class="footer">
+            <p>Footer</p>
+        </footer>
     </body>
-    <footer id="footer" class="footer">
-        <p>Footer</p>
-    </footer>
+    
 </html>
 
 
