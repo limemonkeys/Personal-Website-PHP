@@ -166,26 +166,36 @@ body{
 }
 
 #searchButton{
+
   height: 128px;
   width: 128px;
 
-  display: inline-block;
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#searchButton:hover{
+  height: 128px;
+  width: 128px;
+
+  display: inline;
   margin-left: auto;
   margin-right: auto;
 }
 
 #help{
   height: 64px;
-  display: inline-block;
+  display: inline;
   margin-left: auto;
   margin-right: auto;
 }
 
 #sound{
   height: 64px;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
+  display: inline;
+  margin-top:auto;
+  margin-bottom:auto;
 }
 
 #interactables{

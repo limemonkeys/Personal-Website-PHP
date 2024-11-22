@@ -31,14 +31,17 @@ $(document).ready(function(){
     $('#sound').on('click', function () {
 
         if (sound){
-            document.getElementById("sound").src = "../img/platle/sound off.png";
+            document.getElementById("sound").src = "../img/platle/soundoffp.png";
             sound = false;
+            respawnSfx.pause();
         }
         else{
-            document.getElementById("sound").src = "../img/platle/sound on.png";
+            document.getElementById("sound").src = "../img/platle/soundonp.png";
             sound = true;
         }
     });
+
+    
 
     $('#searchButton').on('click', function () {
 
@@ -53,10 +56,11 @@ $(document).ready(function(){
 
         
         if (inputCharacters.length == 3){
-
-            respawnSfx = new Audio('../sfx/Platle/car horn.mp3');
-            respawnSfx.volume = 1;
-            respawnSfx.play();
+            if (sound){
+                respawnSfx = new Audio('../sfx/Platle/car horn.mp3');
+                respawnSfx.volume = 1;
+                respawnSfx.play();
+            }
             const inputSet = new Set(inputCharacters);
             // Load the dictionary JSON file using AJAX
             $.getJSON('../json/dictionary.json', function (dictionary) {
@@ -143,11 +147,41 @@ $(document).ready(function(){
             });
         }
         else{
-            respawnSfx = new Audio('../sfx/Platle/car crash.mp3');
-            respawnSfx.volume = 1;
-            respawnSfx.play();
+            if (document.getElementById("sound").src.split(/(\\|\/)/g).pop() == "soundon.png"){
+                respawnSfx = new Audio('../sfx/Platle/car crash.mp3');
+                respawnSfx.volume = 1;
+                respawnSfx.play();
+            }
+            
         }
     });
     
 
 });
+
+function wheelHover(element) {
+    element.setAttribute('src', '../img/platle/Wheel\ P.png');
+}
+  
+function wheelUnhover(element) {
+    element.setAttribute('src', '../img/platle/Wheel.png');
+}
+
+function soundHover(element) {
+    console.log(element.src);
+    if (document.getElementById("sound").src.split(/(\\|\/)/g).pop() == "soundon.png"){
+        element.setAttribute('src', '../img/platle/soundonp.png');
+    }
+    else if (document.getElementById("sound").src.split(/(\\|\/)/g).pop() == "soundoff.png"){
+        element.setAttribute('src', '../img/platle/soundoffp.png');
+    }
+}
+  
+function soundUnhover(element) {
+    if (document.getElementById("sound").src.split(/(\\|\/)/g).pop() == "soundonp.png"){
+        element.setAttribute('src', '../img/platle/soundon.png');
+    }
+    else if (document.getElementById("sound").src.split(/(\\|\/)/g).pop() == "soundoffp.png"){
+        element.setAttribute('src', '../img/platle/soundoff.png');
+    }
+}
