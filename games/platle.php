@@ -25,17 +25,16 @@
             </div>
         </div>
         <div id="interactables">
-            <img id="searchButton" onmouseover="wheelHover(this);" onmouseout="wheelUnhover(this);" src="../img/platle/Wheel.png" ></img>
-            <img id="sound" onmouseover="soundHover(this);" onmouseout="soundUnhover(this);" src="../img/platle/soundon.png"></img>        
-            <img id="help" src="../img/platle/qmark.png"></img> 
+            <img id="searchButton" draggable="false" onmouseover="wheelHover(this);" onmouseout="wheelUnhover(this);" src="../img/platle/Wheel.png" ></img>
+            <img id="sound" draggable="false" onmouseover="soundHover(this);" onmouseout="soundUnhover(this);" src="../img/platle/soundon.png"></img>        
+            <img id="help" draggable="false" src="../img/platle/qmark.png"></img> 
         </div>
         
-        <h2>Results</h2>
         <div id="results">
             
         </div>  
-        <footer id="footer" class="footer">
-            <p>Footer</p>
+        <footer id="footer">
+            <p>Self Designed, Illustrated, Coded, and Hosted</p><p id="spacing">&nbsp;&#x2022;&nbsp;</p><p>macburton.ca</p>
         </footer>
     </body>
     

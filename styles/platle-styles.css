@@ -170,9 +170,19 @@ body{
   height: 128px;
   width: 128px;
 
-  display: inline;
-  margin-left: auto;
-  margin-right: auto;
+
+
+  position: absolute; 
+  left: -224px; 
+  right: 0; 
+  width: fit-content;
+
+  margin: 0 auto 0 auto;
+
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  
 }
 
 #searchButton:hover{
@@ -186,18 +196,109 @@ body{
 
 #help{
   height: 64px;
-  display: inline;
-  margin-left: auto;
-  margin-right: auto;
+
+  position: absolute; 
+  left: 0; 
+  right: -224px; 
+  width: fit-content;
+
+  margin: 0 auto 0 auto;
+
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 #sound{
   height: 64px;
-  display: inline;
-  margin-top:auto;
-  margin-bottom:auto;
+  
+  position: absolute; 
+  left: 48px; 
+  right: 0; 
+  width: fit-content;
+
+  margin: 0 auto 0 auto;
+
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#errorContent{
+  font-family: 'Highway Gothic', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+
+  color: #ffffff;
+  background-color: #DC0005;
+
+  border: 5px solid #ffffff;
+  box-shadow: 0 0 0 5px #DC0005;
+
+  border-radius: 10px;
+
+  display: flex; 
+  align-items: center;
+  
+}
+
+#wrongway{
+  padding: 0 8px 0 8px;
+  
 }
 
 #interactables{
+  position: relative;
+  height: 22vh;
+  
+}
 
+#footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+
+  font-family: "Fredoka One", sans-serif;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+  text-align: center;
+  z-index: 6;
+  background-image: url("../img/background-texture/footrock.png");
+  
+}
+
+#footer p{
+  color: #000000;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+@media screen and (max-width: 800px){
+
+  #footer{
+    height: 64px;
+    position: fixed; 
+    bottom: 0;
+
+    text-align: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+    font-size: 0.75rem;
+    color: black;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+    background-image: url("../img/background-texture/footrock.png");
+  }
+
+  #footer p{
+    display: block;
+  }
+
+  #footer #spacing{
+    display: none;
+  }
 }

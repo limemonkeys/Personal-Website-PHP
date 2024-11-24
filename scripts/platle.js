@@ -147,6 +147,45 @@ $(document).ready(function(){
             });
         }
         else{
+            $('#results').html("");
+
+
+            
+
+            let collapsibleDiv = document.createElement('div');
+            collapsibleDiv.id = "errorContent";
+
+            let errorImg = document.createElement('img');
+            errorImg.src = "../img/platle/wrongway.png";
+            errorImg.id = "wrongway";
+
+            let collapsibleContent = document.createElement('p');
+            collapsibleContent.innerHTML = "ERROR: Missing one or more input characters";
+
+            collapsibleDiv.append(errorImg);
+            collapsibleDiv.append(collapsibleContent);
+
+            $('#results').append(collapsibleDiv);
+
+
+
+            /*
+            let errorImg = document.createElement('img');
+            errorImg.src = "../img/platle/wrongway.png";
+            errorImg.id = "wrongway";
+
+            let errorMessage = document.createElement('p');
+            errorMessage.innerHTML = "ERROR: ";
+            errorMessage.id = "errormsg";
+
+            let errorDiv = document.createElement('div');
+            errorDiv.id = "error";
+
+            errorDiv.append(errorImg);
+            errorDiv.append(errorMessage);
+
+            $('#results').append(errorDiv);
+            */
             if (document.getElementById("sound").src.split(/(\\|\/)/g).pop() == "soundon.png"){
                 respawnSfx = new Audio('../sfx/Platle/car crash.mp3');
                 respawnSfx.volume = 1;
