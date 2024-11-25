@@ -75,7 +75,7 @@
 
 #plateContainer{
   position: relative;
-  height: 66vh;
+  height: 50vh;
 }
 
 body{
@@ -173,8 +173,8 @@ body{
 
 
   position: absolute; 
-  left: -224px; 
-  right: 0; 
+  left: 0; 
+  right: 224px; 
   width: fit-content;
 
   margin: 0 auto 0 auto;
@@ -198,8 +198,8 @@ body{
   height: 64px;
 
   position: absolute; 
-  left: 0; 
-  right: -224px; 
+  left: 256px; 
+  right: 0; 
   width: fit-content;
 
   margin: 0 auto 0 auto;
@@ -213,7 +213,7 @@ body{
   height: 64px;
   
   position: absolute; 
-  left: 48px; 
+  left: 64px; 
   right: 0; 
   width: fit-content;
 
@@ -249,8 +249,8 @@ body{
 
 #interactables{
   position: relative;
-  height: 22vh;
-  
+  height: 30vh;
+  min-height: 144px;
 }
 
 #footer{
@@ -300,5 +300,33 @@ body{
 
   #footer #spacing{
     display: none;
+  }
+}
+
+@media screen and (max-width: 650px){
+  #plate{
+    height: 200px;
+    width: auto;
+  }
+
+  .digits input{
+    height: 88px; 
+    width: 50px;
+  
+    font-family: 'Highway Gothic', sans-serif;
+    font-weight: bold;
+    font-size: 5em;
+    text-transform: uppercase;
+  
+    color: #0B2875;
+    background: transparent;
+    border-style: dashed;
+    border-color: #0B2875;
+  
+    text-align: center;
+  }
+
+  #digit3{
+    margin-right: 16px;
   }
 }
