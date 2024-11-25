@@ -43,7 +43,7 @@ $(document).ready(function(){
 
     
 
-    $('#searchButton').on('click', function () {
+    $('.submit').on('click', function () {
 
         
 

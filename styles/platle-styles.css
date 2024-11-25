@@ -194,6 +194,27 @@ body{
   margin-right: auto;
 }
 
+#searchButtonText{
+
+  z-index: 5;
+
+  position: absolute; 
+  left: 0; 
+  right: 224px; 
+  width: fit-content;
+
+  font-family: 'Highway Gothic', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+
+  margin: 0 auto 0 auto;
+
+  top: calc(50% - 0.20em);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  
+}
+
 #help{
   height: 64px;
 

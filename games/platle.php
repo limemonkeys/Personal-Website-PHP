@@ -26,7 +26,8 @@
         </div>
         <div id="interactables">
             <div>
-                <img id="searchButton" draggable="false" onmouseover="wheelHover(this);" onmouseout="wheelUnhover(this);" src="../img/platle/Wheel.png" ></img>
+                <p id="searchButtonText" class="submit">Submit</p>
+                <img id="searchButton" class="submit" draggable="false" onmouseover="wheelHover(this);" onmouseout="wheelUnhover(this);" src="../img/platle/Wheel.png" ></img>
             </div>
             <img id="sound" draggable="false" onmouseover="soundHover(this);" onmouseout="soundUnhover(this);" src="../img/platle/soundon.png"></img>        
             <img id="help" draggable="false" src="../img/platle/qmark.png"></img> 
