@@ -79,7 +79,8 @@
 }
 
 body{
-  color: #ffffff;
+  background-color: #000000;
+  
   background-image: url("../img/platle/asphalt 2.png");
 }
 
@@ -207,6 +208,8 @@ body{
   font-weight: bold;
   font-size: 1.5em;
 
+  color: #FFF;
+
   margin: 0 auto 0 auto;
 
   top: calc(50% - 0.20em);
@@ -333,11 +336,11 @@ body{
 
   .digits input{
     height: 80px; 
-    width: calc(60vw/6);
+    width: calc((60vw - 16px)/6);
   
     font-family: 'Highway Gothic', sans-serif;
     font-weight: bold;
-    font-size: 5em;
+    font-size: 3em;
     text-transform: uppercase;
   
     color: #0B2875;
