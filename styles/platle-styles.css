@@ -326,13 +326,14 @@ body{
 
 @media screen and (max-width: 650px){
   #plate{
-    height: 180px;
-    width: auto;
+    
+    width: 80vw;
+    height: auto;
   }
 
   .digits input{
     height: 80px; 
-    width: 46px;
+    width: calc(60vw/6);
   
     font-family: 'Highway Gothic', sans-serif;
     font-weight: bold;
