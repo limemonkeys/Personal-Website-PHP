@@ -51,6 +51,7 @@ $(document).ready(function(){
         })
         .catch((e) => console.error(e));
         
+        $("#body").addClass("stopScrolling");
     });
 
     $('.submit').on('click', function () {
@@ -226,6 +227,7 @@ function helpUnhover(element) {
 
 function helpClose(element) {
     $("#content").removeClass("brightness");
+    $("#body").removeClass("stopScrolling");
     element.parentNode.parentNode.remove();
 }
 
