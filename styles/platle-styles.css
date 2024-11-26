@@ -128,6 +128,10 @@ body{
   opacity: 0;
 }
 
+#results{
+  padding-bottom:64px;
+}
+
 #helpcontent li{
   font-family: 'Highway Gothic', sans-serif;
   font-weight: bold;
