@@ -41,7 +41,17 @@ $(document).ready(function(){
         }
     });
 
-    
+    $('#help').on('click', function () {
+        
+        $("#content").addClass("brightness");
+        fetch("../templates/platle/help.php")
+        .then((res) => res.text())
+        .then((text) =>{
+            $('#errorZone').append(text);
+        })
+        .catch((e) => console.error(e));
+        
+    });
 
     $('.submit').on('click', function () {
 
@@ -123,10 +133,10 @@ $(document).ready(function(){
                         let collapsibleDiv = document.createElement('div');
                         collapsibleDiv.className = "content";
 
-                        collapsibleButton.innerHTML = maxLen + " Letter Words " + '&#11167;';      
+                        collapsibleButton.innerHTML = maxLen + " Letter Words";      
 
                         let collapsibleContent = document.createElement('p');
-                        collapsibleContent.innerHTML = '<ul><li>' + currList.join("</li><li>"); + + '</li></ul>';
+                        collapsibleContent.innerHTML = '<ul><li>' + currList.join("</li><li>"); + '</li></ul>';
                         currList = [];
 
                         collapsibleDiv.append(collapsibleContent);
@@ -204,6 +214,19 @@ function wheelHover(element) {
   
 function wheelUnhover(element) {
     element.setAttribute('src', '../img/platle/Wheel.png');
+}
+
+function helpHover(element) {
+    element.setAttribute('src', '../img/platle/qmarkp.png');
+}
+  
+function helpUnhover(element) {
+    element.setAttribute('src', '../img/platle/qmark.png');
+}
+
+function helpClose(element) {
+    $("#content").removeClass("brightness");
+    element.parentNode.parentNode.remove();
 }
 
 function soundHover(element) {

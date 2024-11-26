@@ -84,6 +84,75 @@ body{
   background-image: url("../img/platle/asphalt 2.png");
 }
 
+.brightness{
+  filter: brightness(20%);
+
+}
+
+
+
+#helpcontent{
+  z-index: 6;
+
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  width: fit-content;
+
+  margin: 0 auto 0 auto;
+
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  color: #ffffff;
+  background-color: #04AA6D;
+
+  border: 5px solid #ffffff;
+  box-shadow: 0 0 0 5px #04AA6D;
+
+  border-radius: 10px;
+
+  width: 80vw;
+  height: 60vh;
+}
+
+.invisible{
+  opacity: 0;
+}
+
+#helpcontent li{
+  font-family: 'Highway Gothic', sans-serif;
+  font-weight: bold;
+  font-size: 2em;  
+}
+
+#helpcontent button{
+  font-family: 'Highway Gothic', sans-serif;
+  font-weight: bold;
+  font-size: 2em;  
+  color: #fff;
+
+
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  width: fit-content;
+
+  margin: 0 auto 0 auto;
+
+  top: 80%;
+  -ms-transform: translateY(-80%);
+  transform: translateY(-80%);
+
+  background-color: #04AA6D;
+  border: 6px solid #ffffff;
+  border-radius: 10px;
+
+  width: 256px;
+  height: 64px;
+}
+
 #plate{
   position: absolute; 
   left: 0; 
@@ -278,6 +347,8 @@ body{
 }
 
 #footer{
+  z-index: 10;
+
   position: fixed;
   left: 0;
   bottom: 0;
@@ -328,6 +399,11 @@ body{
 }
 
 @media screen and (max-width: 650px){
+
+  #plateContainer{
+    height: 40vh;
+  }
+
   #plate{
     
     width: 80vw;
