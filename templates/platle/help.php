@@ -7,7 +7,7 @@
             Click submit.
         </li>
         <li>   
-            See results 
+        View words containing the three entered letters in the exact order, e.g., 'abc' would match 'abacus' but not 'baccarat'. 
         </li>
         <button onclick="helpClose(this);" id="closeHelp" type="button">Close</button> 
     </ul>

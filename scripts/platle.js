@@ -47,7 +47,7 @@ $(document).ready(function(){
         fetch("../templates/platle/help.php")
         .then((res) => res.text())
         .then((text) =>{
-            $('#errorZone').append(text);
+            $('#helpZone').append(text);
         })
         .catch((e) => console.error(e));
         
@@ -62,106 +62,160 @@ $(document).ready(function(){
         const digit1 = $('#digit1').val().trim().toLowerCase();
         const digit2 = $('#digit2').val().trim().toLowerCase();
         const digit3 = $('#digit3').val().trim().toLowerCase();
+
         const inputCharacters = $('#digit1').val().trim().toLowerCase() + $('#digit2').val().trim().toLowerCase() + $('#digit3').val().trim().toLowerCase();
-        //console.log(inputCharacters);
+        if (inputCharacters.length == 3) {
+            
+            //console.log(inputCharacters);
 
-        
-        if (inputCharacters.length == 3){
-            if (sound){
-                respawnSfx = new Audio('../sfx/Platle/car horn.mp3');
-                respawnSfx.volume = 1;
-                respawnSfx.play();
-            }
-            const inputSet = new Set(inputCharacters);
-            // Load the dictionary JSON file using AJAX
-            $.getJSON('../json/dictionary.json', function (dictionary) {
-                // Filter words that contain all three input characters
-                const matchingWords = dictionary.filter(word => {
-                    const wordSet = new Set(word);
-                    // Check if each input character is in the word's character set
-                    return [...inputSet].every(char => wordSet.has(char));
-                });            
-
-                var verifiedResults = [];
-
-                matchingWords.forEach(function (word){
-                    let regex = new RegExp(inputCharacters.split('').join('.*'), 'i');
-                    //console.log(word);
-                    if (regex.test(word)){
-                        //console.log(word);
-                        verifiedResults.push(word);
-                    }
-                });
-
-                // Sort results by length
-                verifiedResults.sort((a, b) => a.length - b.length);
-
-                $('#results').html("");
-
-
-                
-                // Checking to see if the first result 
-
-                let maxLen = verifiedResults[0].length;
-                let currList = [];
-
-                if (maxLen == 3){
-                    currList.push(verifiedResults[0]);
-                    verifiedResults = verifiedResults.slice(1);
+            
+            if (/^[A-Za-z]+$/.test(digit1) && /^[A-Za-z]+$/.test(digit2) && /^[A-Za-z]+$/.test(digit3)){
+                if (sound){
+                    respawnSfx = new Audio('../sfx/Platle/car horn.mp3');
+                    respawnSfx.volume = 1;
+                    respawnSfx.play();
                 }
+                const inputSet = new Set(inputCharacters);
+                // Load the dictionary JSON file using AJAX
+                $.getJSON('../json/dictionary.json', function (dictionary) {
+                    // Filter words that contain all three input characters
+                    const matchingWords = dictionary.filter(word => {
+                        const wordSet = new Set(word);
+                        // Check if each input character is in the word's character set
+                        return [...inputSet].every(char => wordSet.has(char));
+                    });            
 
-                
-                verifiedResults.forEach(function (word){
-                    // The next word in queue will qualify for new row
-                    if (word.length > maxLen){
-    
-                        let collapsibleButton = document.createElement('button');
-                        collapsibleButton.type = "button";
-                        collapsibleButton.className = "collapsible";
+                    var verifiedResults = [];
+
+                    matchingWords.forEach(function (word){
+                        let regex = new RegExp(inputCharacters.split('').join('.*'), 'i');
+                        //console.log(word);
+                        if (regex.test(word)){
+                            //console.log(word);
+                            verifiedResults.push(word);
+                        }
+                    });
+
+                    // Sort results by length
+                    verifiedResults.sort((a, b) => a.length - b.length);
+
+                    $('#results').html("");
+
+
+                    
+                    // Checking to see if the first result 
+
+                    if (verifiedResults.length > 0){
+                        let maxLen = verifiedResults[0].length;
+                        let currList = [];
+
+                        if (maxLen == 3){
+                            currList.push(verifiedResults[0]);
+                            verifiedResults = verifiedResults.slice(1);
+                        }
 
                         
+                        verifiedResults.forEach(function (word){
+                            // The next word in queue will qualify for new row
+                            if (word.length > maxLen){
+            
+                                let collapsibleButton = document.createElement('button');
+                                collapsibleButton.type = "button";
+                                collapsibleButton.className = "collapsible";
 
-                        collapsibleButton.addEventListener("click", function() {
-                            this.classList.toggle("active");
-                            var content = this.nextElementSibling;
-                            if (content.style.display === "block") {
-                                content.style.display = "none";
-                            } else {
-                                content.style.display = "block";
+                                
+
+                                collapsibleButton.addEventListener("click", function() {
+                                    this.classList.toggle("active");
+                                    var content = this.nextElementSibling;
+                                    if (content.style.display === "block") {
+                                        content.style.display = "none";
+                                    } else {
+                                        content.style.display = "block";
+                                    }
+                                });
+
+                                let collapsibleDiv = document.createElement('div');
+                                collapsibleDiv.className = "content";
+
+                                collapsibleButton.innerHTML = maxLen + " Letter Words";      
+
+                                let collapsibleContent = document.createElement('p');
+
+                                collapsibleContent.innerHTML = '<ul><li>' + currList.join("</li><li>"); + '</li></ul>';
+                                currList = [];
+
+                                collapsibleDiv.append(collapsibleContent);
+
+                                $('#results').append(collapsibleButton);
+                                $('#results').append(collapsibleDiv);
+
+                                maxLen = word.length;
+                                currList.push(word);
+                            }
+                            // Word belongs to current row
+                            else{
+                                currList.push(word);
                             }
                         });
-
+                    }
+                    else{
                         let collapsibleDiv = document.createElement('div');
-                        collapsibleDiv.className = "content";
+                        collapsibleDiv.id = "errorContent";
 
-                        collapsibleButton.innerHTML = maxLen + " Letter Words";      
+                        let errorImg = document.createElement('img');
+                        errorImg.src = "../img/platle/wrongway.png";
+                        errorImg.id = "wrongway";
 
                         let collapsibleContent = document.createElement('p');
-                        collapsibleContent.innerHTML = '<ul><li>' + currList.join("</li><li>"); + '</li></ul>';
-                        currList = [];
+                        collapsibleContent.innerHTML = "ERROR: No results :(";
 
+                        collapsibleDiv.append(errorImg);
                         collapsibleDiv.append(collapsibleContent);
 
-                        $('#results').append(collapsibleButton);
                         $('#results').append(collapsibleDiv);
 
-                        maxLen = word.length;
-                        currList.push(word);
+
+                        if (document.getElementById("sound").src.split(/(\\|\/)/g).pop() == "soundon.png"){
+                            respawnSfx = new Audio('../sfx/Platle/car crash.mp3');
+                            respawnSfx.volume = 1;
+                            respawnSfx.play();
+                        }
                     }
-                    // Word belongs to current row
-                    else{
-                        currList.push(word);
-                    }
+                    
+                }).fail(function () {
+                    $('#results').text("Error loading dictionary file.");
                 });
-            }).fail(function () {
-                $('#results').text("Error loading dictionary file.");
-            });
+            }
+            else{
+                $('#results').html("");
+
+                let collapsibleDiv = document.createElement('div');
+                collapsibleDiv.id = "errorContent";
+
+                let errorImg = document.createElement('img');
+                errorImg.src = "../img/platle/wrongway.png";
+                errorImg.id = "wrongway";
+
+                let collapsibleContent = document.createElement('p');
+                collapsibleContent.innerHTML = "ERROR: One or more character invalid.";
+
+                collapsibleDiv.append(errorImg);
+                collapsibleDiv.append(collapsibleContent);
+
+                $('#results').append(collapsibleDiv);
+
+
+                if (document.getElementById("sound").src.split(/(\\|\/)/g).pop() == "soundon.png"){
+                    respawnSfx = new Audio('../sfx/Platle/car crash.mp3');
+                    respawnSfx.volume = 1;
+                    respawnSfx.play();
+                }
+                
+            }
         }
         else{
             $('#results').html("");
-
-
-            
 
             let collapsibleDiv = document.createElement('div');
             collapsibleDiv.id = "errorContent";
@@ -171,39 +225,24 @@ $(document).ready(function(){
             errorImg.id = "wrongway";
 
             let collapsibleContent = document.createElement('p');
-            collapsibleContent.innerHTML = "ERROR: Missing one or more input characters";
+            collapsibleContent.innerHTML = "ERROR: Missing one or more input characters.";
 
+            if ((digit1.length > 0 && !/^[A-Za-z]+$/.test(digit1)) || (digit2.length > 0 && !/^[A-Za-z]+$/.test(digit2)) || (digit3.length > 0 && !/^[A-Za-z]+$/.test(digit3))){
+                collapsibleContent.innerHTML = "ERROR: Missing one or more input characters and one or more character invalid.";
+            }
             collapsibleDiv.append(errorImg);
             collapsibleDiv.append(collapsibleContent);
 
             $('#results').append(collapsibleDiv);
 
 
-
-            /*
-            let errorImg = document.createElement('img');
-            errorImg.src = "../img/platle/wrongway.png";
-            errorImg.id = "wrongway";
-
-            let errorMessage = document.createElement('p');
-            errorMessage.innerHTML = "ERROR: ";
-            errorMessage.id = "errormsg";
-
-            let errorDiv = document.createElement('div');
-            errorDiv.id = "error";
-
-            errorDiv.append(errorImg);
-            errorDiv.append(errorMessage);
-
-            $('#results').append(errorDiv);
-            */
             if (document.getElementById("sound").src.split(/(\\|\/)/g).pop() == "soundon.png"){
                 respawnSfx = new Audio('../sfx/Platle/car crash.mp3');
                 respawnSfx.volume = 1;
                 respawnSfx.play();
             }
-            
         }
+        
     });
     
 

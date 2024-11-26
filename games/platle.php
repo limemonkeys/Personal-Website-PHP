@@ -11,7 +11,7 @@
         <script src="../scripts/platle.js"></script>
     </head>
     <body id="body">
-        <div id="errorZone">
+        <div id="helpZone">
         </div>
         <div id="content">
             <div id="plateContainer">

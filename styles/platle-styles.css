@@ -131,7 +131,7 @@ body{
 #helpcontent li{
   font-family: 'Highway Gothic', sans-serif;
   font-weight: bold;
-  font-size: 2em;  
+  font-size: 1.75em;  
 }
 
 #helpcontent button{
@@ -148,7 +148,7 @@ body{
 
   margin: 0 auto 0 auto;
 
-  top: 80%;
+  top: 90%;
   -ms-transform: translateY(-80%);
   transform: translateY(-80%);
 
@@ -406,6 +406,10 @@ body{
 }
 
 @media screen and (max-width: 650px){
+
+  #helpcontent li{
+    font-size: 1.5em;  
+  }
 
   #plateContainer{
     height: 40vh;
