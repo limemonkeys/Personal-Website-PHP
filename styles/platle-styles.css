@@ -266,17 +266,32 @@ body{
   
 }
 
-#searchButton:hover{
+#searchButtonText{
+
   height: 128px;
   width: 128px;
 
-  display: inline;
-  margin-left: auto;
-  margin-right: auto;
-}
+  z-index: 5;
 
-#searchButtonText{
+  font-family: 'Highway Gothic', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #FFF;
 
+  text-align: center;
+  
+  margin: 0 auto 0 auto;
+
+  top: calc(50% + 2em);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  position: absolute; 
+  left: 0; 
+  right: 224px; 
+  width: fit-content;
+
+  /*
   z-index: 5;
 
   position: absolute; 
@@ -295,6 +310,7 @@ body{
   top: calc(50% - 0.20em);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  */
   
 }
 
@@ -427,7 +443,7 @@ body{
 
   .digits input{
     height: 80px; 
-    width: calc((60vw - 16px)/6);
+    width: calc((55vw - 16px)/6);
   
     font-family: 'Highway Gothic', sans-serif;
     font-weight: bold;
