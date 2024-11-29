@@ -208,6 +208,8 @@ body{
   border-color: #0B2875;
 
   text-align: center;
+
+  object-fit: cover;
 }
 
 #digit3{
@@ -291,7 +293,6 @@ body{
   position: absolute; 
   left: 0; 
   right: 224px; 
-  width: fit-content;
 
   /*
   z-index: 5;
