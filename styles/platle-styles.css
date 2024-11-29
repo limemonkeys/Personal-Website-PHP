@@ -210,6 +210,8 @@ body{
   text-align: center;
 
   object-fit: cover;
+
+  padding: 0;
 }
 
 #digit3{
@@ -293,6 +295,8 @@ body{
   position: absolute; 
   left: 0; 
   right: 224px; 
+
+  object-fit: cover;
 
   /*
   z-index: 5;
@@ -446,7 +450,7 @@ body{
 
   .digits input{
     height: 80px; 
-    width: calc((55vw - 16px)/6);
+    width: calc((60vw - 16px)/6);
   
     font-family: 'Highway Gothic', sans-serif;
     font-weight: bold;
@@ -459,6 +463,8 @@ body{
     border-color: #0B2875;
   
     text-align: center;
+
+    
   }
 
   #digit3{
