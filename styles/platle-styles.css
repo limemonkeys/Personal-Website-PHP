@@ -256,13 +256,15 @@ body{
   position: absolute; 
   left: 0; 
   right: 224px; 
-  width: fit-content;
+  
 
   margin: 0 auto 0 auto;
 
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+
+  object-fit: cover;
   
 }
 
