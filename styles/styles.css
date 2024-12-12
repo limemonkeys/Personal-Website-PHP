@@ -112,9 +112,12 @@ Section: Body (Effects all pages)
 body {
     /*background-color: #6394C5;*/
     background-color: #000;
-    background-image: linear-gradient(#6394C5 0%, #4475a7 400px); /* W3C */
-    background-image:    -moz-linear-gradient(top, #6394C5 0%, #4475a7 400px); /* FF3.6+ */
-    background-image: -webkit-linear-gradient(top, #6394C5 0%, #4475a7 400px); /* Chrome10+,Safari5.1+ */
+    
+    
+    background-image: linear-gradient(#6394C5 0%, #4475a7 400px); 
+    background-image:    -moz-linear-gradient(top, #6394C5 0%, #4475a7 400px);
+    background-image: -webkit-linear-gradient(top, #6394C5 0%, #4475a7 400px); 
+    
     font-family: "Fredoka One", sans-serif;
     padding: 0px;
     margin: 0px;
@@ -128,6 +131,7 @@ NOTE: overflow-x: hidden; applied to wrapper instead of html/body as it is ignor
 #wrapper{
     position: relative;
     overflow-x:hidden;
+
 }
 
 /*

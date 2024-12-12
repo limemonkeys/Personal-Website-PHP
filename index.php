@@ -32,6 +32,7 @@
             
             <div id="gamespace">
                 
+
                 <img id="clickSign" src="./img/signs/S1.png" style="position:absolute;">
                 <div id="deathSpace" style="position:absolute;">
                     
@@ -58,19 +59,10 @@
                     <img id="tree2" src="./img/greenery/Tree.png">
                 </div>
                 
-                <script>
-                    const d = new Date();
-                    let month = d.getMonth();
-
-                    console.log("Month: " + month);
-
-                    if (month == 10){
-                        console.log("It's December!");
-                        document.getElementById("dirttest").style.backgroundImage = "../img/background-texture/snow-dirt.png"
-                    }
-                </script>
+                
                 <div id="dirttest">
                 </div>
+                
                 <div id="dirt">
                     <div id="icons_section" class="logoContainer row"></div>
                 </div>

@@ -106,10 +106,17 @@ $(document).ready(function(){
     const d = new Date();
     let month = d.getMonth();
 
-
-    if (month == 12){
+    // Winterize site if 
+    if (month == 11 || month <= 1){
         console.log("It's December!");
-        document.getElementById('dirttest').style.backgroundImage = 'url("../img/background-texture/snow-dirt.png")';
-        
+        document.getElementById('dirttest').style.backgroundImage = 'url("../img/background-texture/snow-dirt.png")';   
+        document.getElementById('wrapper').style.backgroundImage = 'url("../img/gif/snowfall.gif")';   
+        document.getElementById('bush1').src = "../img/greenery/WBush1.png";
+        document.getElementById('bush2').src = "../img/greenery/WBush2.png";
+        document.getElementById('bush3').src = "../img/greenery/WBush3.png";
+        document.getElementById('tree1').src = "../img/greenery/WTree.png";
+        document.getElementById('tree2').src = "../img/greenery/WTree.png";
+        document.getElementById('name-logo').src = "../img/centerpiece/wmac-burton.png";
+
     }
 });
