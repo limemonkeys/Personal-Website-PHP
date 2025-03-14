@@ -149,6 +149,9 @@ Section: Resume
 
     margin-left: auto;
     margin-right: auto;
+
+    width: 33vw;
+    height: auto;
 }
 
 #side {
