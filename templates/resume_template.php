@@ -9,10 +9,10 @@
 
 <div id="top">
     <div class="row">
-        <img id="resume-container" src="../Resumes/P1.png">
+        <img id="resume-container" src="../Resumes/uiux1.png">
     </div>
     <div class="row">
-        <img id="resume-container" src="../Resumes/P2.png">
+        <img id="resume-container" src="../Resumes/uiux2.png">
     </div>
 </div>
 
