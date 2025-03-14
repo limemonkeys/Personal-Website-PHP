@@ -20,7 +20,7 @@
 <div id="downloadContainer" class="row">
     
     <p class="col-3"></p>
-    <a id="download-resume" class="col-3" href="../Resumes/Mac Burton Resume.pdf" download="../Resumes/Mac Burton UI UX Resume">Download</a>
+    <a id="download-resume" class="col-3" href="../Resumes/Mac Burton UI UX Resume.pdf" download="../Resumes/Mac Burton UI UX Resume.pdf">Download</a>
 
     <p class="col-3"></p>
 </div>
